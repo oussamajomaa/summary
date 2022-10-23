@@ -1,0 +1,69 @@
+<div style="margin:auto; width: 70%; padding-top: 10px;" #container>
+	<!-- Select a model -->
+	<div style="margin-bottom:10px;">
+		<select style="padding: 3px; width:350px; " (change)="onSelectModel($event)" #select>
+			<option selected hidden disabled>Select Model</option>
+			<option value="facebook/bart-large-cnn">facebook/bart-large-cnn</option>
+			<option value="google/pegasus-xsum">google/pegasus-xsum</option>
+			<option value="csebuetnlp/mT5_multilingual_XLSum">csebuetnlp/mT5_multilingual_XLSum</option>
+		</select>
+	</div>
+
+	<!-- Text area to write text -->
+	<div style="margin-bottom: 15px;">
+		<textarea placeholder="Enter text here, max 400 words..." (input)="changeText()" rows="10" #text></textarea>
+
+		<div style="display: flex; justify-content: end;">
+			<span>{{textWord}}</span>
+			<span>Words ||</span>
+			<span>{{character}} </span>
+			<span>Characters</span>
+		</div>
+	</div>
+
+	<!-- Actions buttons -->
+	<div style="margin-bottom: 20px; justify-content: space-between; display: flex;">
+		<div class="upload-btn-wrapper">
+			<button>Upload a file</button>
+			<span style="margin-left: 10px;">{{fileName}}</span>
+			<input type="file" accept=".txt" (change)="uploadFile($event)" #inputFile>
+		</div>
+		<div>
+			<button (click)="summarize()" style="margin-right: 10px">Summarize</button>
+			<button (click)="clearText()">Reset</button>
+		</div>
+	</div>
+	<hr style="box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 1px;">
+
+	<span *ngIf="!resume && spinner" class="loader"></span>
+	<div *ngIf="resume">
+		<div class="summary-keyword">
+			<div style="width: 63%;">
+				<h3>Summary</h3>
+				<div class="summary">
+					{{resume}}
+				</div>
+				<div>
+					<span>{{resumeWord}}</span>
+					<span>Words ||</span>
+					<span>Computation time on cpu: </span>
+					<span>{{processTime}} s</span>
+				</div>
+			</div>
+			<div style="width: 35%;">
+				<h3>Keywords</h3>
+				<div class="keyword">
+					{{resume}}
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<div *ngIf="isModel" class="dialog">
+	<div class="dialog-message">
+		<h3>Choose a model please!</h3>
+		<button (click)="closeDialog()">OK</button>
+	</div>
+</div>

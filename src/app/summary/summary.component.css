@@ -1,0 +1,152 @@
+.loader {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.5) translate(0, 0);
+    background-color: rgb(10, 97, 124);
+    border-radius: 50%;
+    animation: animloader 1s infinite ease-in-out;
+}
+
+.loader::before {
+    background-color: #FF3D00;
+    transform: scale(0.5) translate(-48px, -48px);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animloader {
+    50% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+textarea, select{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding:5px; 
+    width: 100%; 
+    text-align: justify; 
+    box-sizing:border-box;
+    margin-bottom:10px;
+    border-radius: 8px;
+}
+
+
+
+span{
+    color: gray;
+    margin-right: 5px;
+}
+
+/* Styling upload file input */
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+
+
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  button,select {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .summary-keyword{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .keyword{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding:5px; 
+    /* width: 35%;  */
+    text-align: justify; 
+    box-sizing:border-box;
+    margin-bottom:10px;
+    border-radius: 8px;
+}
+
+.summary{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding:5px; 
+    /* width: 63%;  */
+    text-align: justify; 
+    box-sizing:border-box;
+    margin-bottom:10px;
+    border-radius: 8px;
+}
+
+.dialog{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(52, 53, 53, 0.137);
+}
+
+.dialog-message{
+    border-radius: 8px;
+    padding:10px; 
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* display: flex;
+    justify-content: space-between; */
+    width: 30vw;
+    margin: auto;
+    position: absolute;
+    top: 40vh;
+    left: 35vw
+}
+
+.dialog-message button{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgb(228, 228, 228);
+    float: right;
+}
+
+.dialog-message h3{
+    color: gray;
+}
