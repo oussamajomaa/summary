@@ -1,15 +1,26 @@
 <div style="margin:auto; width: 70%; padding-top: 10px;" #container>
 	<!-- Select a model -->
-	<div style="margin-bottom:10px;">
-		<select style="padding: 3px; width:350px; " (change)="onSelectModel($event)" #select>
+	<div style="margin-bottom:10px; display: flex; justify-content: space-between;">
+		<select style="width:350px; " (change)="onSelectModel($event)" #select>
 			<option selected hidden disabled>Select Model</option>
 			<option value="facebook/bart-large-cnn">facebook/bart-large-cnn</option>
-			<option value="google/pegasus-xsum">google/pegasus-xsum</option>
-			<option value="csebuetnlp/mT5_multilingual_XLSum">csebuetnlp/mT5_multilingual_XLSum</option>
+			<option value="tuner007/pegasus_summarizer">tuner007/pegasus_summarizer</option>
+			<option value="t5-large">t5-large</option>
+			<!-- T5 “Text-to-Text Transfer Transformer” -->
 		</select>
+		<button (click)="auth.logout()">Sign out</button>
 	</div>
+	<div *ngIf="textWord">
+		<p>Max words summary</p>
+		<div style="padding-bottom:20px; display: flex; justify-content: space-between;">
+			<input type="range" value="{{max_length}}" min="{{min}}" max="{{max}}" style="width: 95%;" #ranger (input)="rangeChange(ranger.value)">
+			{{max_length}} Words
+		</div>
+	</div>
+	
 
-	<!-- Text area to write text -->
+
+	<!-- Textarea -->
 	<div style="margin-bottom: 15px;">
 		<textarea placeholder="Enter text here, max 400 words..." (input)="changeText()" rows="10" #text></textarea>
 
@@ -20,14 +31,19 @@
 			<span>Characters</span>
 		</div>
 	</div>
+	
 
-	<!-- Actions buttons -->
+	<!-- Buttons -->
 	<div style="margin-bottom: 20px; justify-content: space-between; display: flex;">
-		<div class="upload-btn-wrapper">
-			<button>Upload a file</button>
-			<span style="margin-left: 10px;">{{fileName}}</span>
-			<input type="file" accept=".txt" (change)="uploadFile($event)" #inputFile>
+		<!-- Upload file -->
+		<div class="upload-btn-wrapper" style="display: flex; ">
+			<label for="fileDropReff" class="dropzone">
+				<h5>Upload</h5>
+				<input type="file" accept=".txt, .xml" (change)="uploadFile($event)" #inputFile id="fileDropReff">
+			</label>
+			<span>{{fileName}}</span>
 		</div>
+		<!-- Summarize && Reset button -->
 		<div>
 			<button (click)="summarize()" style="margin-right: 10px">Summarize</button>
 			<button (click)="clearText()">Reset</button>
@@ -35,11 +51,54 @@
 	</div>
 	<hr style="box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 1px;">
 
+	<!-- Spinner -->
 	<span *ngIf="!resume && spinner" class="loader"></span>
-	<div *ngIf="resume">
-		<div class="summary-keyword">
+
+	<!-- Summary  && Keywords -->
+	<div *ngIf="extension ==='xml' && upload && resume">
+		<h3>General Key Words</h3>
+		<div class="general-keyword">
+			<span *ngFor="let k of keyWord">{{k}}</span>
+		</div>
+	</div>
+	<div *ngIf="extension ==='xml' && upload && resume">
+		<div style="display: flex; justify-content: space-between;">
 			<div style="width: 63%;">
 				<h3>Summary</h3>
+			</div>
+			<div style="width: 35%;">
+				<h3>Keywords</h3>
+			</div>
+		</div>
+		<div class="summary-keyword" *ngFor="let item of allSummaries">
+			<!-- Summary -->
+			<div style="width: 63%;">
+				<div class="summary">
+					<h4>{{item.title}}</h4>
+					{{item.summary.summary}}
+				</div>
+			</div>
+
+			<!-- Keywords -->
+			<div style="width: 35%;">
+				<div class="keyword">
+					<span *ngFor="let keyword of item.summary.keywords"> {{keyword}} </span>
+				</div>
+			</div>
+		</div>
+		<div>
+			<span>{{resumeWord}}</span>
+			<span>Words ||</span>
+			<span>Computation time on cpu: </span>
+			<span>{{processTime}} s</span>
+		</div>
+	</div>
+	<div *ngIf="extension ==='txt' && upload && resume">
+		<div class="summary-keyword" >
+			<!-- Summary -->
+			<div style="width: 63%;">
+				<h3>Summary</h3>
+				
 				<div class="summary">
 					{{resume}}
 				</div>
@@ -50,20 +109,52 @@
 					<span>{{processTime}} s</span>
 				</div>
 			</div>
+
+			<!-- Keywords -->
 			<div style="width: 35%;">
 				<h3>Keywords</h3>
 				<div class="keyword">
-					{{resume}}
+					<span *ngFor="let keyword of keywords"> {{keyword}} </span>
 				</div>
-
 			</div>
-
 		</div>
 	</div>
+
+	<div *ngIf="resume && !upload">
+		<div class="summary-keyword" >
+			<!-- Summary -->
+			<div style="width: 63%;">
+				<h3>Summary</h3>
+				
+				<div class="summary">
+					{{resume}}
+				</div>
+				<div>
+					<span>{{resumeWord}}</span>
+					<span>Words ||</span>
+					<span>Computation time on cpu: </span>
+					<span>{{processTime}} s</span>
+				</div>
+			</div>
+
+			<!-- Keywords -->
+			<div style="width: 35%;">
+				<h3>Keywords</h3>
+				<div class="keyword">
+					<span *ngFor="let keyword of keywords"> {{keyword}} </span>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
+
+
+<!-- Modal alert message -->
 <div *ngIf="isModel" class="dialog">
 	<div class="dialog-message">
 		<h3>Choose a model please!</h3>
 		<button (click)="closeDialog()">OK</button>
 	</div>
 </div>
+

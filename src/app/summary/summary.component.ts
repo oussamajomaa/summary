@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 
 @Component({
@@ -25,11 +26,21 @@ export class SummaryComponent implements OnInit {
 	fileName: string
 	upload = false
 	isModel = false
+	max_length: any = 50;
+	extension: string
+	allSummaries: any
+	keyWord = []
+	min:number
+	max:number
 
-	constructor(private http: HttpClient) {
+
+	constructor(private http: HttpClient, public auth: AuthService) {
 
 	}
-	
+
+	rangeChange(value) {
+		this.max_length = value
+	}
 
 	onSelectModel(e) {
 		this.model = e.target.value
@@ -40,18 +51,24 @@ export class SummaryComponent implements OnInit {
 		this.inputFile.nativeElement.value = ""
 		this.textWord = this.countWords(this.text.nativeElement.value)
 		this.character = (this.text.nativeElement.value).length
+		this.max = this.textWord
+		this.min = Math.round(this.textWord / 2)
 	}
 
 	uploadFile(e) {
-		console.log(e.target.files[0]);
-		if (e.target.files[0]){
+		if (e.target.files[0]) {
 			this.text.nativeElement.value = ""
 			this.file = e.target.files[0]
 			this.fileName = this.file.name
+			this.extension = this.fileName.split('.')[1]
+			console.log(this.extension);
+
 			if (this.file) {
+				this.resume = ""
+				this.spinner = false
 				let reader = new FileReader();
 				reader.onload = () => {
-					this.text.nativeElement.value=reader.result;
+					this.text.nativeElement.value = reader.result;
 					this.textWord = this.countWords(this.text.nativeElement.value)
 					this.character = (this.text.nativeElement.value).length
 					this.upload = true
@@ -61,23 +78,40 @@ export class SummaryComponent implements OnInit {
 		}
 
 	}
-
+	keywords = []
 	summarize() {
-		if (this.model){
-			this.select.nativeElement.setAttribute('style', 'box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;padding: 3px; width:350px; ')
+		if (this.model) {
+			this.select.nativeElement.setAttribute
+				('style',
+					`
+					box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+					width:350px; 
+					padding: 5px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				`
+				)
 			if (this.text.nativeElement.value && !this.upload) {
-				console.log(this.text.nativeElement.value);
-	
 				const start = new Date().getTime()
 				const text = this.text.nativeElement.value
 				if (text && this.textWord > 8) {
 					this.spinner = true
 					this.resume = ""
 					this.textWord = this.countWords(text)
-	
-					this.http.post(`http://localhost:8000`, JSON.stringify(text), { params: { model: this.model } })
+
+					// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text), { params: { model: this.model } })
+					this.http.post(`http://localhost:5000`, JSON.stringify(text),
+						{
+							params:
+							{
+								model: this.model,
+								max_length: this.max_length
+							}
+						})
 						.subscribe((res: any) => {
-							this.resume = res
+							this.resume = res.summary
+							this.keywords = res.keywords
+
 							this.resumeWord = this.countWords(this.resume)
 							const end = new Date().getTime()
 							this.processTime = (end - start) / 1000
@@ -85,36 +119,73 @@ export class SummaryComponent implements OnInit {
 				}
 			}
 			if (this.fileName && this.upload) {
-				
+
 				this.resume = ""
-				console.log(this.file);
 				const formData = new FormData()
-	
+
 				const start = new Date().getTime()
 				this.spinner = true
 				this.resume = ""
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
-				this.http.post(`http://localhost:8000/file`, formData, { params: { model: this.model } })
+				// this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData, { params: { model: this.model } })
+				this.http.post(`http://localhost:5000/file`, formData,
+					{
+						params:
+						{
+							model: this.model,
+							max_length: this.max_length,
+							extension: this.extension
+						}
+					})
 					.subscribe((res: any) => {
-						this.resume = res
-						this.resumeWord = this.countWords(this.resume)
-						const end = new Date().getTime()
-						this.processTime = (end - start) / 1000
-						// this.spinner = false
+						if (this.extension === "xml") {
+							this.resume = res
+							console.log((res));
+							this.allSummaries = res.data
+							console.log("all samuuraies ",this.allSummaries);
+							this.keyWord = res.kw
+							console.log(this.keyWord);
+
+
+							// this.resume = this.allSummaries
+							// this.resume = res.summary
+							// this.keywords = res.keywords
+							// this.resumeWord = this.countWords(this.resume)
+							// const end = new Date().getTime()
+							// this.processTime = (end - start) / 1000
+						}
+						if (this.extension === "txt") {
+							console.log((res));
+							this.resume = res.summary
+							this.keywords = res.keywords
+							this.resumeWord = this.countWords(this.resume)
+							const end = new Date().getTime()
+							this.processTime = (end - start) / 1000
+						}
 					})
 			}
 		}
-		else{
+		else {
 			this.isModel = true
 		}
 	}
 
-	closeDialog(){
+	closeDialog() {
 		this.isModel = false
 		this.select.nativeElement.focus()
 		this.select.nativeElement.setAttribute('style', 'box-shadow: rgba(214, 3, 3, 0.87) 0px 0px 0px 3px; 0px 0px 0px 3px;padding: 3px; width:350px; ')
-		
+		this.select.nativeElement.setAttribute
+			('style',
+				`
+					box-shadow: rgba(214, 3, 3, 0.87) 0px 0px 0px 3px; 0px 0px 0px 3px;
+					width:350px; 
+					padding: 5px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				`
+			)
+
 	}
 
 	clearText() {
