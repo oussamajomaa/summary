@@ -1,6 +1,11 @@
-<div style="margin:auto; width: 70%; padding-top: 10px;" #container>
+
+<div class="header">
+	<img src="assets/logo.png" alt="">
+</div>
+<div class="container" #container>
+	<h1>The Summarizer</h1>
 	<!-- Select a model -->
-	<div style="margin-bottom:10px; display: flex; justify-content: space-between;">
+	<div style="margin-bottom:10px; display: flex; justify-content: space-between; align-items: center;">
 		<select style="width:350px; " (change)="onSelectModel($event)" #select>
 			<option selected hidden disabled>Select Model</option>
 			<option value="facebook/bart-large-cnn">facebook/bart-large-cnn</option>
@@ -8,13 +13,14 @@
 			<option value="t5-large">t5-large</option>
 			<!-- T5 “Text-to-Text Transfer Transformer” -->
 		</select>
-		<button (click)="auth.logout()">Sign out</button>
+		<a class="readme" href="https://github.com/obtic-scai/Summarization" target="_blank">README</a>
 	</div>
-	<div *ngIf="textWord">
-		<p>Max words summary</p>
+	
+	<div>
+		<h4>Summary percentage</h4>
 		<div style="padding-bottom:20px; display: flex; justify-content: space-between;">
-			<input type="range" value="{{max_length}}" min="{{min}}" max="{{max}}" style="width: 95%;" #ranger (input)="rangeChange(ranger.value)">
-			{{max_length}} Words
+			<input type="range" value="20" min="10" max="50" style="width: 95%;" #ranger (input)="rangeChange(ranger.value)">
+			{{max_length}} %
 		</div>
 	</div>
 	
@@ -24,13 +30,14 @@
 	<div style="margin-bottom: 15px;">
 		<textarea placeholder="Enter text here, max 400 words..." (input)="changeText()" rows="10" #text></textarea>
 
-		<div style="display: flex; justify-content: end;">
+		<div style="display: flex; justify-content: end;" *ngIf="!upload">
 			<span>{{textWord}}</span>
 			<span>Words ||</span>
 			<span>{{character}} </span>
 			<span>Characters</span>
 		</div>
 	</div>
+	
 	
 
 	<!-- Buttons -->
@@ -54,36 +61,27 @@
 	<!-- Spinner -->
 	<span *ngIf="!resume && spinner" class="loader"></span>
 
-	<!-- Summary  && Keywords -->
+	<!-- General keywords for xml file -->
 	<div *ngIf="extension ==='xml' && upload && resume">
-		<h3>General Key Words</h3>
-		<div class="general-keyword">
+		<h3>General Keywords</h3>
+		<div class="keyword">
 			<span *ngFor="let k of keyWord">{{k}}</span>
 		</div>
 	</div>
+
+	<!-- Displaying file xml result -->
 	<div *ngIf="extension ==='xml' && upload && resume">
-		<div style="display: flex; justify-content: space-between;">
-			<div style="width: 63%;">
-				<h3>Summary</h3>
-			</div>
-			<div style="width: 35%;">
-				<h3>Keywords</h3>
-			</div>
-		</div>
 		<div class="summary-keyword" *ngFor="let item of allSummaries">
 			<!-- Summary -->
-			<div style="width: 63%;">
-				<div class="summary">
-					<h4>{{item.title}}</h4>
-					{{item.summary.summary}}
-				</div>
+			<div style="width: 63%;" class="summary">
+				<h4>{{item.title}}</h4>
+				{{item.summary.summary}}
 			</div>
 
 			<!-- Keywords -->
-			<div style="width: 35%;">
-				<div class="keyword">
-					<span *ngFor="let keyword of item.summary.keywords"> {{keyword}} </span>
-				</div>
+			<div style="width: 35%;" class="keyword">
+				<h4 style="width: 100%;">Keywords</h4>
+				<span *ngFor="let keyword of item.summary.keywords"> {{keyword}} </span>
 			</div>
 		</div>
 		<div>
@@ -93,57 +91,52 @@
 			<span>{{processTime}} s</span>
 		</div>
 	</div>
+
+	<!-- Displaying file text result -->
 	<div *ngIf="extension ==='txt' && upload && resume">
 		<div class="summary-keyword" >
 			<!-- Summary -->
-			<div style="width: 63%;">
-				<h3>Summary</h3>
-				
-				<div class="summary">
+			<div style="width: 63%;" class="summary">
+				<h4>Summary</h4>
 					{{resume}}
-				</div>
-				<div>
-					<span>{{resumeWord}}</span>
-					<span>Words ||</span>
-					<span>Computation time on cpu: </span>
-					<span>{{processTime}} s</span>
-				</div>
 			</div>
-
+			
 			<!-- Keywords -->
-			<div style="width: 35%;">
-				<h3>Keywords</h3>
-				<div class="keyword">
+			<div style="width: 35%;" class="keyword">
+				<h4 style="width: 100%;">Keywords</h4>
 					<span *ngFor="let keyword of keywords"> {{keyword}} </span>
-				</div>
 			</div>
+		</div>
+		<div>
+			<span>{{resumeWord}}</span>
+			<span>Words ||</span>
+			<span>Computation time on cpu: </span>
+			<span>{{processTime}} s</span>
 		</div>
 	</div>
 
+	<!-- Displaying text result -->
 	<div *ngIf="resume && !upload">
 		<div class="summary-keyword" >
 			<!-- Summary -->
-			<div style="width: 63%;">
-				<h3>Summary</h3>
-				
-				<div class="summary">
+			<div style="width: 63%;" class="summary">
+				<h4>Summary</h4>
 					{{resume}}
-				</div>
-				<div>
-					<span>{{resumeWord}}</span>
-					<span>Words ||</span>
-					<span>Computation time on cpu: </span>
-					<span>{{processTime}} s</span>
-				</div>
 			</div>
-
+			
 			<!-- Keywords -->
-			<div style="width: 35%;">
-				<h3>Keywords</h3>
-				<div class="keyword">
+			<div style="width: 35%;" class="keyword">
+				<h4 style="width: 100%;">Keywords</h4>
+				
 					<span *ngFor="let keyword of keywords"> {{keyword}} </span>
-				</div>
+				
 			</div>
+		</div>
+		<div>
+			<span>{{resumeWord}}</span>
+			<span>Words ||</span>
+			<span>Computation time on cpu: </span>
+			<span>{{processTime}} s</span>
 		</div>
 	</div>
 

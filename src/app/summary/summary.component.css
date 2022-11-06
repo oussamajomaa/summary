@@ -45,19 +45,52 @@
     }
 }
 
-textarea, select{
+.header {
+    width: 100%;
+    background: rgb(235, 235, 235);
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+}
+
+.header img {
+    width: 240px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+    color: gray;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    padding-top: 10px;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+textarea,
+select {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    padding:5px; 
-    width: 100%; 
-    text-align: justify; 
-    box-sizing:border-box;
-    margin-bottom:10px;
+    padding: 5px;
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+    margin-bottom: 10px;
     border-radius: 8px;
 }
 
 
 
-span{
+span {
     color: gray;
     margin-right: 5px;
 }
@@ -68,25 +101,26 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
 .upload-btn-wrapper span {
-    padding: 5px; 
-    background: rgb(235, 235, 235); 
-    border-radius: 5px; 
-    margin: 2px;
+    padding: 5px;
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
+    margin: 5px;
+    color: rgb(78, 78, 78);
+    display: inline-table;
+}
+
+p {
     color: rgb(78, 78, 78);
 }
 
-p{
-    color: rgb(78, 78, 78);
-}
-  
 
 
-  
 
-.dropzone{
+
+.dropzone {
     /* height: 141px; */
     /* width: 100% ; */
     position: relative;
@@ -105,30 +139,33 @@ p{
     height: 19px;
     /* display: none; */
 
-  }
+}
 
-  .dropzone:hover{
+.dropzone:hover {
     background: rgb(235, 235, 235);
-  }
-  
+}
 
 
-  .percent{
+
+.percent {
     margin-left: 10px;
-  }
-  
-  
-  #fileDropReff{
+}
+
+h4{
+    margin: 0;
+}
+
+#fileDropReff {
     opacity: 0;
     position: absolute;
-    z-index: 2;
+    /* z-index: 2; */
     width: 1%;
     top: 0;
     left: 0;
-    
-  }
 
-  button{
+}
+
+button {
     border: 2px solid gray;
     color: gray;
     background-color: white;
@@ -137,9 +174,20 @@ p{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  select{
+.readme {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+select {
     border: 2px solid gray;
     color: gray;
     background-color: white;
@@ -150,48 +198,47 @@ p{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .general-keyword{
+.general-keyword {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     border-radius: 8px;
     padding: 5px;
-  }
+}
 
 
 
 
-  button:hover{
+button:hover {
     background: rgb(235, 235, 235);
-  }
+}
 
-  .summary-keyword{
+.summary-keyword {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-  }
+}
 
-  .keyword{
+.summary,
+.keyword {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding: 5px;
+    text-align: justify;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* .summary{
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     padding:5px; 
-    /* width: 35%;  */
     text-align: justify; 
     box-sizing:border-box;
     margin-bottom:10px;
     border-radius: 8px;
-}
+} */
 
-.summary{
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    padding:5px; 
-    /* width: 63%;  */
-    text-align: justify; 
-    box-sizing:border-box;
-    margin-bottom:10px;
-    border-radius: 8px;
-}
-
-.dialog{
+.dialog {
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -200,9 +247,9 @@ p{
     background: rgba(52, 53, 53, 0.137);
 }
 
-.dialog-message{
+.dialog-message {
     border-radius: 8px;
-    padding:10px; 
+    padding: 10px;
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* display: flex;
@@ -214,24 +261,31 @@ p{
     left: 35vw
 }
 
-.dialog-message button{
+.dialog-message button {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background: rgb(228, 228, 228);
     float: right;
 }
 
-.dialog-message h3{
+.dialog-message h3 {
     color: gray;
 }
 
-.keyword{
-    display:flex; 
+.keyword {
+    display: flex;
     flex-wrap: wrap;
 }
+
 .keyword span {
-    padding: 5px; 
-    background: rgb(235, 235, 235); 
-    border-radius: 5px; 
+    /* padding: 5px;
+    background: rgb(240, 240, 240);
+    border-radius: 5px;
     margin: 2px;
+    color: rgb(78, 78, 78); */
+    padding: 5px;
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
     color: rgb(78, 78, 78);
+    margin: 5px;
+    display: inline-table;
 }

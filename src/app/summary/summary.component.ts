@@ -26,7 +26,7 @@ export class SummaryComponent implements OnInit {
 	fileName: string
 	upload = false
 	isModel = false
-	max_length: any = 50;
+	max_length = 20;
 	extension: string
 	allSummaries: any
 	keyWord = []
@@ -51,8 +51,8 @@ export class SummaryComponent implements OnInit {
 		this.inputFile.nativeElement.value = ""
 		this.textWord = this.countWords(this.text.nativeElement.value)
 		this.character = (this.text.nativeElement.value).length
-		this.max = this.textWord
-		this.min = Math.round(this.textWord / 2)
+		// this.max = this.textWord
+		// this.min = Math.round(this.textWord / 2)
 	}
 
 	uploadFile(e) {
@@ -61,7 +61,6 @@ export class SummaryComponent implements OnInit {
 			this.file = e.target.files[0]
 			this.fileName = this.file.name
 			this.extension = this.fileName.split('.')[1]
-			console.log(this.extension);
 
 			if (this.file) {
 				this.resume = ""
@@ -99,8 +98,8 @@ export class SummaryComponent implements OnInit {
 					this.resume = ""
 					this.textWord = this.countWords(text)
 
-					// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text), { params: { model: this.model } })
-					this.http.post(`http://localhost:5000`, JSON.stringify(text),
+					// this.http.post(`http://localhost:5000`, JSON.stringify(text),
+					this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
 						{
 							params:
 							{
@@ -128,8 +127,8 @@ export class SummaryComponent implements OnInit {
 				this.resume = ""
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
-				// this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData, { params: { model: this.model } })
-				this.http.post(`http://localhost:5000/file`, formData,
+				// this.http.post(`http://localhost:5000/file`, formData,
+				this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData,
 					{
 						params:
 						{
@@ -140,23 +139,21 @@ export class SummaryComponent implements OnInit {
 					})
 					.subscribe((res: any) => {
 						if (this.extension === "xml") {
-							this.resume = res
-							console.log((res));
+							// this.resume = res
 							this.allSummaries = res.data
-							console.log("all samuuraies ",this.allSummaries);
 							this.keyWord = res.kw
-							console.log(this.keyWord);
+
+							this.allSummaries.forEach(element => {
+								this.resume += element.summary.summary
+							});
 
 
-							// this.resume = this.allSummaries
-							// this.resume = res.summary
-							// this.keywords = res.keywords
-							// this.resumeWord = this.countWords(this.resume)
-							// const end = new Date().getTime()
-							// this.processTime = (end - start) / 1000
+
+							this.resumeWord = this.countWords(this.resume)
+							const end = new Date().getTime()
+							this.processTime = (end - start) / 1000
 						}
 						if (this.extension === "txt") {
-							console.log((res));
 							this.resume = res.summary
 							this.keywords = res.keywords
 							this.resumeWord = this.countWords(this.resume)

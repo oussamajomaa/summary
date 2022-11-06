@@ -4,10 +4,10 @@ import { LoginComponent } from './login/login.component';
 import { SummaryComponent } from './summary/summary.component';
 
 const routes: Routes = [
-  {path:'',pathMatch:'full',redirectTo:'login'},
-  {path:'login', component:LoginComponent},
-  // {path:'home', component:HomeComponent},
-  {path:'summary', component:SummaryComponent},
+  // {path:'',pathMatch:'full',redirectTo:'login'},
+  // {path:'login', component:LoginComponent},
+  // // {path:'home', component:HomeComponent},
+  // {path:'summary', component:SummaryComponent},
 
 ];
 

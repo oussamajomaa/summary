@@ -1,0 +1,952 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d1 20130915//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta id="journal-meta-1">
+      <journal-id journal-id-type="nlm-ta">Revista Comunicar</journal-id>
+      <journal-id journal-id-type="publisher-id">Revista Comunicar</journal-id>
+      <journal-id journal-id-type="journal_submission_guidelines">https://www.revistacomunicar.com/index.php?idioma=es</journal-id>
+      <journal-title-group>
+        <journal-title>Comunicar</journal-title>
+      </journal-title-group>
+      <publisher>
+        <publisher-name>Revista Comunicar</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta id="article-meta-1">
+      <title-group>
+        <article-title id="at-ae1efa4432bb">
+          <bold id="strong-1">Understanding social and cultural aspects <bold id="strong-2">of teachers’ digital competencies</bold></bold>
+        </article-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="c-3fa015dad381">
+          <name id="n-618e87e27826">
+            <surname>Engen</surname>
+            <given-names>Bård Ketil</given-names>
+          </name>
+          <degrees>Dr.</degrees>
+          <email>bard-ketil.engen@oslomet.no</email>
+          <bio>
+            <p>is Full Professor in the Faculty of Education and International Studies at the Oslo Metropolitan University (Norway)</p>
+          </bio>
+          <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0003-2446-8866</contrib-id>
+        </contrib>
+      </contrib-group>
+      <article-id pub-id-type="doi">https://doi.org/10.3916/C61-2019-01</article-id>
+      <fpage>9</fpage>
+      <volume>27</volume>
+      <funding-group>
+        <funding-statement></funding-statement>
+      </funding-group>
+      <permissions>
+        <copyright-year>2019</copyright-year>
+      </permissions>
+      <pub-date>
+        <day>10</day>
+        <month>9</month>
+        <year>2019</year>
+      </pub-date>
+      <abstract id="abstract-bf72785f1470">
+        <title id="abstract-title-e3526916e212">Abstract</title>
+       
+        <p id="paragraph-a8471696988b">Muchos gobiernos europeos, incluido el de Noruega, tienen políticas educativas ambiciosas en materia de digitalización. Muchas empresas y responsables políticos prestan gran atención al uso de las tecnologías digitales en la educación para satisfacer la futura demanda de una mano de obra competente y cualificada. Entre los investigadores y los legisladores, existe un consenso general al considerar a los docentes profesionales como una figura clave para la aplicación con éxito de las TIC en la escuela, en lo referente a su implementación y su uso, y se han depositado muchas expectativas en ellos. Se supone que el docente profesional debe, hasta cierto punto, decidir de manera autónoma cómo se han de utilizar estas tecnologías digitales en el aula. Este artículo analiza lo que puede significar el concepto de «docente profesional digitalmente competente» en el contexto de la escuela. También argumenta sobre la necesidad de una mejor interpretación de la competencia digital profesional, que tenga en cuenta diversos aspectos sociales y culturales en relación con la tecnología, las escuelas y la profesión docente. Al analizar las condiciones sociales y culturales para implementar la tecnología en un contexto de enseñanza profesional, nos basaremos en el enfoque constructivista de la tecnología, en concreto, la «domesticación de la tecnología».</p>
+      </abstract>
+      <abstract id="abstract-7b09d27e138d">
+        <title id="abstract-title-eab302d2dc05">Resumen</title>
+        <p id="paragraph-a8471696988b">Muchos gobiernos europeos, incluido el de Noruega, tienen políticas educativas ambiciosas en materia de digitalización. Muchas empresas y responsables políticos prestan gran atención al uso de las tecnologías digitales en la educación para satisfacer la futura demanda de una mano de obra competente y cualificada. Entre los investigadores y los legisladores, existe un consenso general al considerar a los docentes profesionales como una figura clave para la aplicación con éxito de las TIC en la escuela, en lo referente a su implementación y su uso, y se han depositado muchas expectativas en ellos. Se supone que el docente profesional debe, hasta cierto punto, decidir de manera autónoma cómo se han de utilizar estas tecnologías digitales en el aula. Este artículo analiza lo que puede significar el concepto de «docente profesional digitalmente competente» en el contexto de la escuela. También argumenta sobre la necesidad de una mejor interpretación de la competencia digital profesional, que tenga en cuenta diversos aspectos sociales y culturales en relación con la tecnología, las escuelas y la profesión docente. Al analizar las condiciones sociales y culturales para implementar la tecnología en un contexto de enseñanza profesional, nos basaremos en el enfoque constructivista de la tecnología, en concreto, la «domesticación de la tecnología».</p>
+      </abstract>
+      <kwd-group id="kwd-group-1">
+        <title>Keywords</title>
+        <kwd>Cultural values</kwd>
+        <kwd>digital competence</kwd>
+        <kwd>digitalisation</kwd>
+        <kwd>domestication of technology</kwd>
+        <kwd>moral economy</kwd>
+        <kwd>social conditions</kwd>
+        <kwd>teacher professional competence</kwd>
+        <kwd>technology adaption</kwd>
+      </kwd-group>
+      <kwd-group id="kg-ff1a7634a7a3">
+        <title>Keywords</title>
+        <kwd>Valores culturales</kwd>
+        <kwd>competencia digital</kwd>
+        <kwd>digitalización</kwd>
+        <kwd>domesticación tecnológica</kwd>
+        <kwd>economía ética</kwd>
+        <kwd>condiciones sociales</kwd>
+        <kwd>competencia profesional docente</kwd>
+        <kwd>adaptación tecnológica</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title id="t-54e3cce14870">Introduction</title>
+      <p id="paragraph-2">In a relatively short period of time, the role of the teacher has undergone a dramatic change. The expectations placed on schools have increased, because knowledge and digital competence have gained more importance in the development of society. In the public debate in Norway, one element that has been particularly emphasised is the huge impact that new digital technologies have had on all aspects of civil and professional society and that schools must be able to prepare students for the digital professional lives they have ahead of them. Such technology deterministic arguments have been articulated by politicians and school leaders and are supported by technology experts and the commercial computer industry at large (Egea, 2014; Hammond, 2014). Although it is difficult to find explicit claims of technological determinism, the view persists in many everyday accounts of digital technologies (Selwyn, 2012). The slow changes and adaptions to technology in schools have often been explained by teachers’ tendencies to have a reactionary attitude towards using digital technologies and towards changing their teaching practices. Such claims have, to some extent, found support by research that reveals there is a gap between the technology available for education and teachers’ actual use of technology in the classroom (Cuban, 2001; Jurica &amp; Webb, 2016; Selwyn, 2010; Wachira &amp; Keengwe, 2011; Winner, 2009). Research has also indicated that teacher training is too slow in responding to technological developments and fails to provide pre-service teachers with the necessary digital competence for integrating technology into their future professional contexts (Elstad &amp; Christophersen, 2017; Instefjord &amp; Munthe, 2017). </p>
+      <p id="p-a2a9d00fbe7e">There is a general consensus in the research community and among policymakers that teachers’ digital competence refers to their skills, knowledge, and attitudes towards using digital technology. It is clear that these issues are important for understanding how technology is adapted and used in schools. In addition, I will argue that a teacher’s competence in translating the use of technology between different contexts which also takes into account the social and cultural aspects of digital technology is of equal importance. </p>
+      <p id="p-5d86c55830ca">The aim of this paper is therefore to examine the social and cultural conditions needed to implement digital technologies in the classroom and to explore what knowledge and competencies are required of the professional teacher. In order to address these issues, I will explore the phenomenon of ‘digitalisation’ and its connection to schools, teaching and digital competence. To unpack the contextual conditions required for implementing technology in teaching practices and schools, I will draw on the theoretical concept from the constructivist understanding of technology, the ‘domestication of technology’ approach (Berker, Hartmann, Punie, &amp; Ward, 2006; Silverstone &amp; Hirsch, 1992). In the discourse surrounding digital competence and the use of technology in schools, which to a large extent have been focused on the potential technology has for enhance learning (Oliver, 2011; Selwyn, 2012), the domestication perspective represents an alternative conceptual framework for understanding the social and cultural aspects regarding the implementation and adaption of technology in schools.</p>
+    </sec>
+    <sec>
+      <title id="t-13a6eafc8a1a">Digitalisation and new competencies</title>
+      <p id="t-14d2f5ec30af">The technological imperative in education is connected to the more general development and digitalisation of society and the need for new competencies. Rationalisation is often the most obvious motivation for digitalisation, at least in the initial stages. Workers and workflows can be replaced with digital technologies, either with ATMs and mobile payment solutions within the financial sector, or with robots within the classical industrial production sector, such as the car industry. Rationalisation, however, only represents one side of digitalisation. The other side is about innovation, new products, new services, and new cultures. The digital society has changed the industrial society’s mode of production towards innovation, new products, new lifestyles, and even new business models (Tapscott &amp; Williams, 2006). It has been claimed that the crucial institutions in these new dynamics are the educational institutions, which play a completely new role in the ‘knowledge society’ than they did in the previous industrial society. Such claims has ideological underpinnings which implicitly understands knowledge as a productive force (Friesen, 2008). Although schools and universities look largely the same, both on the inside and on the outside, their function and role have nevertheless changed. The late modern society is characterised by a profound socio-cultural change, not merely a technological shift. In the discourse surrounding knowledge, competencies and digitalisation, education is emphasised as some of the most important premises for the development of society (Egea, 2014). This includes acknowledging a clear linkage between the use of digital technology in the classroom at micro level and social structures of society such as global economics, as well as political and cultural institutions at macro level (Selwyn, 2010). With that background, the term ‘digital competence’ is highly political, reflecting the beliefs and assumptions regarding the kinds of competencies that are needed for the future societies (Ilomäki, Paavola, Lakkala, &amp; Kantosalo, 2016).</p>
+    </sec>
+    <sec>
+      <title id="t-efaa0e5fda80">Professional digital competencies</title>
+      <p id="t-d660a853db40">Rapid technological developments and changes put great demands on the professional teacher. These demands are not only in relation to adopting the new digital technologies as they are introduced and made available for education but also to understanding the political and cultural dimensions of digital technologies in relation to schools and society. The omnipresence of digital technologies, which undergo continuous developments and alterations, has changed the expectations placed on the professional teacher. Most people expect a professional teacher to be able to use new technologies to teach different subjects, teach pupils to be digitally competent for the future, communicate with parents and perform administrative tasks. </p>
+      <disp-quote id="bq-8643df8c7694" content-type="block-quote">
+        <p>Rationalisation, however, only represents one side of digitalisation. The other side is about innovation, new products, new services, and new cultures. The digital society has changed the industrial society’s mode of production towards innovation, new products, new lifestyles, and even new business models.</p>
+      </disp-quote>
+      <p id="p-79f25aff6279">However, it is important to emphasise that a unilateral focus on technology’s use and adaption fails to take into account the interplay between the social and cultural aspects of educational institutions (McDonagh &amp; McGarr, 2015). An instrumental understanding of technology where schools, or educational institutions in general, are expected to adapt to and make use of technology at more or less the same pace as they are introduced to the consumer market will result in a kind of cultural lag. Crucial factors such as the organisational, political, economic and cultural considerations will pattern the design and implementation of technology. </p>
+      <p id="p-a22cba6b4469">Teachers are faced with a situation where they require skills not only to use digital tools but also to teach pupils how to practically use these tools. In addition, they should be competent in facilitating the pedagogical use of these devices in order to enhance the pupils’ learning in all subject areas (Almerich, Orellana, Suárez-Rodríguez, &amp; Díaz-García, 2016; Güneş &amp; Bahçivan, 2018; Ilomäki &amp; al., 2016; Mishra &amp; Koehler, 2006). While the first refers to what can be understood as practical instrumental skills in using digital devices, the latter is much more complex and ambiguous and includes pedagogical, ethical and attitudinal dimensions. </p>
+      <p id="paragraph-3">In the early days of digitalisation within education, much effort was spent in increasing schoolteachers’ competencies in the practical use of digital technology. This is in part due to the fact that digital technologies at that time were much more complicated to use, and the ability to use these devices was seen as valuable on its own terms. Today, the situation is somewhat different. Digital devices such as computers, tablets and mobile phones have become common in every sphere of society, and the devices’ user interfaces have become considerably easier to use. The current challenge that teachers face is not, therefore, how to practically use computers or other digital devices but how to implement and use digital technology within the framework of a teaching and learning context. </p>
+      <p id="paragraph-4">It is not unreasonable to claim that a teacher’s ability to use digital devices, both for professional and private use, is more or less assumed by society. To put it another way, there is an expectation that today’s professional teacher will have the digital competencies to adapt to new and emerging digital technologies as they are made available to the public. In the context of Norway, this expectation is explicitly stated in the Ministry of Education, Digitalization Strategy for Basic Education 2017-2021 (2017). This document claims that one of the main obstacles to achieving better results through the use of ICT in schools is related to the teachers’ lack of professional digital competence. The term ‘professional digital competence’ is a new concept in the research community, which is rooted in the larger body of research around digital literacy and competence (Buckingham, 2006; Ilomäki &amp; al., 2016; Johannesen, Øgrim, &amp; Giæver, 2014; Koltay, 2011; Pettersson, 2018). Considering that the concept is a relatively new addition to the discourse around digital competence in schools and teacher training, there is at present no clear and precise definition of the term (Gudmundsdottir &amp; Hatlevik, 2018; Lund, Furberg, Bakken, &amp; Engelien, 2014; Pettersson, 2018). Lund and others (2014) propose a need to shift the understanding of digital competence away from general skills that are suitable for all situations to an understanding of professional digital competence that includes both generic and a specific teacher profession skills.</p>
+      <disp-quote id="bq-ae52f55767a2" content-type="block-quote">
+        <p>Professional digital competencies require practical skills in using digital tools, which are applicable across multiple subjects and teaching situations, as well as competencies in translating and making digital devices applicable to different subjects and situations.</p>
+      </disp-quote>
+      <p id="p-99a4526e7003">This argument calls for a more context-sensitive approach that emphasises the need for understanding professional digital competence in relation to the different contexts in which digital devices are applied. It also emphasises the need to educate pre-service teachers in translating digital technology in order to make it relevant for the different situations and subjects into which they are integrated. To this argument, I will add that we are, in fact, not just dealing with one kind of professional digital competence, because competence does not exist without knowledge. And since ‘knowledge’ is always knowledge about something specific, and ‘competence’ is knowledge put into action, then consequently, ‘competence’ is also always competence in something specific. In terms of being a professional teacher, we are discussing several kinds of professional digital competencies. Professional digital competencies require practical skills in using digital tools, which are applicable across multiple subjects and teaching situations, as well as competencies in translating and making digital devices applicable to different subjects and situations. Professional digital competencies also involve skills in translating digital skills from the private domain to a public professional practice domain. This is more than a two-step process of transferring personal digital competencies, knowledge and experience to a given professional setting or applying a set of rules or learned strategies from manuals or lectures to a professional practice. Instead, it is a dialectical process in which digital competencies in one context reveal deficiencies in another and contribute to deeper digital competencies across different domains. A conceptual definition or demarcation of ‘professional digital competence’ would therefore be futile, because we are dealing with a set of several overlapping professional digital competencies. The cognitive activity of moving digital competencies from one domain to another implies a process of translating digital technology from one field of application to another. Being a professional, digitally competent teacher is therefore to a lesser degree a question of being able to adapt to or appropriate digital technologies but is more about having the ability to translate technologies across different domains. In order to unpack and clarify my arguments on what such a translation process might imply, I will, as mentioned in the introduction, draw on concepts from the constructivist understanding of the ‘domestication of technology’ approach.</p>
+    </sec>
+    <sec>
+      <title id="t-a1c5ab09b4b1">Domestication of technology</title>
+      <p id="p-3660cef72399">In the beginning of the 1990s, Roger Silverstone and his colleges introduced the analytical concept of ‘domestication’ (Silverstone &amp; Hirsch, 1992). The concept was developed to describe and analyse the process of how people adapted (media) technology in their homes. The domestication perspective represented an alternative to the more established understanding of the adaption and use of technology, which saw this introduction and use as rational, linear and instrumental. As a critique of technological determinism, the theory of domestication focuses on actions and social practises as well as the symbolic interpretations of objects (Caron &amp; Caronia, 2001; Muñoz &amp; Sørensen, 2015; Silverstone, 2006). The adoption and use of technology went through four sequential phases of domestication. The first phase described ‘appropriation’, whereby technology was transferred from the market to the users. The second phase was about ‘objectivization’, whereby technology became a physical part of the home and part of the user’s cognitive reality in regards to their conscious choice around aesthetics and expressions (Silverstone, 2006; Silverstone &amp; Hirsch, 1992). The third phase concerned ‘incorporation’, whereby technology became part of people’s daily routines and practises. In this third phase, technology was converted from a commodity to an object with a certain purpose that was fully integrated into the user’s lifeworld. The fourth phase involved ‘conversion’, whereby technology changed from something existing on its own terms to something that could be presented to the outside world. It is obvious that different technologies are functional and are developed and designed for specific purposes. However, this does not prevent people from using them in ways or cultural contexts other than what they were designed for (Silverstone, 2006). The conversion phase is therefore about a reconnection and redefinition of the relationship between the home and the outside world. This can be described as a crossroads, where cultural expectations and social practices face challenges with technology. On the one hand, the object in question is designed and constructed to serve certain functionalities, as designers in the ‘laboratory’ have specific ideas about the ideal and optimal use of the object. On the other hand, the users themselves decide and define the application and use of said object. Conversion is also about understanding users' resistance and scepticism when cultural expectations and social resources are challenged by technology. Through these four phases, technology moves from being an exotic and complex novelty to becoming an integrated part of everyday life and routines that every household member takes for granted (Silverstone, 2006). The concept of domestication highlights the fact that using a specific kind of technology is never a passive action. The user does not necessarily follow the scripts and predesigned purposes of the technology, and they do not necessarily interpret the technology in the same manner as the designer. Users will always contribute to defining, or even redefining, the kind of role and significance that technology should have. The interactions between people and technology will always constitute a meeting between two active parties. </p>
+      <p id="p-b67b009e28a7">The domestication perspective provides an analytical framework based on the complexity of everyday life and technology’s role within rituals, routines and social structures (Berker &amp; al., 2006; Selwyn, 2012). Etymologically speaking, ‘domestication’ refers to taming something that is wild and is related to how people adapt and translate technology and content to their homes. The point of departure for the domestication perspective is the view that seeing technology as simply functional is insufficient. Instead, technology must be understood and interpreted as meaningful and must be integrated into the socio-cultural context of its use in meaningful ways. Specifically, this means that technology will not become functional until it is classified and accepted within a social and cultural order. Since technology is always part of a cultural and social order, it will also be a part of a moral economy. </p>
+      <p id="p-3f2f5fbadfab">The term ‘domestication’ was originally developed to understand the use of technology in people’s private homes. One can therefore ask whether this framework is suitable for shedding light on and understanding the use of technology in other social contexts, such as schools, since it is analytically based on the clear distinction between the public and private sphere. However, if we analytically restrict the meaning of the term to ‘tame’, referring to the processes around adapting and redefining technologies to specific contexts and value orientations, we can open up an analytical understanding of how different media technologies are understood, implemented and translated into different contexts (Berker &amp; al., 2006; Habib &amp; Sønneland, 2010). In using ‘domestication’ as an analytical lens, we can have a framework for understanding the process of adapting, integrating and redefining technology within the context of schools. </p>
+      <p id="p-5fa1cbd09f37">Unlike private homes, schools are considered to belong to the public sphere (for example, in Norway, 91% of primary schools are public). Though schools are either classified as public or private, they are nonetheless all under governmental regulation and have to abide by national curriculums. However, when we move from the institutional level into the actual school buildings and classrooms, we find many of the same characteristics regarding the adaption and use of technologies as those we find within private homes. Schools have clear perceptions, agreements and rules regarding the kinds of technologies and media content that are suitable or unsuitable. Schools ask similar questions about technology to those asked by the private sphere, such as when it is considered appropriate to use technology, how much time should children spend using digital media, and what kind of content is acceptable according to the values of the private culture. As the awareness and cultural understanding of the private sphere are separated from the public sphere, the rationale for what is considered right or wrong is sometimes even incorporated into the design by several consumer technologies. For example, Apple devices have software for parental controls preinstalled on their iPhones, iPads and Macs. Such controls make sense for parents who want to monitor their children’s activity, but they do not make sense when using an Apple device in a business or academic context. Schools are supposed to be a protected environment and are even free from advertising and marketing campaigns, something which is regulated by law in Norway. In addition, there are culturally established norms and regulations that clearly regulate the suitability of different kinds of technology and content. There are also norms and regulations that relate to when and how technology should be applied. These kinds of socially constructed beliefs and attitudes have more in common with the moral economy of private homes than the public sphere or even workplaces. </p>
+      <p id="p-1916aaf2869b">Based on such a premise, we will be able to better understand how the interpretation, implementation and use of technology take place inside schools as well as how and why most teachers relate to using technology in the classroom. Such normative orientations related to the use of new kinds of technology are very common (Ward, 2006), and thus reveal that the use of technology also represents an expression as well as a value orientation. These kinds of moral orientations regarding the use of technology are, of course, part of people’s private lives, but they can also be linked and understood in relation to professional ethics, such as the teaching profession. In order to clarify this argument, I will now present some empirical examples from my own previous research (Engen, Giæver, &amp; Mifsud, 2014; 2018a; 2018b).</p>
+    </sec>
+    <sec>
+      <title id="t-182c20f7ed81">Designing practices with tablets and wearables</title>
+      <p id="clipboard_property">Between 2011 and 2014, two research colleagues and I were involved in a research project focusing on the implementation and use of the iPad in a primary school in Oslo, Norway (Engen &amp; al., 2014; 2018a). Methodologically this study was based on observation. Observations were supplemented by video recording and interviews. The interviews with the pupils were conducted in-situ in order to gain an understanding of the pupils’ perspectives of the different activities. Considering that the iPad was released to the consumer market just a year earlier, is it clear that this particular school can be considered an early adopter of this particular kind of technology. The decision to acquire and use the iPad for teaching and learning was, however, made by the school management team, and the teachers had little or no influence. The management’s understanding of the iPad was shaped by how it had been advertised as a simple and intuitive device. The management team, therefore, saw no need for formal training on how to implement the device in a pedagogical context. Nevertheless, the teachers were given the opportunity to borrow the iPads during their leisure time and holidays in order to familiarise themselves with the technology. It is important to emphasise that the context in which the teachers’ self-learning took place was their own private spheres, and consequently, their understanding of the device was shaped more or less exactly according to the design’s intended purpose. When the teachers later introduced the iPad to the pupils, it was solely the teachers’ responsibility to understand and translate the technology from the context of being a private consumer to a formal teaching and learning situation at school. Aside from technological guidelines relating to the procedures for installing apps, general maintenance, and charging the iPads overnight, the teachers were left alone in deciding what subjects, teaching activities and apps to use to support the pupils’ training. In the early phases of our research, we observed that the pupils were mostly using the iPads for drill exercises using dedicated apps that had a clear gaming factor. Learning activities that included more production-related tasks on the iPad were almost entirely absent. The management, teachers and pupils were obviously facing challenges in converting and translating the technology from a device that was designed and intended for the consumer market and for private use over to a school context. In the early version of the system’s software, there was no support for saving and retrieving previous work. The iPad was designed as a personal device and thus had no capacity to support multiple users on the same device. In terms of domestication, at this early stage of adopting the technology, the management, teachers and pupils’ understanding of the iPad was too limited to translate it from the private consumer market to a fully functional domesticated device within a school context. This issue also became evident when we observed how the teaching process with the iPads was organised. During this early phase of our research, we observed that the iPad was mainly used to support activities that can be described as repetitive, fact-based learning, and it was used to a much lesser degree in learning activities centred around reading and writing skills or the learning of concepts. Obviously, the teachers struggled a great deal in determining what kind of technology the iPad represented and how to make it fit into the pedagogical context of a classroom (Engen &amp; al., 2014). </p>
+      <disp-quote id="bq-232d01bf08e4" content-type="block-quote">
+        <p>Etymologically speaking, ‘domestication’ refers to taming something that is wild and is related to how people adapt and translate technology and content to their homes. The point of departure for the domestication perspective is the view that seeing technology as simply functional is insufficient.</p>
+      </disp-quote>
+      <p id="p-7631b09d7f59">A year later, we conducted a follow-up study in order to see if there had been any changes (Engen &amp; al., 2018a). The teachers had already made plans for a week-long project in which the pupils were to work in groups to construct and write a fairy tale, using the iPad as an integrated tool to construct the narrative. Besides a clear instruction to use the app ‘BookCreator’ as a tool for producing their fairy tales, the pupils were free to use any of the available features, such as the built-in camera and audio recorder and any other software installed on the iPads. </p>
+      <p id="p-d1ec62dfd95e">As researchers, we were present for the five days while the pupils worked on the project as well as one day the following week when the pupils presented their fairy tales and gave each other feedback. During the week-long project of developing a fairy tale, we observed how the iPad, which was originally designed as a personal device to consume content, was not simply used as a tool for producing a multimodal text, but it had also been domesticated and translated into the school context. On the one hand, the tablet functioned as a regulator for interactions by supporting individual contributions to the project, regulating the social organisation of the group(s) and ensuring that each pupil contributed to the story. On the other hand, the tablet also supported group collaboration, allowing the pupils to lay the screen flat so that everyone could take part in the group decisions. The tablet was an unobtrusive tool that mediated interactions, integrated seamlessly with the project and with other tools and brought together several modalities. One can say that the process of domestication had reached a point where the iPad had become fully associated with practices, meanings and other devices. This process has a close associative connection with what Bruno Latour calls ‘sociotechnical assemblages’ (Latour, 2005).</p>
+      <p id="p-07802e843317">In the summer of 2015, the same group of researchers initiated a research project on the use of smartwatches in another school in Norway (Engen &amp; al., 2018b). The aim of our research was to examine whether a wearable device could be integrated into a secondary school classroom context. We wanted to gain insight into whether, and how, smartwatches could support learning while also exploring the concerns associated with cyber ethics. Data were collected by video-recorded classroom observations from all lessons during a two-week research period. In addition, field notes were taken from walking around the classroom and observing the pupils. The teacher was also interviewed after the two-week period. Unlike the iPad project, this project was researcher-driven, in that the technology was introduced to the school by the researchers and was withdrawn after the 14 days of the project had ended. At that time, smartwatches with sensors and GPS tracking possibilities were a relatively new device on the consumer market. Besides looking into cross-subject possibilities, such as letting the pupils produce bodily data during their physical education classes and subsequently bringing these data to their mathematics and social studies classes, we also focused our research on privacy issues. Privacy issues were important due to the fact that the pupils were underage and that this technology differed from mobile devices, as it was unobtrusive, hyper-personal and could measure personal statistics, such as health data. The domestication process of translating a fitness device targeted at the consumer market to a classroom context was not only the responsibility of the teacher but also of us as researchers due to the research design and the experimental character of the study. In planning and preparing the study, one of our main concerns was to protect the pupils’ privacy and protect them against marketing campaigns about fitness. We believed that the influence of such campaigns might have caused harm to any pupils who were already suffering from body image problems. </p>
+      <p id="p-3a3fa43238d9">Without going into the practical and technical details, in short, the pupils did not participate in syncing the devices and did not interact with the external repositories on the Internet. The pupils’ names and other personal data were anonymised. Of course, this was based on research ethical considerations, but in retrospect, this was also based on the moral economical beliefs that we as researchers had regarding the kinds of technology and features that did and did not belong in a classroom. The teachers also had to unpack the technology and translate it from being a fitness device targeted at the mainstream consumer market to a tool for a professional teaching situation. The experiment with the watches during the period of the project was fully integrated with the ordinary teaching activities and the pedagogical rationale for these arrangements. Integrating a new technological device will always require a focus on the cognitive reality regarding the awareness of the ethical and professional judgements of teachers. In terms of domestication, the process never fully reached the conversion phase within the school context because of the experiment’s relatively short time period and because of its strong dependence on the practical and technical support of the research team.</p>
+      <p id="p-d54ff06fb795">These empirical examples pinpoint and illustrate several issues when it comes to adapting and using digital technology in a school context. First, they tell us that the incorporation and conversion phases for new kinds of technology in a school context are rather long. Both teachers and pupils experienced challenges with learning how to translate and use a technological device intended for the private consumer market to a teaching and learning situation within the framework of a classroom. Second, they illustrate that a teacher’s professional digital competencies are about much more than being able to use a specific digital device. Instead, it is more closely related to the ability to reconnect and redefine the relationship between schools and the outside world. Most digital devices and forms of technology are designed and constructed in a ‘laboratory’ to serve certain functions. The technology designers have specific ideas about the kind of use the device is designed for, which in many cases is not directly aimed at supporting learning activities in schools. However, in schools, it is the teacher who must decide and define the device’s application and use. Therefore, it is not hard to understand why teachers sometimes express resistance and scepticism when their cultural expectations and social resources are challenged by technology pushing its way into schools. The process of implementing new technology in teaching and learning practices in schools cannot be predicted or standardised in any detail. The two empirical examples above clearly show that technologies need to be situated both practically and symbolically and emphasises how the process of appropriation, reconfiguration and conversion of digital technology in the classroom is entangled in the normative beliefs and cultural practices. The empirical cases also highlight how teachers and students make sense of and understand technical objects within a concrete contextualized setting. In terms of teachers’ professional digital competences, it stresses teachers’ abilities in incorporating digital technologies into daily routines, activities and practices in the classroom and converting them into something that has distinct purposes that are fully integrated with the other activities in the classroom. It also sheds light on the teachers’ need for competencies in translating and converting technology into an object on its own terms within the framework of a school, as opposed to the outside world. At a broader level, it shows why assumptions that technology unilaterally will determine educational practises, rather than being shaped in interaction with pedagogical practices, is fundamentally wrong.</p>
+    </sec>
+    <sec>
+      <title id="t-5f943216f996">Conclusions</title>
+      <p id="t-d4fe6c692541">This paper has explored the social and cultural conditions for using digital technologies in schools and teaching, in connection with the kinds of competencies that are required by the teacher. In unpacking these issues, two arguments have been highlighted. The first is about the term ‘digital competence’ in relation to be a professional teacher in the late modern knowledge society. I have argued for a need to move away from understanding the notion of ‘digital competence’ as general knowledge and skills that are suitable for all situations without reference to any specific domain or context. The term teachers’ ‘professional digital competence’ must be closely linked to situations and concrete uses, and it is thus no longer possible to speak of just one kind of digital competence but rather of several inter-connected digital competencies. I have argued that the decisive competencies that are required by teachers in order to make use of digital technologies to support teaching and learning activities are their ability to translate and reconfigure digital technologies across different domains and contexts. Given the fact that most digital hardware and software technologies are designed for domains and purposes other than supporting classroom activities, there is a need for a kind of reconfiguring or translation process to make technology suitable for the classroom. The cognitive activity of facilitating the use of digital technologies in the classroom must heavily involve the teacher, for several reasons. Teachers’ professional digital competence is therefore much more than instrumental skill-based competencies: it requires a conceptual knowledge of the social and cultural aspects of digital technologies’ role and transformative potential in the late modern society. It requires an awareness and knowledge of how to use technology in the classroom and, at the same time, how to design practices within a context that (often) has strict normative beliefs and orientations regarding what is and is not appropriate. This represents an understanding of ‘competencies’ that differs radically from the neoliberal notions and conceptions of knowledge and competencies as being commodities on the labour market. In the discourse around the significance and new role of education in the knowledge society, it is expressed that schools need to adapt to the political, economic and technologic domains of society in order to deliver competencies for the future. The ability of education to adapt to and use digital technology is articulated as decisive in order to fulfil these goals. I have argued that such deterministic understanding of technology fails to understand the uptake of ICT in schools. What policy makers or the commercial industry claim is slow appropriation of technology in school, is instead about the fact that the teacher is having a professional value-oriented approach in order to contextualise the use of technology shaped by emerging pedagogies. <xref id="x-586690f0302e" rid="" ref-type="bibr"></xref> </p>
+      <p id="p-dec7a2e499ac"/>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="R54416112417225">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Almerich</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Orellana</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Suárez-Rodríguez</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Díaz-García</surname>
+              <given-names>I.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Teachers’ information and communication technology competences: A structural approach</article-title>
+          <source>Computers &amp; Education</source>
+          <year>2016</year>
+          <volume>100</volume>
+          <fpage>110</fpage>
+          <lpage>125</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1016/j.compedu.2016.05.002</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417226">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berker</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Punie</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Domestication of media and technology</source>
+          <publisher-name>Open University Press</publisher-name>
+          <publisher-loc>Maidenhead</publisher-loc>
+          <year>2006</year>
+          <object-id pub-id-type="doi">https://doi.org/10.4324/9781315630397-3</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417227">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buckingham</surname>
+              <given-names>D.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Defining digital literacy – What do young people need to know about digital media?</article-title>
+          <source>Nordic Journal of Digital Literacy</source>
+          <year>2006</year>
+          <volume>2006</volume>
+          <issue>4</issue>
+          <fpage>263</fpage>
+          <lpage>277</lpage>
+          <uri>http://bit.ly/2EfsQaF</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417228">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Caron</surname>
+              <given-names>A.H.</given-names>
+            </name>
+            <name>
+              <surname>Caronia</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Active users and active objects: The mutual construction of families and communication technologies</article-title>
+          <source>Convergence</source>
+          <year>2001</year>
+          <volume>7</volume>
+          <issue>3</issue>
+          <fpage>38</fpage>
+          <lpage>61</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1177/135485650100700305</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417229">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cuban</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Oversold and underused: Computers in the classroom</source>
+          <publisher-name>Harvard University Press</publisher-name>
+          <publisher-loc>Cambridge</publisher-loc>
+          <year>2001</year>
+          <uri>https://doi.org/10.1016/s0272-7757</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417230">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Egea</surname>
+              <given-names>O.M.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Neoliberalism, education and the integration of ICT in schools. A critical reading</article-title>
+          <source>Technology, Pedagogy and Education</source>
+          <year>2014</year>
+          <volume>23</volume>
+          <issue>2</issue>
+          <fpage>267</fpage>
+          <lpage>283</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1080/1475939X.2013.810168</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417231">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Elstad</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Christophersen</surname>
+              <given-names>K.A.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Perceptions of digital competency among student teachers: Contributing to the development of student teachers’ instructional self-efficacy in technology-rich classrooms</article-title>
+          <source>Education Sciences</source>
+          <year>2017</year>
+          <volume>7</volume>
+          <issue>1</issue>
+          <uri>https://doi.org/10.3390/educsci7010027</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417232">
+        <element-citation publication-type="website">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Engen</surname>
+              <given-names>B.K.</given-names>
+            </name>
+            <name>
+              <surname>Giæver</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <name>
+              <surname>Mifsud</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Out of the WILD and into the schools: iPads from a domestication perspective. The Society for Information Technology &amp; Teacher Education International Conference</article-title>
+          <year>2014</year>
+          <uri>http://bit.ly/2JpiSHQ</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417233">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Engen</surname>
+              <given-names>B.K.</given-names>
+            </name>
+            <name>
+              <surname>Giæver</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <name>
+              <surname>Mifsud</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>‘It’s a fairy tale’; Using tablets for creating composite texts</article-title>
+          <source>Journal of Interactive Learning Research</source>
+          <year>2018</year>
+          <volume>29</volume>
+          <issue>3</issue>
+          <fpage>301</fpage>
+          <lpage>321</lpage>
+          <uri>http://bit.ly/2JpcUqv</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417234">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Engen</surname>
+              <given-names>B.K.</given-names>
+            </name>
+            <name>
+              <surname>Giæver</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <name>
+              <surname>Mifsud</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>wearable technologies in the k-12 classroom −cross− disciplinary possibilities and privacy pitfalls</article-title>
+          <source>Journal of Interactive Learning Research</source>
+          <year>2018</year>
+          <volume>29</volume>
+          <issue>3</issue>
+          <fpage>323</fpage>
+          <lpage>341</lpage>
+          <uri>http://bit.ly/2Yx0aSb</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417235">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friesen</surname>
+              <given-names>N.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Critical theory: Ideology critique and the myths of e-learning</article-title>
+          <source>Ubiquity</source>
+          <year>2008</year>
+          <volume>2</volume>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1145/1403922.1386860</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417236">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gudmundsdottir</surname>
+              <given-names>G.B.</given-names>
+            </name>
+            <name>
+              <surname>Hatlevik</surname>
+              <given-names>O.E.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Newly qualified teachers’ professional digital competence: Implications for teacher education</article-title>
+          <source>European Journal of Teacher Education</source>
+          <year>2018</year>
+          <volume>41</volume>
+          <issue>2</issue>
+          <fpage>214</fpage>
+          <lpage>231</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1080/02619768.2017.1416085</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417237">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Günes</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Bahçivan</surname>
+              <given-names>E.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>A mixed research-based model for pre-service science teachers' digital literacy: Responses to ‘which beliefs’ and ‘how and why they interact’ questions</article-title>
+          <source>Computers &amp; Education</source>
+          <year>2018</year>
+          <volume>118</volume>
+          <fpage>96</fpage>
+          <lpage>106</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1016/j.compedu.2017.11.012</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417238">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Habib</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Sønneland</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>From alien to domestic? Virtual learning environment use from a domestication perspective</article-title>
+          <source>Journal of Online Learning and Teaching</source>
+          <year>2010</year>
+          <volume>6</volume>
+          <issue>4</issue>
+          <uri>http://bit.ly/2Jobz3f</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417239">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hammond</surname>
+              <given-names>M.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Introducing ICT in schools in England: Rationale and consequences</article-title>
+          <source>British Journal of Educational Technology</source>
+          <year>2014</year>
+          <volume>45</volume>
+          <issue>2</issue>
+          <fpage>191</fpage>
+          <lpage>201</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1111/bjet.12033</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417240">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ilomäki</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Paavola</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lakkala</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kantosalo</surname>
+              <given-names>A.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Digital competence - An emergent boundary concept for policy and educational research</article-title>
+          <source>Education and Information Technologies</source>
+          <year>2016</year>
+          <volume>21</volume>
+          <issue>3</issue>
+          <fpage>655</fpage>
+          <lpage>679</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1007/s10639-014-9346-4</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417241">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Instefjord</surname>
+              <given-names>E.J.</given-names>
+            </name>
+            <name>
+              <surname>Munthe</surname>
+              <given-names>E.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Educating digitally competent teachers: A study of integration of professional digital competence in teacher education</article-title>
+          <source>Teaching and Teacher Education</source>
+          <year>2017</year>
+          <volume>67</volume>
+          <fpage>37</fpage>
+          <lpage>45</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1016/j.tate.2017.05.016</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417242">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johannesen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Øgrim</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Giæver</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Notion in motion: Teachers’ digital competence</article-title>
+          <source>Nordic Journal of Digital Literacy</source>
+          <year>2014</year>
+          <volume>4</volume>
+          <fpage>300</fpage>
+          <lpage>310</lpage>
+          <uri>http://bit.ly/2Hocoqn</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417243">
+        <element-citation publication-type="website">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jurica</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Webb</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>The use of technology in K-12 classrooms. The Society for Information Technology &amp; Teacher Education International Conference</article-title>
+          <year>2016</year>
+          <uri>http://bit.ly/2EaMMez</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417244">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koltay</surname>
+              <given-names>T.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>The media and the literacies: Media literacy, information literacy, digital literacy</article-title>
+          <source>Media, Culture &amp; Society</source>
+          <year>2011</year>
+          <volume>33</volume>
+          <issue>2</issue>
+          <fpage>211</fpage>
+          <lpage>221</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1177/0163443710393382</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417245">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Latour</surname>
+              <given-names>B.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Reassembling the social: An introduction to actor-network-theory</article-title>
+          <publisher-name>Oxford University Press</publisher-name>
+          <publisher-loc>Oxford</publisher-loc>
+          <year>2005</year>
+          <uri>https://doi.org/10.17323/1726-3247-2013-2-73-87</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417246">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lund</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Furberg</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bakken</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Engelien</surname>
+              <given-names>K.L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>What does professional digital competence mean in teacher education?</article-title>
+          <source>Nordic Journal of Digital Literacy</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <issue>4</issue>
+          <fpage>280</fpage>
+          <lpage>298</lpage>
+          <uri>http://bit.ly/2HrZJ69</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417247">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McDonagh</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>McGarr</surname>
+              <given-names>O.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Technology leadership or technology somnambulism? Exploring the discourse of integration amongst information and communication technology coordinators</article-title>
+          <source>Irish Educational Studies</source>
+          <year>2015</year>
+          <volume>34</volume>
+          <issue>1</issue>
+          <fpage>55</fpage>
+          <lpage>68</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1080/03323315.2015.1010292</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417248">
+        <element-citation publication-type="website">
+          <person-group person-group-type="author">
+            <collab>Ministry of Education and Research (Ed.)</collab>
+          </person-group>
+          <article-title>Framtid, fornyelse og digitalisering. Digitaliseringsstrategi for grunnopplæringen 2017-2021</article-title>
+          <year>2017</year>
+          <uri>http://bit.ly/2LO5nn3</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417249">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mishra</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Koehler</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Technological pedagogical content knowledge: A framework for teacher knowledge</article-title>
+          <source>Teachers College Record</source>
+          <year>2006</year>
+          <volume>108</volume>
+          <issue>6</issue>
+          <fpage>1017</fpage>
+          <lpage>1054</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1111/j.1467-9620.2006.00684.x</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417250">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>L.A.L.</surname>
+              <given-names>Muñoz,</given-names>
+            </name>
+            <name>
+              <surname>K.H.</surname>
+              <given-names>Sørensen,</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Consumer, client or citizen? How Norwegian local governments domesticate website technology and configure their users</article-title>
+          <source>Information, Communication and Society</source>
+          <year>2015</year>
+          <volume>18</volume>
+          <issue>7</issue>
+          <fpage>733</fpage>
+          <lpage>746</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1080/1369118X.2014.993678</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417251">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oliver</surname>
+              <given-names>M.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Technological determinism in educational technology research: Some alternative ways of thinking about the relationship between learning and technology</article-title>
+          <source>Journal of Computer Assisted Learning</source>
+          <year>2011</year>
+          <volume>27</volume>
+          <issue>5</issue>
+          <fpage>373</fpage>
+          <lpage>384</lpage>
+          <uri>https://doi.org/10.1111/j.1365-2729.2011.00406.x</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417252">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pettersson</surname>
+              <given-names>F.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>On the issues of digital competence in educational contexts – A review of literature</article-title>
+          <source>Education and Information Technologies</source>
+          <year>2018</year>
+          <volume>23</volume>
+          <issue>3</issue>
+          <fpage>1005</fpage>
+          <lpage>1021</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1007/s10639-017-9649-3</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417253">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selwyn</surname>
+              <given-names>N.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Looking beyond learning: Notes towards the critical study of educational technology</article-title>
+          <source>Journal of Computer Assisted Learning</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <issue>1</issue>
+          <fpage>65</fpage>
+          <lpage>73</lpage>
+          <uri>https://doi.org/10.1111/j.1365-2729.2009.00338.x</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417254">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selwyn</surname>
+              <given-names>N.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Making sense of young people, education and digital technology: The role of sociological theory</article-title>
+          <source>Oxford Review of Education</source>
+          <year>2012</year>
+          <volume>38</volume>
+          <issue>1</issue>
+          <fpage>81</fpage>
+          <lpage>96</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1080/03054985.2011.577949</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417255">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Silverstone</surname>
+              <given-names>R.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Berker</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Punie</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <source>Domesticating domestication. Reflections on the life of a concept</source>
+          <publisher-name>Open University Press</publisher-name>
+          <publisher-loc>Maidenhead</publisher-loc>
+          <year>2006</year>
+          <uri>https://doi.org/10.4324/9780203401491</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417256">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Silverstone</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>E.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Consuming technologies: Media and information in domestic spaces</article-title>
+          <publisher-name>Routledge</publisher-name>
+          <publisher-loc>London</publisher-loc>
+          <year>1992</year>
+          <uri>https://doi.org/10.4324/9780203401491</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417257">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tapscott</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>A.D.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Wikinomics: How mass collaboration changes everything</article-title>
+          <publisher-name>Portfolio</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+          <year>2006</year>
+          <uri>https://doi.org/10.1111/j.1468-0270.2008.864_2.x</uri>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417258">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wachira</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Keengwe</surname>
+              <given-names>J.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>technology integration barriers: Urban school mathematics teacher’s perspectives</article-title>
+          <source>Journal of Science Education and Technology</source>
+          <year>2011</year>
+          <volume>20</volume>
+          <issue>1</issue>
+          <fpage>17</fpage>
+          <lpage>25</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1007/s10956-010-9230-y</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417259">
+        <element-citation publication-type="misc">
+          <person-group/>
+          <person-group/>
+          <fpage>10</fpage>
+          <lpage>1007</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417260">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ward</surname>
+              <given-names>K.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Berker</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Punie</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <source>The bald guy just ate an orange. Domestication work and home</source>
+          <publisher-name>Open University Press</publisher-name>
+          <publisher-loc>Maidenhead</publisher-loc>
+          <year>2006</year>
+        </element-citation>
+      </ref>
+      <ref id="R54416112417261">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winner</surname>
+              <given-names>L.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Information Technology and educational amnesia. Policy Futures in</article-title>
+          <source>Education</source>
+          <year>2009</year>
+          <volume>7</volume>
+          <issue>6</issue>
+          <fpage>587</fpage>
+          <lpage>591</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.2304/pfie.2009.7.6.587</object-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

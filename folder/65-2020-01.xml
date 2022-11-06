@@ -1,0 +1,1098 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d1 20130915//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta id="journal-meta-1">
+      <journal-id journal-id-type="nlm-ta">Revista Comunicar</journal-id>
+      <journal-id journal-id-type="publisher-id">Revista Comunicar</journal-id>
+      <journal-id journal-id-type="journal_submission_guidelines">https://www.revistacomunicar.com/index.php?idioma=es</journal-id>
+      <journal-title-group>
+        <journal-title>Comunicar</journal-title>
+      </journal-title-group>
+      <issn publication-format="print"/>
+    </journal-meta>
+    <article-meta id="article-meta-1">
+      <title-group>
+        <article-title id="at-8ecbc9c1aeee">
+          <bold id="strong-1">Systematic review of mixed methods in the framework of educational innovation </bold>
+        </article-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="c-049983d207b0">
+          <name id="n-84d63035bcca">
+            <surname>Ramírez-Montoya,</surname>
+            <given-names>María-Soledad</given-names>
+          </name>
+          <degrees>Dr.</degrees>
+          <email>solramirez@tec.mx</email>
+          <bio>
+            <p>Senior Research Professor, School of Humanities and Education Tecnológico de Monterrey (Mexico)</p>
+          </bio>
+          <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-1274-706X</contrib-id>
+        </contrib>
+        <contrib id="c-71d75b369de1">
+          <name id="n-a8524623d9fa">
+            <surname>Lugo-Ocando,</surname>
+            <given-names>Jairo</given-names>
+          </name>
+          <degrees>Dr.</degrees>
+          <email>jairo.lugo-ocando@northwestern.edu</email>
+          <bio>
+            <p>Director of Executive &amp; Graduate Education, Northwestern University, Doha (Qatar)</p>
+          </bio>
+          <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-9533-2088</contrib-id>
+        </contrib>
+      </contrib-group>
+      <abstract id="abstract-cc2c8f9966a6">
+        <title id="abstract-title-260d6fc51258">Abstract</title>
+        <p id="paragraph-4766d8c62315">In the field of education research, mixed methods have traditionally referred to the combination of quantitative and qualitative data that brings us closer to ‘reality’. However, recent literature on social and educational studies has increasingly incorporated works that integrate digital technologies and mixed methods. This novelty provides an opportunity to re-examine original contributions in the field, particularly in relation to educational innovation. Therefore, the objective of this article is to analyze the characteristics and the trends of new contributions from researchers in education. To achieve this, we carried out a systematic literature review (SLR) of 311 articles published from January 2010 to January 2020 in the Web of Science (WoS) and Scopus databases. We worked with nine questions that explored three key themes: characteristics, technologies and designs within the realm of educational innovation. The validation for this analysis was achieved using a criterion adopted by scholars at York University, which incorporates: inclusion and exclusion, relevance and description of data, as well as peer review in the analysis. Our findings indicate that networks of co-terms, identification of educational innovations and the types of designs –currently applied in educational innovation– as well as the adoption of a mixed-method approach seem to be much better suited to underpin the required combination of strategies and processes that are interwoven in order to address the complexity of the education phenomenon in our times.</p>
+      </abstract>
+      <abstract id="abstract-dcdc24971472">
+        <title id="abstract-title-d25ecc2918fa">Resumen</title>
+        <p id="paragraph-04b3105b74c4">En el ámbito de la investigación, los métodos mixtos usan combinadamente datos cuantitativos y cualitativos para un acercamiento con la «realidad». En la literatura reciente de los estudios sociales y educativos, se ubica un crecimiento de publicaciones que integran tecnologías digitales y métodos mixtos y, con ello, se presenta la oportunidad de generar un aporte original de posibilidades para investigar la innovación educativa. El objetivo de este artículo fue analizar las características de estos estudios y las tendencias de nuevas contribuciones para la educación. Para lograrlo se realizó una revisión sistemática de literatura (SLR) de 311 artículos publicados, de enero 2010 a enero 2020, en las bases de datos Web of Science (WoS) y Scopus. Se trabajó con nueve preguntas que exploraron tres temas: características, tecnologías y diseños con líneas de innovación educativa. La validación se dio con los criterios de la Universidad de York: inclusión y exclusión, pertinencia y descripción de datos, así como evaluación de pares en el análisis. Los hallazgos dan cuenta de redes de co-términos, identificación de innovaciones educativas y tipos de diseños que están siendo trabajados en líneas de investigación de innovación educativa. Se concluye que el enfoque de métodos mixtos aporta con una combinación interceptada de estrategias y procesos para abordar la complejidad del fenómeno de la educación, con comprensión holística, interdisciplinar y cambio en la forma de hacer investigación en nuestros tiempos.</p>
+      </abstract>
+      <kwd-group id="kwd-group-1">
+        <title>Keywords</title>
+        <kwd>Mixed methods</kwd>
+        <kwd>educational innovation</kwd>
+        <kwd>digital trends</kwd>
+        <kwd>innovation</kwd>
+        <kwd>education</kwd>
+        <kwd>science dissemination</kwd>
+        <kwd>validation</kwd>
+        <kwd>technology</kwd>
+      </kwd-group>
+      <kwd-group id="kg-71019c72a239">
+        <title>Palabras clave</title>
+        <kwd>Métodos mixtos</kwd>
+        <kwd>innovación educativa</kwd>
+        <kwd>tendencias digitales</kwd>
+        <kwd>innovación</kwd>
+        <kwd>educación</kwd>
+        <kwd>divulgación científica</kwd>
+        <kwd>validación</kwd>
+        <kwd>tecnología</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title id="t-9e2c4cee402b">Introduction</title>
+      <p id="t-10f8631eb9a1">The paths used by researchers to approach ‘reality’ are the methods. They set the relationships, strategies and techniques that will be used, and which will be established through a particular methods design. In this sense, an approach to ‘reality’ in social environments can be provided through mixed methods. These last are usually defined as the combination of multiple methodological strategies to study and answer questions on a particular topic. Among these definitions of mixed methods, we find that of Plano-Clark &amp; Ivankova (2016: 57) who have conceptualized it as “the intentional integration of quantitative and qualitative research approaches to better address a research problem”. Meanwhile, others have defined it as the ability to conduct balanced study analyses that increase the validity of a rationale (Edmonds &amp; Kennedy, 2017) and its scope (Onwuegbuzie &amp; Teddlie, 2003). Similarly, various authors have argued about philosophical assumptions that guide data collection and analysis, mixing quantitative data and general qualitative approaches incorporated into the various phases of the research process (Creswell, 2007; Yu, 2009; Tashakkori and Teddlie, 2010). </p>
+      <p id="paragraph-2">More recently, Valenzuela-Gonzalez (2019) has indicated that the merger of both data forms in the same research design or method is something new as the idea of mixing data, specific research designs, the note-taking process, terminology, procedures, and difficulties in using different designs are recent features that emerged at the dawn of the 21st century. This, as previous definitions, indicates that mixed-methods studies are much more than the sum of quantitative with qualitative data as they encompass a strategic combination, triangulation and integration of both types of data that is based on the particular research design. </p>
+      <p id="paragraph-3">Creswell (2003) classifies research designs into six types: sequential explanatory design, sequential exploratory design, sequential transformative design, concurrent triangulation design, concurrent nested design, and concurrent transformative design. Another classification by Johnson and Onwuegbuzie (2004) suggests there are nine designs represented in a four-quadrant matrix where the researcher must decide between the paradigm (dominant or not) and the time to carry out the study (concurrent or sequential). For their part, Teddlie and Tashakkori (2006), analyzed the usefulness of various design typologies, as well as the dimensions used by the authors and proposed a Method-Strands Matrix, which presents research designs, especially four families: sequential, concurrent, conversion, and fully integrated. Based on these classifications, other authors have contributed in terms of the possible questions and analyses (Onwuegbuzie &amp; Leech, 2006). As part of this classification, Harwell (2014) links these designs to research questions that they provide in the process of carrying out studies, including examples for each design. Moreover, DeCuir-Gunby and Schutz (2017) propose five basic designs: explanatory sequential design, exploratory sequential design, convergent parallel design, embedded design and multiphase design. Having said that, it is important to consider that mixed methods also have their challenges for researchers, mainly in relation to the incompatibility of qualitative and quantitative approaches (Creamer, 2018). Each of these designs has its own benefits and its own difficulties and challenges, so the choice depends on the research questions and the purpose of the research study.</p>
+      <p id="paragraph-5">In the field of social and educational research, the digital imprint and technological developments have provided opportunities to design studies with mixed methods that have made important contributions to innovation in the sector. In a systematic literature mapping, González-Pérez et al. (2019) located the emerging themes of educational technology: digital education, technological models, adaptive technologies, open technologies, smart technologies and disruptive technologies. These themes have provided opportunities for innovations in different fields. Rogers (2003: 11) has defined innovation as “an idea, practice or project that is perceived as new by an individual or other adoption unit", where collaboration is substantial (Corbo et al., 2016); it has also been defined as the process of coming up with new products that can be adopted or redesigned for use and transformation (Rikkerink et al., 2016), and even in an open way (Ramírez-Montoya, 2018). Innovation, accordingly, can promote a new process (organization, method, strategy, development, procedure, training, technique), a new product (technology, article, instrument, material, device, application, manufacture, result, object, prototype), a new service (attention, provision, assistance, action, function, dependence, benefit) or new knowledge (transformation, impact, evolution, cognition, dissent, knowledge, talent, patent, model, system).</p>
+      <p id="paragraph-6">From this we can derive that new processes, products, services and knowledge are the engines of change in the field of education, where innovation often contributes to address problems and situations arising from teaching practices and delivery. In this respect, Sein-Echaluce et al., (2019) argued that educational innovation means making changes in learning/training in order to improve learning outcomes. In order to achieve this, educational innovation must be embraced holistically and inclusively. Consequently, companies, students, educational providers, communities and political organizations need to integrate the objects of innovation at all levels (Baumann et al., 2016). </p>
+      <p id="paragraph-7">Equally, it is important to understand how these research foci are classified. In this sense, some scholars at the Educational Innovation Research Group in Mexico (Ramírez-Montoya &amp; Valenzuela-González, 2019) have proposed a comprehensive classification. It is one that includes: psycho-pedagogical (related to general learning and teaching); use and development of technology in education (application and impact of technology in education, both face-to-face and at a distance); educational management (administration processes: planning, organization, management, and evaluation of human, material, and financial resources of educational institutions); and, socio-cultural (emphasis on the sociocultural context in which the educational process takes place). In addition, these scholars also highlight a ‘disciplinary’ category, which relates to the curriculum and the teaching-learning process in disciplines such as mathematics, medicine, natural sciences, engineering, accounting, business, and English, among others (Rodríguez et al., 2015). Moreover, these scholars go on to say it is important to ask what types of contributions can be made with studies that use mixed methods within the particular research spectrum. </p>
+      <p id="paragraph-8">Among scholarly works that have undertaken systematic literature reviews, meta-analyses and/or studies based on mixed methods, we find contributions to a variety of disciplines. Among them are those related to computers and the use of software in small and medium enterprises (Sharma &amp; Sangal, 2018). We should also mention those in the field of health and gender (Mabweazara et al., 2019) as well as those that deal with autism spectrum disorder (Frantzen &amp; Fetters, 2016) and the safety of elderly drivers (Classen &amp; Lopez 2006). Scholars such as Pluye and Hong (2014), on the other hand, have contributed with reviews providing guidelines for planning, conducting, and evaluating mixed-method research. Specifically, in the field of education, the work of Imanuel-Noy and Wagner (2016; 2014) who have looked at teacher training in the clinical area, is worth mentioning. In turn, Levin and Wagner (2009) produced a theoretical and practical vision of education, which argued about its importance for the advancement of knowledge and public policy. Overall, these contributions provide a valuable basis from which to argue that mixed methods have in fact contributed to advance our knowledge in these areas. </p>
+      <p id="clipboard_property">However, important questions still need to be addressed and in some cases remain unanswered. Particularly, around challenges and opportunities that arise in the combination of the digital era and education. Indeed, in the existing literature there are still important gaps in knowledge in relation to the contributions of mixed methods, specifically in terms of their potential for educational innovation. One particular example of this is the gap in areas such as the representation of culturally and linguistically diverse students (Klingner &amp; Boardman, 2011). In this sense, this article aims to analyze recent studies (2010-20) that have integrated digital and technological components in social and educational research, where mixed-method designs were applied. Therefore, the aim would be to understand the characteristics of the studies, the research topics that are often undertaken, the types of research designs found, and the nature of the innovation contributions made in the field. It is necessary to fill this gap in order to dissect the original knowledge that can in turn allow us to develop a theoretical framework to provide further guidance for trainers, researchers and decision-makers with a vision of improvement and change in education in general.</p>
+    </sec>
+    <sec>
+      <title id="t-55c1a929a775">Method</title>
+      <p id="t-8ce5a4c77004">Our central approach involved a systematic literature review (SLR) due to its ability to help identify, assess and interpret available research related to a topic area (Kitchenham and Charters, 2007). The process is broadly based on guidelines established by Verner et al. (2012) and the University of York (2009). In order to analyze the articles in a fair, rigorous and transparent manner, we established an analysis protocol with the following phases: 1) Research questions; 2) Search process; 3) Inclusion and exclusion criteria; 4) Data selection and extraction process; 5) Data synthesis.</p>
+      <list list-type="bullet">
+        <list-item id="li-b01b2b627698">
+          <p>Phase 1: Research questions: Based on the aim of analyzing the characteristics of the social and educational studies that have been published in the last ten years, nine research questions were posed to locate the characteristics of the articles, the findings and digital technologies, the types of designs and lines of educational innovation, where they have contributed.</p>
+        </list-item>
+      </list>
+      <p id="p-34fd19b957ec">The origin of the nine research questions that drove the study was in the identification of gaps previously observed in studies conducted by the authors of this paper, as well as the challenges (and benefits) they have found in the implementation of the methodology, both in the implementation of other studies, as well as in training activities with their students and research groups. The possible answers came from the theoretical support on which the study was based. The motivation for the topics and research questions were based on the opportunity to contribute new ways of studying educational innovation.</p>
+      <fig id="f-0b83ddc05ca0" orientation="portrait" fig-type="graphic" position="anchor">
+        <label>Figure 0 </label>
+        <graphic id="g-10175ca7c4aa" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/cd78e75a-9064-4953-b9af-b17242a656bc/image/cd7d901e-4b2b-4157-b386-49e8cd52d43d-ueng-01-01.png"/>
+      </fig>
+      <list list-type="bullet">
+        <list-item id="li-3c95cca5ca82">
+          <p>Phase 2: Search process. The protocol for the search of articles integrated electronic processes in the Scopus and Web of Science (WoS) databases, delimiting the keywords (mixed methods, education, social, digital), language (Spanish and English), time window (2010-2020), type of document (article), type of access (open) and language (English and Spanish). The search strings are presented in the integrated Excel (</p>
+        </list-item>
+        <list-item id="li-fffafcba0184">
+          <p>Phase 3: Inclusion and exclusion criteria. Articles were included if: they were articles that integrated in their title, abstract or keywords the topics of mixed methods, social or educational and digital or tech*, published between January 2010 and January 2020, written in English or Spanish and were open access.</p>
+        </list-item>
+      </list>
+      <p id="p-af36fd72f727">Articles were excluded if: they were papers, book chapters, literature reviews related to the topics of the search (mixed methods, social or educational and digital or tech*), published in languages other than Spanish and English, that were not open access and that were published before January 2010 or after January 2020.</p>
+      <list list-type="bullet">
+        <list-item id="li-2fe65e42ee1a">
+          <p>Phase 4: Selection process and data collection. The search resulted in the identification of 190 articles in Scopus and 184 in WoS. Articles were reviewed in both databases with the aim of identifying and eliminating duplicates. The articles were reviewed to verify that they contained the integration of mixed methods in the studies and that they were related to the social and educational areas. Finally, 311 articles were selected and can be consulted in the integrated Excel.</p>
+        </list-item>
+      </list>
+      <p id="p-aaaf98919d11">The following data had been previously extracted from the studies identified: Authors, Title, DOI, Abstract, Country and Keywords. The researchers used a data extraction strategy specifically related to the nine questions under study in the SLR. Validation was done through peer review to check the identification of the answers; in cases of discrepancies, agreements were reached for the selection of answers and to approach 100% data verification.</p>
+      <list list-type="bullet">
+        <list-item id="li-3365bbef55ba">
+          <p>Phase 5: Data synthesis. In order to synthesize the answers, a previous classification of the possible graphic representations was made, an analysis was carried out to locate the intersection that could be interesting to relate terms, keywords, networks of co-terms, clusters and concatenation of categories and subcategories.</p>
+        </list-item>
+      </list>
+    </sec>
+    <sec>
+      <title id="t-d65d7e4b6f28">Results</title>
+      <p id="t-c5cf12b61911">In this section, which is organized by the themes and sub-themes identified in the research, we report the results related to the research questions. The graphing tools were Vosviewer and Tableau.</p>
+      <sec>
+        <title id="t-1538f0e366ec">Characteristics of social and educational studies that have integrated mixed methods in recent years</title>
+        <list list-type="bullet">
+          <list-item id="li-784fb369dc73">
+            <p>RQ1: What are the key words in the studies, how are they related and what groups of incidents are detected?</p>
+          </list-item>
+        </list>
+        <p id="p-c82dc3ec8539">The keywords of the 311 articles were located (Figure 1a) and clusters of higher prevalence were identified in the words “Education” (Figure 1b), “Qualitative” (Figure 1c) and “Quantitative” (Figure 1d). Clusters establish networks of co-terms that are at the same level (keywords) and their most frequent relationships with other terms. The representation is shown in the following figures (Figure 1).</p>
+        <fig id="f-46856cf4c37f" orientation="portrait" fig-type="graphic" position="anchor">
+          <label>Figure 0 </label>
+          <graphic id="g-01df314a7594" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/cd78e75a-9064-4953-b9af-b17242a656bc/image/ff4803da-dd0c-452b-ab74-10a547f474cd-ueng-01-02.png"/>
+        </fig>
+        <p id="p-feae5211f5f6">The keyword co-terms (Figure 1a) highlight four major groupings (colors) where the most related terms are highlighted: human, education, curriculum and teaching, followed by assessment, educational technology, students, higher education, and medical education. Based on the objective of this article, researchers conducted a deeper exploration of clusters of interest and their relationship with human, psychological, woman, man, learning and teaching located in Education (Figure 1b). The clusters of the words Qualitative (Figure 1c) and Quantitative (Figure 1d) relate with the terms under study: education, human, adult, learning and curriculum.</p>
+        <p id="p-aa939503e07c">These results shed light on the key terms that have been recurrent in the articles and may be useful for theoretical frameworks of studies related to educational innovation, mixed methods applied to education, educational assessment and for support of training programs, with interest in educational innovation.</p>
+        <fig id="f-b090601e5d9f" orientation="portrait" fig-type="graphic" position="anchor">
+          <label>Figure 0 </label>
+          <graphic id="g-e825a6dfb116" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/cd78e75a-9064-4953-b9af-b17242a656bc/image/5ee0af11-5e11-41b2-b456-f543201ea715-ueng-01-03.png"/>
+        </fig>
+        <list list-type="bullet">
+          <list-item id="li-5302ff4cd6e6">
+            <p>RQ2: In which years have the articles been published and in which journal quartile levels are they located?</p>
+          </list-item>
+        </list>
+        <p id="p-733b5cff77ae">Quartile data from the journals were sought to classify them according to level (Q1, Q2, Q3, Q4). There were journals with ESCI and ERIH indexes and others that were classified as No data (from the WoS database) and No rank (from the Scopus database) because they are journals newly entered in these databases and do not yet reflect the level (Figure 2). The growth of publications in Q2 journals in the last few years, and the decrease of Q1 journals in this period are noteworthy.</p>
+        <fig id="f-e0f759b76f62" orientation="portrait" fig-type="graphic" position="anchor">
+          <label>Figure 0 </label>
+          <graphic id="g-a0474971e1c8" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/cd78e75a-9064-4953-b9af-b17242a656bc/image/85beddd1-a823-4673-b344-dc89e8be650f-ueng-01-04.png"/>
+        </fig>
+        <p id="p-ce9486893778">Figure 2 is relevant to academic communities of educational institutions (with an interest in rankings), research groups (with an interest in consolidation), training programs (undergraduate and graduate), researchers (for their careers and publication visibility) and journal editors (thematic vs. impact factor), by enabling the recognition of the growth of publications that have used mixed methods in their research, as well as the range of impact factor, according to the type of journal.</p>
+        <list list-type="bullet">
+          <list-item id="li-de350fa8dedf">
+            <p>RQ3: Which journals have published the most on the subject and how many citations have their articles received?</p>
+          </list-item>
+        </list>
+        <p id="p-dbd7039e37d2">The citations received for the articles were identified and related to the journals that have the most publications on the subject (Figure 3). The journal that stands out is BMC Medical Education with articles that have accrued 263 citations.</p>
+        <p id="p-1b22ea047a35">The contribution that this Figure gives is the location of two themes of great interest for communities attracted to educational innovation, both in the social sectors, as well as in government, academia and business, where training and innovation are important, by locating the journals that have published the most research articles with mixed methods and the number of citations they have had. The visibility of articles is an important consideration for the social appropriation of knowledge.</p>
+        <list list-type="bullet">
+          <list-item id="li-ea187d6c23c2">
+            <p>RQ4: What is the geographical distribution of the authors? In order to locate where the authors who have worked most with mixed methods in recent years are, the country of the first author was identified, and the number is represented in Figure 4.</p>
+          </list-item>
+        </list>
+        <p id="p-30210d6bbfd7">Networking in educational innovation is a strategic engine for growth at all levels: institutional, national, regional and international. Locating authors who have worked on a topic of interest, in this case, locating authors who have used mixed methods in their studies, can support the strategic relationships of students, teachers, researchers and trainers. Some possibilities include carrying out collaborative academic activities, research, publication or academic internships. Also, Figure 4 helps us to identify the regions with authors working on the topic of mixed methods.</p>
+        <fig id="f-b51d05bcfc9c" orientation="portrait" fig-type="graphic" position="anchor">
+          <label>Figure 0 </label>
+          <graphic id="g-ee7a213fe153" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/cd78e75a-9064-4953-b9af-b17242a656bc/image/5825f44a-ee65-436d-a2a1-26d1561ae410-ueng-01-05.png"/>
+        </fig>
+        <list list-type="bullet">
+          <list-item id="li-39a48fc02a87">
+            <p>RQ5: What are the emerging digital technologies that have been studied with mixed methods? / RQ6- What kind of innovation does the article bring? It was relevant to correlate the types of emerging technologies identified in the articles, following the classification of González-Pérez et al. (2019) and the possibilities of contributions to educational innovation. It was done so that two same-level dimensions were analyzed for each article: the digital technologies that were identified in the articles and the type of innovation located in the publications. Figure 5 shows this crossing, highlighting a homogeneous frequency among the different types of innovation.</p>
+          </list-item>
+        </list>
+        <fig id="f-3a84ec65ffc6" orientation="portrait" fig-type="graphic" position="anchor">
+          <label>Figure 0 </label>
+          <graphic id="g-53745525ec2e" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/cd78e75a-9064-4953-b9af-b17242a656bc/image/e8572898-4776-4877-a702-f8229e2104ca-ueng-01-06.png"/>
+        </fig>
+        <p id="p-91e4f5a9bb17">The result located in this figure brings threefold light: a) In the dimensions of the upper axis it is possible to identify which the emerging digital technologies that are being worked on are, such as digital education, and which are less , such as disruptive technologies; b) In the dimensions of the lower axis are located the new contributions given by the studies in terms of knowledge, processes, products or services and; c) At the intersection of both axes and the frequency identified in the articles, one can see the picture of how emerging technologies have supported innovation in research practices, leaving challenges, such as driving new products (not identified in four technology categories) and fostering disruptive innovations (which had less frequency in the analysis of the articles). These results provide development opportunities for creative and innovative program teams, where innovators, decision makers and the educational community can locate advances from research and visualize challenges to bring new knowledge.</p>
+        <list list-type="bullet">
+          <list-item id="li-0c246bbf6000">
+            <p>RQ7: What kind of design did they use? / RQ8- What sample have you worked on in the study? The studies were analyzed to locate the mixed-method research design and the sample being conducted in the studies (see Figure 6 at https://doi.org/10.6084/m9.figshare.12269414.v1). We highlighted the exploratory sequential designs with a large sample (over 200 participants).</p>
+          </list-item>
+        </list>
+        <p id="p-ff95a4b3bf14">The crossing of the design and sample dimensions is a data that we consider interesting to identify how the different types of research design have behaved (following the classification of Creswell, 2003), with respect to the number of participants that have been present in the studies. This may shed light for students, researchers and research groups interested in contributing using mixed methods.</p>
+        <list list-type="bullet">
+          <list-item id="li-a60de8bebf6b">
+            <p>RQ8: What kind of design did they use? / RQ9: In what lines of research and topics have the studies been carried out with mixed methods? The research lines of educational innovation of the articles were analyzed, with emphasis on the research question of the study, given that ‘digital’ was a key word in the publications. The research designs used in those lines were identified, as well as the most studied topics in the lines (Figure 7 at https://doi.org/10.6084/m9.figshare.12269477.v1).</p>
+          </list-item>
+        </list>
+        <p id="p-ec5e23822f26">Once the articles were identified by their type of design, it was considered interesting to cross-refer them with the educational innovation lines of research (Ramírez-Montoya &amp; Valenzuela-González, 2019; Rodríguez et al., 2015). In this way, it is possible to see the areas that are being worked on in the articles and the type of design. In addition, the topics that are being worked on are located within these lines. For example, in the psycho-pedagogical line, articles that deal with evaluation stand out, or in the disciplinary line, medical education studies are of great frequency. This result can be of interest to the areas of planning, instructional design, evaluation and educational research, among others, where decision makers, stakeholders, academic groups and training agents can have a reference to develop new forms of creation and research.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title id="t-b8b7e9be3a26">Discussion and conclusions</title>
+      <p id="t-b14bd7a850d3">The publications related to research that integrates digital technologies, gives an opportunity to carry out analysis from a perspective that contributes to educational innovation. The objective of this article focused on providing original contributions to research the characteristics of these studies and the trends of new contributions to education. Our SLR highlighted important research foci on educational innovation. Particularly, around findings that were implied by the analysis and that led to the deduction of networks of co-terms, identification of educational innovations and types of designs that are being worked by scholars. It is worth highlighting some, including:</p>
+      <list list-type="bullet">
+        <list-item id="li-b177d01c106a">
+          <p>The articles in the areas of social sciences and education, with components of digital integration, which are studied with mixed methods. They stand out for their emerging growth in recent years and for focusing on key aspects of educational sciences (the human factor and the educational process) and on processes that combine quantitative and qualitative strategies. Figure 1 shows the network of key words in the studies, the relations established between the most outstanding terms (human, education, curriculum and teaching) and their relationship with others of the same level; likewise, the clusters of qualitative and quantitative processes to study educational phenomena are highlighted. Figures 2, 3 and 4 report the growth in the number of articles, citations of these studies and geographical location where they are conducted. These findings are in line with what some methodologists indicate regarding conducting mixed methods, where collection and analysis must be balanced in the phases of the study process (Creswell, 2007; Tashakkori &amp; Teddlie, 2010). The networks of co-terms and the characteristics of these studies analyzed in recent years can help to identify conceptual frameworks to support academic communities and stakeholders in project approaches, training and evaluation.</p>
+        </list-item>
+        <list-item id="li-c169bd79fbef">
+          <p>Another theme is that of digital mediation in social science and education studies, which brings with it the integration of emerging digital technologies and contributions to new processes, products, services and knowledge. This finding is reflected in Figure 5 where the crossover of technologies and contributions is identified, highlighting that there is a greater incidence of technologies classified as digital education and the need to scale up new products and disruptive technologies. These integrations in training processes are linked to the basic ideas of Rogers (2003), who defines innovation as an idea, practice or project that is perceived as new, either individually or in adoption processes. Identifying digital technologies and new contributions helps in addition to establish a link with educational innovation, areas that can be of value to stakeholders, decision makers, scholars and creative teams interested in generating new options for education.</p>
+        </list-item>
+        <list-item id="li-37cd5090f15f">
+          <p>We could also observe that the mixed methods are implemented with differentiated samples and designs that contribute to the research lines of educational innovation. The sample sizes in the different designs are reflected in Figure 6 and also in Figure 7. It shows a cross-section of the designs and the lines of research. The data is classified within the taxonomy provided by Ramirez-Montoya &amp; Valenzuela-Gonzalez (2019), and Rodríguez et al. (2015) where the psycho-pedagogical, use and development of technology in education, educational management, socio-cultural and disciplinary lines are located. Educational innovation has -together with the different types of designs- an opportunity to generate new knowledge for processes such as design, evaluation, training and research, where academia, business, government and society in general have the opportunity to undertake and innovate.</p>
+        </list-item>
+      </list>
+      <p id="p-a9ca67941605">One thing that became clear from the analysis of the data is that the growth of educational research must include the recognition that working with mixed methods implies designs that converge. This, in order to enrich the approach that scholars undertake when assessing facts on the ground. Therefore, it is not only the sum of collecting quantitative and qualitative data but the intersection in the different levels of the research process (research question, selection of techniques and strategies, data collection, analysis, interpretation, legitimation and report presentation) that marks, in fact, the difference between being innovative or not.</p>
+      <p id="p-d8d9104d8a90">One of the most important aspects that we can highlight is that by embracing a mixed-methods approach in education research it has been possible for scholars to not only close important gaps in our understanding of the field, but also to enhance interdisciplinarity. Indeed, the mixed-methods approach not only provided a more holistic grounding to knowledge, but also changed the mindset about how researchers approach the issues in question. This review of existing literature also provides additional guidance towards an inquiry that, due to its nature, is always organic and on the move. That is, the changing nature of education itself requires a combination of research strategies that brings about a better and more comprehensive understanding of the subject in question.</p>
+      <p id="p-f38ddd575776">Furthermore, our SLR highlights how the technological imprint and digitalization of processes has brought about changes in educational processes and in the ways and possibilities of doing research. Indeed, as Klingner and Boardman (2011) point out, the mixed methods research can lead to insights about possible challenges to implementation as well as the circumstances under which a practice is most likely to be successful; therefore, adding depth and breadth not available through quantitative designs alone. Particularly, because this approach is better suited to address the enormous complexity of the education phenomena, which tends to be overall heterogeneous and particular-specific to each case and discipline.</p>
+      <p id="p-db02d63f6565">Based on the work found that has used mixed methods, one could ask how mixed methodologies help to carry out better research in the field analyzed here, at least compared to studies that use a single method. In other words, it is important to ask: what is the added value of the mixed methodology to advance and improve research in this field? The contribution lies in the possibility of approaching the knowledge of complex entities, such as studies in social sciences, education, communication, with views of depth and scope. In this sense, the different designs around mixed methods help also to link quantitative and qualitative data, providing meaning and sense to complex realities.</p>
+      <p id="p-efd2a6de3431">The differential value is found in the way of combining data, research designs, collection processes, terminologies, procedures, which in their mixture lead to differentiated results. The amalgamation (not just the sum) of quantitative and qualitative data in the same design or research method, is something new, with great potential for more complete studies. Hence, there is little doubt that the mixed-methods approach brings with it a combination of strategies and processes to address the complexity of the education phenomenon. One that offers a holistic and interdisciplinary understanding and that has the potential to change the way research is done in our field. This study is an invitation to continue exploring and researching this topic and specifically expand our knowledge around how to bring continuous educational innovation into our work. This, we believe it is an opportunity for change and improvement that should not be missed.<xref id="x-24e070e30ae5" rid="" ref-type="bibr">1</xref> </p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="R81570519460940">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creswell</surname>
+              <given-names>J W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Qualitative inquiry research design. Choosing among five approaches</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2007</year>
+          <uri>https://bit.ly/3dph7W8</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460941">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kitchenham</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Charters</surname>
+              <given-names>S</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Guidelines for performing systematic literature reviews in software engineering</source>
+          <publisher-name>Keele University &amp; University of Durham</publisher-name>
+          <year>2007</year>
+          <uri>https://bit.ly/2LmHwbj</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460942">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Plano-Clark</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ivankova</surname>
+              <given-names>N</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Plano-Clark</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Ivankova</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>What is mixed methods research?: Considering how mixed methods research is defined</article-title>
+          <source>Mixed methods research: A guide to the field</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2016</year>
+          <fpage>55</fpage>
+          <lpage>78</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781483398341.n6</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460943">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sein-Echaluce</surname>
+              <given-names>M L</given-names>
+            </name>
+            <name>
+              <surname>Fidalgo-Blanco</surname>
+              <given-names>Á</given-names>
+            </name>
+            <name>
+              <surname>García-Peñalvo</surname>
+              <given-names>F J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Sein-Echaluce</surname>
+              <given-names>M.L.</given-names>
+            </name>
+            <name>
+              <surname>Fidalgo-Blanco</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>García-Peñalvo</surname>
+              <given-names>F.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Método para diseñar buenas prácticas de innovación educativa docente: Percepción del profesorado</article-title>
+          <source>Aprendizaje, innovación y cooperación como impulsores del cambio metodológico. Actas del V Congreso Internacional sobre Aprendizaje, Innovación y Cooperación</source>
+          <publisher-name>CINAIC</publisher-name>
+          <year>2014</year>
+          <fpage>623</fpage>
+          <lpage>628</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.26754/cinaic.2019.0127</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460944">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>C H</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Book review: Designing and conducting mixed methods research</article-title>
+          <source>Organizational Research Methods</source>
+          <year>2009</year>
+          <volume>12</volume>
+          <issue>4</issue>
+          <fpage>801</fpage>
+          <lpage>804</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1177/1094428108318066</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460945">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baumann</surname>
+              <given-names>Thomas</given-names>
+            </name>
+            <name>
+              <surname>Mantay</surname>
+              <given-names>Kinsey</given-names>
+            </name>
+            <name>
+              <surname>Swanger</surname>
+              <given-names>Alice</given-names>
+            </name>
+            <name>
+              <surname>Saganski</surname>
+              <given-names>Gary</given-names>
+            </name>
+            <name>
+              <surname>Stepke</surname>
+              <given-names>Sophie</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Education and innovation management: A contradiction? How to manage educational projects if innovation is crucial for success and innovation management is mostly unknown</article-title>
+          <source>Procedia - Social and Behavioral Sciences</source>
+          <year>2016</year>
+          <volume>226</volume>
+          <fpage>243</fpage>
+          <lpage>251</lpage>
+          <object-id pub-id-type="doi">10.1016/j.sbspro.2016.06.185</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460946">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johnson</surname>
+              <given-names>R. Burke</given-names>
+            </name>
+            <name>
+              <surname>Onwuegbuzie</surname>
+              <given-names>Anthony J.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Mixed methods research: A research paradigm whose time has come</article-title>
+          <source>Educational Researcher</source>
+          <year>2004</year>
+          <volume>33</volume>
+          <issue>7</issue>
+          <fpage>14</fpage>
+          <lpage>26</lpage>
+          <object-id pub-id-type="doi">10.3102/0013189x033007014</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460947">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rikkerink</surname>
+              <given-names>Marleen</given-names>
+            </name>
+            <name>
+              <surname>Verbeeten</surname>
+              <given-names>Henk</given-names>
+            </name>
+            <name>
+              <surname>Simons</surname>
+              <given-names>Robert-Jan</given-names>
+            </name>
+            <name>
+              <surname>Ritzen</surname>
+              <given-names>Henk</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>A new model of educational innovation: Exploring the nexus of organizational learning, distributed leadership, and digital technologies</article-title>
+          <source>Journal of Educational Change</source>
+          <year>2016</year>
+          <volume>17</volume>
+          <issue>2</issue>
+          <fpage>223</fpage>
+          <lpage>249</lpage>
+          <object-id pub-id-type="doi">10.1007/s10833-015-9253-5</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460948">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Klingner</surname>
+              <given-names>Janette K.</given-names>
+            </name>
+            <name>
+              <surname>Boardman</surname>
+              <given-names>Alison G.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Addressing the ‘research gap’ in special education through mixed methods</article-title>
+          <source>Learning Disability Quarterly</source>
+          <year>2011</year>
+          <volume>34</volume>
+          <issue>3</issue>
+          <fpage>208</fpage>
+          <lpage>218</lpage>
+          <object-id pub-id-type="doi">10.1177/0731948711417559</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460949">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sharma</surname>
+              <given-names>Pooja</given-names>
+            </name>
+            <name>
+              <surname>Sangal</surname>
+              <given-names>Amrit Lal</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Framework for empirical examination and modeling structural dependencies among inhibitors that impact SPI implementation initiatives in software SMEs</article-title>
+          <source>Journal of Software: Evolution and Process</source>
+          <year>2018</year>
+          <volume>30</volume>
+          <issue>12</issue>
+          <fpage>e1993</fpage>
+          <object-id pub-id-type="doi">10.1002/smr.1993</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460950">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramírez-Montoya</surname>
+              <given-names>M S</given-names>
+            </name>
+            <name>
+              <surname>Valenzuela-González</surname>
+              <given-names>J R</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <given-names>M.S. Ramírez-Montoya</given-names>
+            </name>
+            <name>
+              <given-names>J.R. Valenzuela-González</given-names>
+            </name>
+          </person-group>
+          <source>Innovación educativa: Tendencias globales de investigación e implicaciones prácticas</source>
+          <year>2019</year>
+          <fpage>9</fpage>
+          <lpage>17</lpage>
+          <uri>https://bit.ly/2WgnEgd</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460951">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rogers</surname>
+              <given-names>E M</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Diffusion of innovations</source>
+          <publisher-name>Free Press</publisher-name>
+          <year>2003</year>
+          <uri>https://bit.ly/3dqBBO7</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460952">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Decuir-Gunby</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schutz</surname>
+              <given-names>P</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname/>
+              <given-names>J. DeCuir-Gunby</given-names>
+            </name>
+            <name>
+              <surname/>
+              <given-names>P. Schutz</given-names>
+            </name>
+          </person-group>
+          <article-title>Chapter 6 mixed methods designs: frameworks for organizing your research methods</article-title>
+          <source>Developing a mixed methods proposal: A practical guide for beginning researchers</source>
+          <year>2017</year>
+          <fpage>83</fpage>
+          <lpage>106</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781483399980.n10</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460953">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creswell</surname>
+              <given-names>J W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Research design: Qualitative, quantitative, and mixed method approaches</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2003</year>
+          <object-id pub-id-type="doi">https://doi.org/10.5539/elt.v12n5p40</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460954">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>González-Pérez</surname>
+              <given-names>L I</given-names>
+            </name>
+            <name>
+              <surname>Ramírez-Montoya</surname>
+              <given-names>M S</given-names>
+            </name>
+            <name>
+              <surname>García-Peñalvo</surname>
+              <given-names>F J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Ramírez-Montoya</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Valenzuela-González</surname>
+              <given-names>J.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Innovación educativa en estudios sobre el desarrollo y uso de la tecnología: Un mapeo sistemático</article-title>
+          <source>Innovación educativa: Tendencias globales de investigación e implicaciones prácticas</source>
+          <publisher-name>Octaedro</publisher-name>
+          <year>2019</year>
+          <fpage>171</fpage>
+          <lpage>195</lpage>
+          <uri>https://bit.ly/2Lzr0oa</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460955">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>M.S.</surname>
+              <given-names>Ramírez-Montoya,</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Innovación abierta, interdisciplinaria y colaborativa para formar en sustentabilidad energética a través de MOOCs e investigación educativa</article-title>
+          <source>Education in the Knowledge Society</source>
+          <year>2018</year>
+          <volume>19</volume>
+          <issue>4</issue>
+          <fpage>11</fpage>
+          <lpage>11</lpage>
+          <object-id pub-id-type="doi">10.14201/eks20181941130</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460956">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harwell</surname>
+              <given-names>R</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname/>
+              <given-names>F.C. Clifton</given-names>
+            </name>
+            <name>
+              <surname/>
+              <given-names>C.S. Ronald</given-names>
+            </name>
+          </person-group>
+          <article-title>Research design in qualitative/quantitative/mixed methods</article-title>
+          <source>The Sage handbook for research in education: pursuing ideas as the keystone of exemplary inquiry</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2014</year>
+          <fpage>147</fpage>
+          <lpage>164</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781483351377</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460957">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Verner</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brereton</surname>
+              <given-names>O P</given-names>
+            </name>
+            <name>
+              <surname>Kitchenham</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Niazi</surname>
+              <given-names>M K</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Risk mitigation advice for global software development from systematic literature reviews</source>
+          <publisher-name>Keele University</publisher-name>
+          <year>2012</year>
+          <object-id pub-id-type="doi">https://doi.org/10.1049/ic.2012.0001</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460958">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edmonds</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>T</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Edmonds</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mixed methods</article-title>
+          <source>An applied guide to research designs</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2017</year>
+          <fpage>177</fpage>
+          <lpage>180</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781071802779 </object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460959">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mabweazara</surname>
+              <given-names>S.Z.</given-names>
+            </name>
+            <name>
+              <surname>Leach</surname>
+              <given-names>L.L.</given-names>
+            </name>
+            <name>
+              <surname>Ley</surname>
+              <given-names>C.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Development of a context-sensitive physical activity intervention for persons living with HIV and AIDS of low socioeconomic status using the behaviour change wheel</article-title>
+          <source>BMC Public Health</source>
+          <year>2019</year>
+          <volume>19</volume>
+          <issue>1</issue>
+          <object-id pub-id-type="doi">10.1186/s12889-019-7091-8</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460960">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Imanuel-Noy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>T</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Unpacking the clinical and participatory dimensions of the Trump math-teacher-residency-program</article-title>
+          <source>Australian Journal of Teacher Education</source>
+          <year>2016</year>
+          <volume>41</volume>
+          <issue>7</issue>
+          <fpage>6</fpage>
+          <object-id pub-id-type="doi">https://doi.org/10.14221/ajte.2016v41n7.6</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460961">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Corbo</surname>
+              <given-names>Joel C.</given-names>
+            </name>
+            <name>
+              <surname>Reinholz</surname>
+              <given-names>Daniel L.</given-names>
+            </name>
+            <name>
+              <surname>Dancy</surname>
+              <given-names>Melissa H.</given-names>
+            </name>
+            <name>
+              <surname>Deetz</surname>
+              <given-names>Stanley</given-names>
+            </name>
+            <name>
+              <surname>Finkelstein</surname>
+              <given-names>Noah</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Framework for transforming departmental culture to support educational innovation</article-title>
+          <source>Physical Review Physics Education Research</source>
+          <year>2016</year>
+          <volume>12</volume>
+          <issue>1</issue>
+          <object-id pub-id-type="doi">10.1103/physrevphyseducres.12.010113</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460962">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Levin</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>T</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Shelley</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Yore</surname>
+              <given-names>L.D.</given-names>
+            </name>
+            <name>
+              <surname>Hand</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mixed-methodology research in science education: Opportunities and challenges in exploring and enhancing thinking dispositions</article-title>
+          <source>Quality research in literacy and science education</source>
+          <publisher-name>Springer</publisher-name>
+          <year>2009</year>
+          <fpage>213</fpage>
+          <lpage>243</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1007/978-1-4020-8427-0_11</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460963">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Classen</surname>
+              <given-names>Sherrilene</given-names>
+            </name>
+            <name>
+              <surname>Lopez</surname>
+              <given-names>Ellen D. S.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Mixed methods approach explaining process of an older driver safety systematic literature review</article-title>
+          <source>Topics in Geriatric Rehabilitation</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <issue>2</issue>
+          <fpage>99</fpage>
+          <lpage>112</lpage>
+          <object-id pub-id-type="doi">10.1097/00013614-200604000-00002</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460964">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pluye</surname>
+              <given-names>Pierre</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>Quan Nha</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Combining the power of stories and the power of numbers: Mixed methods research and mixed studies reviews</article-title>
+          <source>Annual Review of Public Health</source>
+          <year>2014</year>
+          <volume>35</volume>
+          <fpage>29</fpage>
+          <lpage>45</lpage>
+          <object-id pub-id-type="doi">10.1146/annurev-publhealth-032013-182440</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460965">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creamer</surname>
+              <given-names>E</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <article-title>Chapter 10 controversies and future directions</article-title>
+          <source>An introduction to fully integrated mixed methods research</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2018</year>
+          <fpage>198</fpage>
+          <lpage>224</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781071802823.n13</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460966">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Onwuegbuzie</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Teddlie</surname>
+              <given-names>Ch</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Tashakkori</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Teddlie</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A framework for analyzing data in mixed methods research</article-title>
+          <source>Handbook of mixed methods in social and behavioral research</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2003</year>
+          <fpage>351</fpage>
+          <lpage>384</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781506335193</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460967">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Valenzuela-González</surname>
+              <given-names>J R</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <article-title>Mixed methods: Lessons learned from five cases of doctoral these studies</article-title>
+          <source>Proceedings of the Seventh International Conference on Technological Ecosystem for Enhancing Multiculturality</source>
+          <publisher-name>León (España)</publisher-name>
+          <year>2019</year>
+          <uri>https://bit.ly/2SMkVZx</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460968">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wagner</surname>
+              <given-names>Tili</given-names>
+            </name>
+            <name>
+              <surname>Imanuel-Noy</surname>
+              <given-names>Dalia</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Are they genuinely novice teachers? Motivations and self-efficacy of those who choose teaching as a second career</article-title>
+          <source>Australian Journal of Teacher Education</source>
+          <year>2014</year>
+          <volume>39</volume>
+          <issue>7</issue>
+          <fpage>31</fpage>
+          <lpage>57</lpage>
+          <object-id pub-id-type="doi">10.14221/ajte.2014v39n7.5</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460969">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Frantzen</surname>
+              <given-names>Kirsten Krabek</given-names>
+            </name>
+            <name>
+              <surname>Fetters</surname>
+              <given-names>Michael D.</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Meta-integration for synthesizing data in a systematic mixed studies review: Insights from research on autism spectrum disorder</article-title>
+          <source>Quality &amp; Quantity</source>
+          <year>2016</year>
+          <volume>50</volume>
+          <issue>5</issue>
+          <fpage>2251</fpage>
+          <lpage>2277</lpage>
+          <object-id pub-id-type="doi">10.1007/s11135-015-0261-6</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460970">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Onwuegbuzie</surname>
+              <given-names>A J</given-names>
+            </name>
+            <name>
+              <surname>Leech</surname>
+              <given-names>N L</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Linking research questions to mixed methods data analysis procedures 1</article-title>
+          <source>The Qualitative Report</source>
+          <year>2006</year>
+          <volume>11</volume>
+          <issue>3</issue>
+          <fpage>474</fpage>
+          <lpage>498</lpage>
+          <uri>https://bit.ly/2TbXt8j</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460971">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rodríguez</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Neri</surname>
+              <given-names>L J</given-names>
+            </name>
+            <name>
+              <surname>Valenzuela-González</surname>
+              <given-names>J R</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Identidad de los grupos de investigación: Retos en la definición de sus líneas de investigación</source>
+          <publisher-loc>Chihuahua (México)</publisher-loc>
+          <year>2015</year>
+          <uri>http://hdl.handle.net/11285/579395</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460972">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Teddlie</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Tashakkori</surname>
+              <given-names>A</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>A general typology of research designs featuring mixed methods</article-title>
+          <source>Research in the Schools</source>
+          <year>2006</year>
+          <volume>13</volume>
+          <issue>1</issue>
+          <fpage>12</fpage>
+          <lpage>28</lpage>
+          <uri>https://bit.ly/2SInYSr</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460973">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>University of York (Ed.)</collab>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Systematic review</source>
+          <publisher-name>CRD, University of York</publisher-name>
+          <year>2009</year>
+          <uri>https://bit.ly/2zJzE0E</uri>
+        </element-citation>
+      </ref>
+      <ref id="R81570519460974">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tashakkori</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Teddlie</surname>
+              <given-names>C</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Sage handbook of mixed methods in social&amp; behavioral research</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2010</year>
+          <object-id pub-id-type="doi">https://doi.org/10.4135/9781506335193</object-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
