@@ -60,12 +60,13 @@ def process():
         
         soup = BeautifulSoup(file, 'xml')
         keyWord = soup.find("kwd-group", {"id": "kwd-group-1"})
-        res = keyWord.find_all('kwd')
         kw = []
-        for k in res:
-            kw.append(k.text)
+        if keyWord:
+            res = keyWord.find_all('kwd')
+            for k in res:
+                kw.append(k.text)
 
-        print(res)
+            print(res)
         
         response = {
             "data":summaries,
@@ -86,5 +87,5 @@ def process():
 
 
 if __name__ == '__main__':
-    # app.run(port=5000,debug=True)
-    app.run('0.0.0.0', debug=True, ssl_context=('cert.pem','key.pem'))
+    app.run(port=5000,debug=True)
+    # app.run('0.0.0.0', debug=True, ssl_context=('cert.pem','key.pem'))

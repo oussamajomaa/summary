@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { environment } from 'src/environments/environment';
+import { ReCaptcha2Component } from 'ngx-captcha';
+import { FormControl, FormBuilder, FormGroup, Validators} from '@angular/forms'
 
 
 @Component({
@@ -28,16 +31,31 @@ export class SummaryComponent implements OnInit {
 	isModel = false
 	max_length = 20;
 	extension: string
-	allSummaries: any
+	allSummaries = []
 	keyWord = []
 	min:number
 	max:number
+	isData = true
+	robot = true
 
+	// siteKey = "6LcdJuAUAAAAAKwoYqPDHy92q2yPSVAFZU8a49r1"
+	recaptcha:any
+	aFormGroup:FormGroup
+	public captchaEl: FormControl = new FormControl(null, Validators.required);
 
-	constructor(private http: HttpClient, public auth: AuthService) {
+	constructor(private http: HttpClient, public auth: AuthService, private formBuilder:FormBuilder) {
 
 	}
 
+	ngOnInit(): void {
+		this.aFormGroup = this.formBuilder.group({
+			recaptcha: ['', Validators.required]
+		})
+	}
+
+	success(){
+		this.robot = true
+	}
 	rangeChange(value) {
 		this.max_length = value
 	}
@@ -79,6 +97,8 @@ export class SummaryComponent implements OnInit {
 	}
 	keywords = []
 	summarize() {
+		this.allSummaries = []
+		this.keyWord = []
 		if (this.model) {
 			this.select.nativeElement.setAttribute
 				('style',
@@ -98,8 +118,8 @@ export class SummaryComponent implements OnInit {
 					this.resume = ""
 					this.textWord = this.countWords(text)
 
-					// this.http.post(`http://localhost:5000`, JSON.stringify(text),
-					this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
+					this.http.post(environment.url, JSON.stringify(text),
+					// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
 						{
 							params:
 							{
@@ -127,8 +147,8 @@ export class SummaryComponent implements OnInit {
 				this.resume = ""
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
-				// this.http.post(`http://localhost:5000/file`, formData,
-				this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData,
+				this.http.post(`${environment.url}/file`, formData,
+				// this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData,
 					{
 						params:
 						{
@@ -138,9 +158,14 @@ export class SummaryComponent implements OnInit {
 						}
 					})
 					.subscribe((res: any) => {
+						
 						if (this.extension === "xml") {
-							// this.resume = res
+							if (res.data.length === 0) {
+								this.spinner = false
+								this.isData = false
+							}
 							this.allSummaries = res.data
+							
 							this.keyWord = res.kw
 
 							this.allSummaries.forEach(element => {
@@ -185,6 +210,10 @@ export class SummaryComponent implements OnInit {
 
 	}
 
+	closeDialogMsg(){
+		this.isData = true
+	}
+
 	clearText() {
 		this.text.nativeElement.value = "" // clear textarea
 		this.inputFile.nativeElement.value = "" // clear input file
@@ -202,8 +231,7 @@ export class SummaryComponent implements OnInit {
 		return str.trim().split(/\s+/).length
 	}
 
-	ngOnInit(): void {
-	}
+	
 
 
 
