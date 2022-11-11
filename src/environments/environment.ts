@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url: "http://localhost:5000"
+  // url: "http://localhost:5000"
+  url: "https://obtic.sorbonne-universite.fr:5001"
 };
 
 /*
