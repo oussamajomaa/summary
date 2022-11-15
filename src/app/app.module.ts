@@ -8,6 +8,8 @@ import { SummaryComponent } from './summary/summary.component';
 import { LoginComponent } from './login/login.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { ClipboardModule } from 'ngx-clipboard';
+import { NgxCopyPasteModule } from 'ngx-copypaste';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxCaptchaModule
+    NgxCaptchaModule,
+    NgxCopyPasteModule,
+    ClipboardModule,
     
     
   ],

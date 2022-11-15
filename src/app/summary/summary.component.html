@@ -38,8 +38,8 @@
 	
 		<!-- Textarea -->
 		<div style="margin-bottom: 15px;">
-			<textarea placeholder="Enter text here, max 400 words..." (input)="changeText()" rows="10" #text></textarea>
-	
+			<textarea class="textarea" placeholder="Enter text here, max 400 words..." (input)="changeText()" rows="10" #text></textarea>
+			
 			<div style="display: flex; justify-content: end;" *ngIf="!upload">
 				<span>{{textWord}}</span>
 				<span>Words ||</span>
@@ -84,21 +84,33 @@
 			<div class="summary-keyword" *ngFor="let item of allSummaries">
 				<!-- Summary -->
 				<div style="width: 63%;" class="summary">
-					<h4>{{item.title}}</h4>
+					<h4 style="margin-bottom: 5px;">{{item.title}}</h4>
 					{{item.summary.summary}}
 				</div>
+				
 	
 				<!-- Keywords -->
 				<div style="width: 35%;" class="keyword">
 					<h4 style="width: 100%;">Keywords</h4>
-					<span *ngFor="let keyword of item.summary.keywords"> {{keyword}} </span>
+					<span *ngFor="let keyword of item.summary.keywords"
+							[ngClass]="{'key-red' : keyword[1] >= 0.5 , 'key-grey' : keyword[1] < 0.5}">
+							{{keyword}}
+					</span>
 				</div>
 			</div>
-			<div>
-				<span>{{resumeWord}}</span>
-				<span>Words ||</span>
-				<span>Computation time on cpu: </span>
-				<span>{{processTime}} s</span>
+			<div style="display: flex; justify-content: space-between;">
+				<div class="icons">
+					<img src="assets/translate.png" alt="" title="Translator" (click)="translate()">
+					<!-- <a href="https://www.deepl.com/translator" target="_blank"><img src="assets/deep.png" alt="" title="Deep translator"></a> -->
+					<a [href]="fileUrl" download="file.txt"><img src="assets/download.png" alt="" title="Download as txt"></a>
+					<img src="assets/copy.png" alt="" (click)="copyText()" title="Copy to clipboard">
+				</div>
+				<div style="padding-top: 5p; padding-bottom:5px">
+					<span>{{resumeWord}}</span>
+					<span>Words ||</span>
+					<span>Computation time on cpu: </span>
+					<span>{{processTime}} s</span>
+				</div>
 			</div>
 		</div>
 	
@@ -106,18 +118,28 @@
 		<div *ngIf="extension ==='txt' && upload && resume">
 			<div class="summary-keyword" >
 				<!-- Summary -->
-				<div style="width: 63%;" class="summary">
-					<h4>Summary</h4>
-						{{resume}}
+				<div style="width: 63%;" class="summary" >
+					<h4 style="margin-bottom: 5px;">Summary</h4>
+						<span ngxCopyPaste #cp="copy">{{resume}}</span>
+						<div class="icons">
+							<img src="assets/translate.png" alt="" title="Translator" (click)="translate()">
+							<!-- <a href="https://www.deepl.com/translator" target="_blank"><img src="assets/deep.png" alt="" title="Deep translator"></a> -->
+							<a [href]="fileUrl" download="file.txt"><img src="assets/download.png" alt="" title="Download as txt"></a>
+							<!-- <img src="assets/copy.png" alt="" (click)="copyText()"> -->
+							<img src="assets/copy.png" alt="" (click)="cp.copy()" title="Copy to clipboard">
+						</div>
 				</div>
 				
 				<!-- Keywords -->
 				<div style="width: 35%;" class="keyword">
 					<h4 style="width: 100%;">Keywords</h4>
-						<span *ngFor="let keyword of keywords"> {{keyword}} </span>
+					<span *ngFor="let keyword of keywords" 
+							[ngClass]="{'key-red' : keyword[1] >= 0.5 , 'key-grey' : keyword[1] < 0.5}">
+							{{keyword}}
+					</span>
 				</div>
 			</div>
-			<div>
+			<div style="padding-top: 5p; padding-bottom:5px">
 				<span>{{resumeWord}}</span>
 				<span>Words ||</span>
 				<span>Computation time on cpu: </span>
@@ -130,19 +152,27 @@
 			<div class="summary-keyword" >
 				<!-- Summary -->
 				<div style="width: 63%;" class="summary">
-					<h4>Summary</h4>
-						{{resume}}
+					<h4 style="margin-bottom: 5px;">Summary</h4>
+					<span ngxCopyPaste #cp="copy">{{resume}}</span>
+					<div class="icons">
+						<img src="assets/translate.png" alt="" title="Translator" (click)="translate()">
+						<!-- <a href="https://www.deepl.com/translator" target="_blank"><img src="assets/deep.png" alt="" title="Deep translator"></a> -->
+						<a [href]="fileUrl" download="file.txt"><img src="assets/download.png" alt="" title="Download as txt"></a>
+						<!-- <img src="assets/copy.png" alt="" (click)="copyText()"> -->
+						<img src="assets/copy.png" alt="" (click)="cp.copy()" title="Copy to clipboard">
+					</div>
 				</div>
 				
 				<!-- Keywords -->
 				<div style="width: 35%;" class="keyword">
 					<h4 style="width: 100%;">Keywords</h4>
-					
-						<span *ngFor="let keyword of keywords"> {{keyword}} </span>
-					
+					<span *ngFor="let keyword of keywords" 
+							[ngClass]="{'key-red' : keyword[1] >= 0.5 , 'key-grey' : keyword[1] < 0.5}">
+							{{keyword}}
+					</span>
 				</div>
 			</div>
-			<div>
+			<div style="padding-top: 5p; padding-bottom:5px">
 				<span>{{resumeWord}}</span>
 				<span>Words ||</span>
 				<span>Computation time on cpu: </span>
@@ -167,6 +197,40 @@
 	<div class="dialog-message">
 		<h3>There is no summary!</h3>
 		<button (click)="closeDialogMsg()">OK</button>
+	</div>
+</div>
+
+<!-- Modal fo translator -->
+<div *ngIf="isTranslator" class="dialog">
+	<div class="dialog-translator">
+		<h3 style="text-align: center;">Translator</h3>
+		<div style="display: flex; justify-content: space-between;">
+			<div style="width: 50%; ">
+				<div>
+					<p style="padding: 10px 5px; margin:0 0 10px; color: grey;font-weight: bold;">Auto detect</p>
+				</div>
+				<div style="border: solid 1px  silver; border-right: none; height: 250px; width: 100%; border-radius: 5px;">
+					<textarea disabled class="textarea-translate" [value]="resume"></textarea>
+				</div>
+			</div>
+			<div style="width: 50%; ">
+				<div>
+					<select class="select"  (change)="onSelectTarget($event)">
+						<!-- <option *ngFor="let langue of langues" [value]="langue.code">{{langue.name}}</option> -->
+						<option [selected]="target == 'en'" value="en">English</option>
+						<option [selected]="target == 'fr'" value="fr">Frenche</option>
+						<option [selected]="target == 'de'" value="de">Dutch</option>
+						<option [selected]="target == 'ar'" value="ar">Arabic</option>
+
+					</select>
+				</div>
+				<div style="border: solid 1px silver; height: 250px; width: 100%; border-radius: 5px;">
+					<textarea class="textarea-translate" [value]="translated" ></textarea>
+				</div>
+			</div>
+		</div>
+		<button (click)="closeDialogMsg()" style="position: absolute; right:10px; top: 10px">X</button>
+		<!-- <button (click)="translate()">translate</button> -->
 	</div>
 </div>
 

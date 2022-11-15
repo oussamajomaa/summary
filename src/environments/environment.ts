@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   // url: "http://localhost:5000"
-  url: "https://obtic.sorbonne-universite.fr:5001"
+  url: "https://obtic.sorbonne-universite.fr:5001",
+  api_key: "AIzaSyB7YHr0ichQjbpUlfY6Ftw3A2GD6xAq630"
 };
 
 /*

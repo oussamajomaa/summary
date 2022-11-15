@@ -50,9 +50,9 @@
     background: rgb(235, 235, 235);
     padding: 10px;
     box-sizing: border-box;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
 }
@@ -73,11 +73,11 @@ h1 {
     margin: auto;
     width: 70%;
     padding-top: 10px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-bottom: 10px;
 }
 
-textarea,
+.textarea,
 select {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     padding: 5px;
@@ -86,6 +86,28 @@ select {
     box-sizing: border-box;
     margin-bottom: 10px;
     border-radius: 8px;
+}
+
+.textarea-translate{
+    width: 100%;
+    height: 250px;
+    text-align: justify;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 10px;
+    resize: none;
+    
+}  
+
+.select{
+    border: none;
+    box-shadow: none;
+    width: 100px;
+}
+
+.select:focus{
+    outline:none
 }
 
 
@@ -229,14 +251,7 @@ button:hover {
     border-radius: 8px;
 }
 
-/* .summary{
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    padding:5px; 
-    text-align: justify; 
-    box-sizing:border-box;
-    margin-bottom:10px;
-    border-radius: 8px;
-} */
+
 
 .dialog {
     height: 100vh;
@@ -271,21 +286,65 @@ button:hover {
     color: gray;
 }
 
+.dialog-translator{
+    border-radius: 8px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    width: 70vw;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 20vh;
+    left: 15vw
+}
+
 .keyword {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* 
 .keyword span {
-    /* padding: 5px;
-    background: rgb(240, 240, 240);
-    border-radius: 5px;
-    margin: 2px;
-    color: rgb(78, 78, 78); */
     padding: 5px;
     background: rgb(235, 235, 235);
     border-radius: 5px;
     color: rgb(78, 78, 78);
     margin: 5px;
     display: inline-table;
+} */
+
+.key-grey{
+    padding: 5px;
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
+    color: rgb(78, 78, 78);
+    margin: 5px;
+    display: inline-table;
+}
+
+.key-red{
+    padding: 5px;
+    background: rgb(222, 231, 255);
+    border-radius: 5px;
+    color: rgb(78, 78, 78);
+    margin: 5px;
+    display: inline-table;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons img{
+    cursor: pointer;
+    /* margin-right: 20px; */
+    width: 20px;
+    /* margin: 10px; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icons img:hover{
+    background: rgb(235, 235, 235);
 }

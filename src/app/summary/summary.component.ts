@@ -3,7 +3,9 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { environment } from 'src/environments/environment';
 import { ReCaptcha2Component } from 'ngx-captcha';
-import { FormControl, FormBuilder, FormGroup, Validators} from '@angular/forms'
+import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { ClipboardService } from 'ngx-clipboard';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 @Component({
@@ -17,6 +19,7 @@ export class SummaryComponent implements OnInit {
 	@ViewChild('select') select: ElementRef;
 	@ViewChild('container') container: ElementRef;
 	@ViewChild('inputFile') inputFile: ElementRef;
+	@ViewChild('resume_text') resume_text: ElementRef;
 	title = 'ng_nlp';
 	file: any
 	resume: string
@@ -33,17 +36,26 @@ export class SummaryComponent implements OnInit {
 	extension: string
 	allSummaries = []
 	keyWord = []
-	min:number
-	max:number
+	min: number
+	max: number
 	isData = true
 	robot = true
+	isTranslator = false
+	textAreaSource: string
+
 
 	// siteKey = "6LcdJuAUAAAAAKwoYqPDHy92q2yPSVAFZU8a49r1"
-	recaptcha:any
-	aFormGroup:FormGroup
+	recaptcha: any
+	aFormGroup: FormGroup
 	public captchaEl: FormControl = new FormControl(null, Validators.required);
 
-	constructor(private http: HttpClient, public auth: AuthService, private formBuilder:FormBuilder) {
+	constructor(
+		private http: HttpClient,
+		public auth: AuthService,
+		private formBuilder: FormBuilder,
+		private clipboardService: ClipboardService,
+		private sanitizer: DomSanitizer
+	) {
 
 	}
 
@@ -53,7 +65,7 @@ export class SummaryComponent implements OnInit {
 		})
 	}
 
-	success(){
+	success() {
 		this.robot = true
 	}
 	rangeChange(value) {
@@ -119,7 +131,7 @@ export class SummaryComponent implements OnInit {
 					this.textWord = this.countWords(text)
 
 					this.http.post(environment.url, JSON.stringify(text),
-					// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
+						// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
 						{
 							params:
 							{
@@ -148,7 +160,7 @@ export class SummaryComponent implements OnInit {
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
 				this.http.post(`${environment.url}/file`, formData,
-				// this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData,
+					// this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData,
 					{
 						params:
 						{
@@ -158,40 +170,92 @@ export class SummaryComponent implements OnInit {
 						}
 					})
 					.subscribe((res: any) => {
-						
+
 						if (this.extension === "xml") {
 							if (res.data.length === 0) {
 								this.spinner = false
 								this.isData = false
 							}
 							this.allSummaries = res.data
-							
+
 							this.keyWord = res.kw
 
 							this.allSummaries.forEach(element => {
-								this.resume += element.summary.summary
+								this.resume += element.title + '\n'
+								this.resume += element.summary.summary + '\n' + '\n'
 							});
-
-
 
 							this.resumeWord = this.countWords(this.resume)
 							const end = new Date().getTime()
 							this.processTime = (end - start) / 1000
+
+							// Download text file
+							const data = this.resume
+							const blob = new Blob([data], { type: 'application/octet-stream' });
+							this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
 						}
 						if (this.extension === "txt") {
 							this.resume = res.summary
 							this.keywords = res.keywords
+
 							this.resumeWord = this.countWords(this.resume)
 							const end = new Date().getTime()
 							this.processTime = (end - start) / 1000
+
+							// Download text file
+							const data = this.resume
+							const blob = new Blob([data], { type: 'application/octet-stream' });
+							this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
 						}
 					})
+
+
 			}
 		}
 		else {
 			this.isModel = true
 		}
 	}
+
+	copyText() {
+		this.clipboardService.copyFromContent(this.resume);
+	}
+
+	fileUrl
+	downloadText() {
+
+	}
+
+	translated = ""
+	target = "fr"
+	langues = [
+		{ name: 'English', code: 'en' },
+		{ name: 'French', code: 'fr' },
+		{ name: 'Dutch', code: 'de' }
+	]
+
+
+	translate() {
+		if (this.resume) {
+			this.isTranslator = true
+			this.http.post(`${environment.url}/translate`,
+				JSON.stringify(this.resume),
+				{ params: { target: this.target } })
+				.subscribe((res: any) => {
+					this.translated = res
+				})
+		}
+	}
+
+	onSelectTarget(event) {
+		this.target = event.target.value
+		this.translate()
+	}
+
+	// onSelectSource(event){
+	// 	this.source = event.target.value
+	// 	this.translate()
+	// }
 
 	closeDialog() {
 		this.isModel = false
@@ -210,8 +274,9 @@ export class SummaryComponent implements OnInit {
 
 	}
 
-	closeDialogMsg(){
+	closeDialogMsg() {
 		this.isData = true
+		this.isTranslator = false
 	}
 
 	clearText() {
@@ -231,7 +296,7 @@ export class SummaryComponent implements OnInit {
 		return str.trim().split(/\s+/).length
 	}
 
-	
+
 
 
 
