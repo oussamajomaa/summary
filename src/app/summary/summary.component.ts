@@ -42,6 +42,12 @@ export class SummaryComponent implements OnInit {
 	robot = true
 	isTranslator = false
 	textAreaSource: string
+	textTranslated = ""
+	generalSummary = ""
+	keywords = []
+	fileUrl
+	translated = ""
+	target = "fr"
 
 
 	// siteKey = "6LcdJuAUAAAAAKwoYqPDHy92q2yPSVAFZU8a49r1"
@@ -107,7 +113,7 @@ export class SummaryComponent implements OnInit {
 		}
 
 	}
-	keywords = []
+	
 	summarize() {
 		this.allSummaries = []
 		this.keyWord = []
@@ -140,17 +146,23 @@ export class SummaryComponent implements OnInit {
 							}
 						})
 						.subscribe((res: any) => {
-							this.resume = res.summary
+							this.resume = "Summary" + "\n"
+							this.resume += res.summary
+							this.textTranslated = res.summary
 							this.keywords = res.keywords
+							this.resume += "\n" + "\n" + "Keywords" + "\n"
+							this.keywords.forEach(key => {
+								this.resume += key + " - "
+							})
 
 							this.resumeWord = this.countWords(this.resume)
 							const end = new Date().getTime()
 							this.processTime = (end - start) / 1000
+							this.spinner = false
 						})
 				}
 			}
-			if (this.fileName && this.upload) {
-
+			if (this.fileName && this.upload) {				
 				this.resume = ""
 				const formData = new FormData()
 
@@ -176,32 +188,60 @@ export class SummaryComponent implements OnInit {
 								this.spinner = false
 								this.isData = false
 							}
+
+							// Assign the array of data = [{title,summary={summary,keywords}},..] to allSummaries
 							this.allSummaries = res.data
 
-							this.keyWord = res.kw
+							// Assign the general summary
+							this.generalSummary = res.general_summary
 
+							// Assign the array of general keywords to keyword
+							this.keyWord = res.kw
+			
+							// Add the title "GENERAL SUMMARY" and the content of general summary to resume
+							this.resume += "GENERAL SUMMARY"+"\n"+this.generalSummary + "\n" + "\n"
+							// Add the title "GENERAL KEYWORD" and the content of keyword to resume
+							this.resume += "GENERAL KEYWORD"+"\n"+this.keyWord + '\n' + '\n'
+							// Get the title and summary of every block and add theme to resume
 							this.allSummaries.forEach(element => {
 								this.resume += element.title + '\n'
+								// Asign the title and summary to testTranslated for translating
+								this.textTranslated += element.title + '\n'
 								this.resume += element.summary.summary + '\n' + '\n'
+								this.textTranslated += element.summary.summary + '\n' + '\n'
+								this.resume += "Keywords" + "\n"
+								element.summary.keywords.forEach(key =>{
+									this.resume += key + " - "
+								})
+								this.resume += '\n' + '\n'
 							});
-
+							// Count the words of resume
 							this.resumeWord = this.countWords(this.resume)
 							const end = new Date().getTime()
 							this.processTime = (end - start) / 1000
-
+							this.spinner = false
 							// Download text file
-							const data = this.resume
+							const data = this.resume					
 							const blob = new Blob([data], { type: 'application/octet-stream' });
 							this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
+							this.text.nativeElement.value = "" // clear textarea
+							this.inputFile.nativeElement.value = ""
+							this.fileName = ""
 						}
 						if (this.extension === "txt") {
-							this.resume = res.summary
+							this.resume = "Summary" + "\n"
+							this.resume += res.summary
+							this.textTranslated = res.summary
 							this.keywords = res.keywords
+							this.resume += "\n" + "\n" + "Keywords" + "\n"
+							this.keywords.forEach(key => {
+								this.resume += key + " - "
+							})
 
 							this.resumeWord = this.countWords(this.resume)
 							const end = new Date().getTime()
 							this.processTime = (end - start) / 1000
-
+							this.spinner = false
 							// Download text file
 							const data = this.resume
 							const blob = new Blob([data], { type: 'application/octet-stream' });
@@ -221,25 +261,12 @@ export class SummaryComponent implements OnInit {
 		this.clipboardService.copyFromContent(this.resume);
 	}
 
-	fileUrl
-	downloadText() {
-
-	}
-
-	translated = ""
-	target = "fr"
-	langues = [
-		{ name: 'English', code: 'en' },
-		{ name: 'French', code: 'fr' },
-		{ name: 'Dutch', code: 'de' }
-	]
-
 
 	translate() {
-		if (this.resume) {
+		if (this.textTranslated) {
 			this.isTranslator = true
 			this.http.post(`${environment.url}/translate`,
-				JSON.stringify(this.resume),
+				JSON.stringify(this.textTranslated),
 				{ params: { target: this.target } })
 				.subscribe((res: any) => {
 					this.translated = res

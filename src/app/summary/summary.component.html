@@ -20,7 +20,7 @@
 				<option selected hidden disabled>Select Model</option>
 				<option value="facebook/bart-large-cnn">facebook/bart-large-cnn</option>
 				<option value="tuner007/pegasus_summarizer">tuner007/pegasus_summarizer</option>
-				<option value="t5-large">t5-large</option>
+				<option value="csebuetnlp/mT5_multilingual_XLSum">csebuetnlp/mT5_multilingual_XLSum</option>
 				<!-- T5 “Text-to-Text Transfer Transformer” -->
 			</select>
 			<a class="readme" href="https://github.com/obtic-scai/Summarization" target="_blank">README</a>
@@ -62,8 +62,8 @@
 			</div>
 			<!-- Summarize && Reset button -->
 			<div>
-				<button (click)="summarize()" style="margin-right: 10px">Summarize</button>
-				<button (click)="clearText()">Reset</button>
+				<button (click)="summarize()" style="margin-right: 10px" >Summarize</button>
+				<button (click)="clearText()" >Reset</button>
 			</div>
 		</div>
 		<hr style="box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 1px;">
@@ -73,9 +73,14 @@
 	
 		<!-- General keywords for xml file -->
 		<div *ngIf="keyWord.length>0">
+			<h3>General Summary</h3>
+			<div class="keyword">
+				{{generalSummary}}
+			</div>
+
 			<h3>General Keywords</h3>
 			<div class="keyword">
-				<span *ngFor="let k of keyWord">{{k}}</span>
+				<span class="key-blue" *ngFor="let k of keyWord">{{k}}</span>
 			</div>
 		</div>
 	
@@ -120,7 +125,7 @@
 				<!-- Summary -->
 				<div style="width: 63%;" class="summary" >
 					<h4 style="margin-bottom: 5px;">Summary</h4>
-						<span ngxCopyPaste #cp="copy">{{resume}}</span>
+						<span ngxCopyPaste #cp="copy">{{textTranslated}}</span>
 						<div class="icons">
 							<img src="assets/translate.png" alt="" title="Translator" (click)="translate()">
 							<!-- <a href="https://www.deepl.com/translator" target="_blank"><img src="assets/deep.png" alt="" title="Deep translator"></a> -->
@@ -153,7 +158,7 @@
 				<!-- Summary -->
 				<div style="width: 63%;" class="summary">
 					<h4 style="margin-bottom: 5px;">Summary</h4>
-					<span ngxCopyPaste #cp="copy">{{resume}}</span>
+					<span ngxCopyPaste #cp="copy">{{textTranslated}}</span>
 					<div class="icons">
 						<img src="assets/translate.png" alt="" title="Translator" (click)="translate()">
 						<!-- <a href="https://www.deepl.com/translator" target="_blank"><img src="assets/deep.png" alt="" title="Deep translator"></a> -->
@@ -210,13 +215,12 @@
 					<p style="padding: 10px 5px; margin:0 0 10px; color: grey;font-weight: bold;">Auto detect</p>
 				</div>
 				<div style="border: solid 1px  silver; border-right: none; height: 250px; width: 100%; border-radius: 5px;">
-					<textarea disabled class="textarea-translate" [value]="resume"></textarea>
+					<textarea disabled class="textarea-translate" [value]="textTranslated"></textarea>
 				</div>
 			</div>
 			<div style="width: 50%; ">
 				<div>
 					<select class="select"  (change)="onSelectTarget($event)">
-						<!-- <option *ngFor="let langue of langues" [value]="langue.code">{{langue.name}}</option> -->
 						<option [selected]="target == 'en'" value="en">English</option>
 						<option [selected]="target == 'fr'" value="fr">Frenche</option>
 						<option [selected]="target == 'de'" value="de">Dutch</option>

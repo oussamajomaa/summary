@@ -301,8 +301,9 @@ button:hover {
 }
 
 .keyword {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start; */
 }
 /* 
 .keyword span {
@@ -324,6 +325,15 @@ button:hover {
 }
 
 .key-red{
+    padding: 5px;
+    background: rgb(255, 224, 222);
+    border-radius: 5px;
+    color: rgb(78, 78, 78);
+    margin: 5px;
+    display: inline-table;
+}
+
+.key-blue{
     padding: 5px;
     background: rgb(222, 231, 255);
     border-radius: 5px;

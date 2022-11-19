@@ -6,6 +6,7 @@ from werkzeug.utils import secure_filename
 import json
 import re
 from bs4 import BeautifulSoup
+from deep_translator import GoogleTranslator
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -49,11 +50,16 @@ def process():
 
         # summary
         summaries = []
+        general_summary = ""
         for k, v in data.items():
             if len(v) > 0:
+                if k == 'Abstract':
+                    print(v)
+                    general_summary = v
+                sum = summary_text(v,model_name,max_length)
                 obj= {
                     "title" : k,
-                    "summary" : summary_text(v,model_name,max_length)
+                    "summary" : sum
                 }
                 summaries.append(obj)
         # end summary
@@ -65,12 +71,11 @@ def process():
             res = keyWord.find_all('kwd')
             for k in res:
                 kw.append(k.text)
-
-            print(res)
         
         response = {
             "data":summaries,
-            "kw":kw
+            "kw":kw,
+            "general_summary": general_summary
         }
         return response
     
@@ -82,9 +87,16 @@ def process():
         contents = " ".join(contents)
         print(contents)
         response = summary_text(contents,model_name,max_length)
-        print(response)
         return json.dumps(response)
 
+
+@app.route('/translate', methods=['POST'])
+def translator():
+    target = request.args.get('target')
+    # source = request.args.get('source')
+    text = request.get_json(force=True)
+    translated = GoogleTranslator(source="auto", target=target).translate(text)  
+    return json.dumps(translated)
 
 if __name__ == '__main__':
     app.run(port=5000,debug=True)

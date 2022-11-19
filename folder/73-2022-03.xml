@@ -1,0 +1,1046 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d1 20130915//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta id="journal-meta-1">
+      <journal-id journal-id-type="nlm-ta">Revista Comunicar</journal-id>
+      <journal-id journal-id-type="publisher-id">Revista Comunicar</journal-id>
+      <journal-id journal-id-type="journal_submission_guidelines">https://www.revistacomunicar.com/index.php?idioma=es</journal-id>
+      <journal-title-group>
+        <journal-title>Comunicar</journal-title>
+      </journal-title-group>
+      <issn publication-format="electronic">1988-3293</issn>
+      <issn publication-format="print">1134-3478</issn>
+    </journal-meta>
+    <article-meta id="article-meta-1">
+      <article-id pub-id-type="doi">https://doi.org/10.3916/C73-2022-03</article-id>
+      <title-group>
+        <article-title id="at-78780b2a438f">Design process for the generation of future education scenarios</article-title>
+        <trans-title-group>
+          <trans-title>El proceso de diseño para la generación de escenarios futuros educativos</trans-title>
+        </trans-title-group>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0003-1500-4904</contrib-id>
+          <name id="n-d19ad2a3f48c">
+            <surname>Manetti.</surname>
+            <given-names>Alessandro</given-names>
+          </name>
+          <email>a.manetti@ied.es</email>
+          <bio>
+            <p>Professor, European Design Institute, Barcelona (Spain)</p>
+          </bio>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0003-0595-3161</contrib-id>
+          <name id="n-f172d53711cd">
+            <surname>Lara-Navarra.</surname>
+            <given-names>Pablo</given-names>
+          </name>
+          <degrees>Dr.</degrees>
+          <email>plara@uoc.edu</email>
+          <bio>
+            <p>Associate Professor, Studies of Information and Communication Sciences, Open University of Catalonia, Barcelona (Spain)</p>
+          </bio>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-0311-1385</contrib-id>
+          <name id="n-c38c684c7456">
+            <surname>Sánchez-Navarro.</surname>
+            <given-names>Jordi</given-names>
+          </name>
+          <degrees>Dr.</degrees>
+          <email>jsancheznav@uoc.edu</email>
+          <bio>
+            <p>Associate Professor, Studies of Information and Communication Sciences, Open University of Catalonia, Barcelona (Spain)</p>
+          </bio>
+        </contrib>
+      </contrib-group>
+      <volume>30</volume>
+      <issue>73</issue>
+      <fpage>33</fpage>
+      <permissions>
+        <copyright-year>2022</copyright-year>
+      </permissions>
+      <abstract id="abstract-15c738ca45c0">
+        <title id="abstract-title-2c62fc08234e">Abstract</title>
+        <p id="paragraph-741317825fa0">This paper brings together studies on the future and design methodologies to develop a novel proposal for prospective analysis in the field of education. We apply mixed research methods in combination with design methodologies to open up new routes for studying the evolution, impact and behaviour of trends in future scenarios. Our research is based on an analysis of qualitative data from secondary sources and interviews with experts, which we transform into quantitative data using fuzzy logic models applied to uncontrolled Internet data environments. Our goal is to verify the validity of the DEFLEXOR method, which addresses the need to identify educational opportunities based on future scenarios defined using megatrends detected in various fields. Our conclusions highlight that combining qualitative and quantitative approaches with the methodological principles of design thinking, together with automated calculations arising from creative reflection by experts, constitutes a powerful methodology for developing specific prospective studies. </p>
+      </abstract>
+      <abstract id="abstract-224fad80502c">
+        <title id="abstract-title-cd5946a78243">Resumen</title>
+        <p id="paragraph-df18f6a89ed5">El presente trabajo relaciona los estudios sobre el futuro y la disciplina del diseño para plantear una propuesta novedosa de análisis prospectivo aplicado al campo de la educación. La exploración se sustenta en el empleo de métodos mixtos de investigación, que, combinados con metodologías propias del diseño, abren nuevas vías para estudiar la evolución, impacto y comportamiento de las tendencias en escenarios futuros. La investigación se fundamenta en el análisis de datos cualitativos, provenientes de fuentes secundarias y de entrevistas con expertos, que son transformados en datos cuantitativos mediante modelos matemáticos de lógica difusa aplicados a entornos de datos no controlados de Internet. El objetivo del estudio es verificar la validez del método DEFLEXOR, cuyo desarrollo responde a la necesidad de detectar oportunidades educativas basadas en escenarios de futuro, definidos a partir de megatendencias detectadas en varios campos, con el objeto de definir una oferta académica relevante para el diseño del futuro. Las conclusiones ponen en relieve que la unión de una perspectiva integradora de métodos cualitativos y cuantitativos con los principios metodológicos del design thinking, en convivencia con el uso de cálculos automatizados a partir de la reflexión creativa de expertos, constituye un poderoso constructo metodológico para el desarrollo concreto de estudios prospectivos.</p>
+      </abstract>
+      <kwd-group id="kwd-group-1">
+        <title>Keywords</title>
+        <kwd>Education</kwd>
+        <kwd>studies on the future</kwd>
+        <kwd>design</kwd>
+        <kwd>mixed methods</kwd>
+        <kwd>data mining</kwd>
+        <kwd>trends</kwd>
+      </kwd-group>
+      <kwd-group id="kg-2dc7f91bcf1d">
+        <title>Palabras clave</title>
+        <kwd>Educación</kwd>
+        <kwd>estudios sobre futuro</kwd>
+        <kwd>diseño</kwd>
+        <kwd>métodos mixtos</kwd>
+        <kwd>minería de datos</kwd>
+        <kwd>tendencias</kwd>
+      </kwd-group>
+      <funding-group>
+        <funding-statement>Research Group on Learning, Media and Environment (Spanish acronym GAME) (2017 SGR 293). This research is part of the project titled Una propuesta de herramienta para el análisis y la planificación estratégica de innovación basada en el estudio de macrotendencias y en metodologías de diseño (A Proposed Tool for Analysing and Strategically Planning Innovation Based on the Study of Macrotrends and on Design Methodologies) (2018 DI 031), funded by the University Grants Management Agency of the Government of Catalonia.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title id="t-091b875723ab">Introduction</title>
+      <p id="t-46d3d43375b3">Trend analysis is the practice of gathering information to identify behavioural patterns. We achieve this by delving into the field of future studies (Decoufle, 1974; Schwartz, 1991; Godet, 2001; Mojica, 2005; Brown &amp; Kuratko, 2015; Kuosa, 2010, 2016; Berenskoetter, 2011; Ito &amp; Howe, 2016) – the theoretical and methodological underpinnings which are combined with conceptual analysis procedures (Meyer &amp; Mackintosh, 1994) – supported by advanced automated learning techniques (Shavlik et al., 1990; Mohri et al., 2018). The overall goal is to conduct a design-based prospective analysis of trends that can be used as a tool for future studies. This new approach employs mixed research methods (Creswell, 2014, 2015; Ramírez-Montoya &amp; Lugo-Ocando, 2020) in combination with design methodologies (Manzini &amp; Coad, 2015) to create new routes for studying the evolution, impact and behaviour of trends in future scenarios.  </p>
+      <p id="clipboard_property">In this approach, strategic decision-making requires the setting of different observation points to refine the responses to the research questions. The approach entails the application of the principles of design thinking (Visser, 2006; Dorst, 2011; Oxman, 2017), a method involving multi-stage analysis of the data gathered. It is effective in situations involving volatile information and a high degree of obsolescence. We integrate all these elements to demonstrate the importance of design-based methods in future studies. In this paper, we present the various components of our methodology, which we call DEFLEXOR (DEsign FLowing EXpansion Organism), we specify our research design, and we argue why the design thinking methodology is effective for achieving our research objectives. In that regard, we explain how qualitative and quantitative data mining and artificial intelligence models can be integrated in future studies. Lastly, we discuss the results of using the analysis tool for future studies in the field of education, and we provide our research conclusions.</p>
+    </sec>
+    <sec>
+      <title id="t-a9d99d73d8c8">Research design: Studies on the future and design</title>
+      <p id="t-737fde910a67">We sought to verify whether mixed-method design methodologies supported by fuzzy logic algorithms are valid in the field of studies on the future and, specifically, whether they are effective for prospective analysis in the field of education. We tested the validity of the DEFLEXOR method in the context of devising new education programmes at the European Design Institute (Istituto Europeo di Design, or IED). The IED teaches all disciplines related to design, visual communication, fashion and management and constitutes a large international network – originating in Italy – for training future professionals in all areas of design. We established the following research questions as the starting point for this study. The questions stem from the strategic goals set out by the IED management team in view of the need for an educational portfolio that responds to long term trends and changes:</p>
+      <list list-type="bullet">
+        <list-item id="li-7f1009241420">
+          <p>Do studies on the future combined with a design approach enable the generation of future scenarios? </p>
+        </list-item>
+        <list-item id="li-0eeffdd6c3d7">
+          <p>Do the scenarios enable us to envisage a design education programme 20 years ahead? </p>
+        </list-item>
+        <list-item id="li-dbb70e080823">
+          <p>Which specific academic programmes should be part of a future design scenario? </p>
+        </list-item>
+        <list-item id="li-e08d6a706c98">
+          <p>Which professional competences are needed for the future of design? </p>
+        </list-item>
+      </list>
+      <p id="p-196f906cfa30">In the following sections, we present the main features of our research design and we establish the foundation and context for the debate on the application of the DEFLEXOR methodology. </p>
+      <sec>
+        <title id="t-0e8d67de8dd1">Participants</title>
+        <p id="t-5f5c34fb08c6">Twenty-four transdisciplinary, transgenerational professionals took part in the study. We ensured gender equality in our selection. The final selection comprised thirteen women and eleven men aged 23 to 65 working in the various design disciplines. Our selection criteria stipulated that the participating experts had to work with one or more areas of the school: design, visual arts, fashion and management. We analysed the curriculum to ensure it included live projects, to find evidence of continuous contact with the design world, and to verify the experts’ involvement in the IED's educational programmes. Lastly, we sought the involvement of staff from the academic secretariat, the academic coordination team, the directorial team for the master’s programme and the school’s overall management team.</p>
+      </sec>
+      <sec>
+        <title id="t-db5afa0b2200">Research context</title>
+        <p id="t-ba14cce39d75">To foster teamwork and collaboration, we opted for three eight-hours, in-person workshops led by five experts in creative methodologies. This approach enabled the experts to share the same information in the same space. The workshop format ensured decisions were taken based on experience and information exchange in the various sessions. We expected to see a consensus based on cumulative knowledge. The workshops were designed around competences in research, critical and creative thinking, and collaboration.</p>
+      </sec>
+      <sec>
+        <title id="t-b2ad6b45d2bd">Data sources and instruments</title>
+        <p id="t-d5df2e5f6cc4">In terms of data sources, the workshop participants consulted the trend forecasts provided by the Worth Global Style Network (WGSN) in the IED library. The library has a specific collection on trends in both database and physical format. They also consulted the data platform of the World Economic Forum (WEF) to obtain trusted, reliable information. Furthermore, they conducted Internet research using specialist search engines such as Google Scholar, which provide a vast amount of trend reports and specialist literature on future studies (we developed this theme in the DEFLEXOR method). Lastly, they used the internal IED database of texts and images going back ten years on research projects in the different design disciplines.  </p>
+        <fig id="f-1d7db135ebf7" orientation="portrait" fig-type="graphic" position="anchor">
+          <label>Figure 0 </label>
+          <graphic id="g-3187db5695a8" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/e36eea65-d178-4941-a950-51457921a489/image/43d37fb5-f75a-4c3c-bc17-cf650c083235-ueng-03-01.png"/>
+        </fig>
+        <p id="p-d8ed0fe9d2f1">In terms of data collection instruments, we employed various techniques. Firstly, the mind map technique with removable sticky notes yields a schematic representation of ideas beginning with the question “What next?” in the centre. Participants add their ideas, projecting outwards from the centre (the present) towards the future. We also used the Manual Thinking (Huber &amp; Veldman, 2015) system of removable labels of different sizes, colours and shapes to connect different concepts. This is a particularly effective tool for visualising processes, contextualising ideas and ordering thoughts. Moreover, it facilitates teamwork and supports creativity, exploration, prioritisation, organisation and the prototyping of scenarios in a structured and dynamic way. We also used the dot-voting system in which a limited number of red voting dots (in our case ten) is distributed to participants who then place their red dots next to the sticky notes to indicate a preference for a specific theme (in this case, course topics). Participants vote individually on ideas, trend characteristics, and any other element that requires prioritisation. Lastly, we installed the DEFLEXOR algorithm (see the methodology section) on various devices so that all workshop participants had access. As we will see further on, the algorithm helps determine the distance between the experts’ ideas and suggestions, and their presence and relevance in external information sources.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title id="t-ef8ba587fb75">DEFLEXOR methodology for studies on the future and design</title>
+      <p id="t-3018568c4187">Trend identification is a complex problem given the directional nature of trends and their oscillation over time. The trends we examine are not past events but predictions of what will happen at a specific time in the future (Vejlgaard, 2007). To study and analyse the nature of trends, we must apply new research methods. We propose a new methodology (Figure 1) for studies on the future supported by design methodologies as well as mixed research methods and mathematical tools which constitute an active and constantly changing body of knowledge. </p>
+      <p id="p-e77a0d901759">We are convinced that design thinking and mixed digital research methods are the most appropriate techniques for studying and analysing trends in view of the temporal variation of trends and social behaviour (Lara-Navarra et al., 2018). According to Campbell and Fiske (1959), multiple research methods are necessary to identify trends and their variations since trends vary depending on societal needs. For that reason, a mixed research model is the most suitable approach to studying and analysing social behaviours (Pereira-Pérez, 2011).</p>
+      <sec>
+        <title id="t-80bc7438de97">Mixed methods</title>
+        <p id="t-618248d4bb22">Research questions concerning trends must be studied and reviewed at different stages and be supported by both qualitative and quantitative evidence. The data obtained help interpret trend behaviour in multiple scenarios. When faced with diverse responses to the research questions, it is important to conduct methodological triangulation with various types of information (Jick, 1979). There is a sufficient body of literature supporting the use of mixed methods to create research instruments that facilitate a better understanding of the subject of our research (Creswell &amp; Plano-Clark, 2011; Curry &amp; Nunez-Smith, 2015; Morse &amp; Niehaus, 2009; O’Halloran et al., 2018). </p>
+        <p id="p-3babe64a1379">Studying the nature of mixed research methods reveals a common factor: the need to define a process, such as a set of staged research operations to analyse the problem from different points of view (Dagnino et al., 2020). For example, the mixed research model proposed by Creswell (2014; 2015) includes Multi Stage Evaluation Design, a process with specific phases for development, testing, implementation and making improvements (Creswell, 2015; Guetterman et al., 2015). O’Halloran et al. (2018) state that mixed models use qualitative and quantitative data to evaluate needs, conceptualise, develop instruments, implement and test, monitor and refine. The approaches by Creswell (2014; 2015) and O’Halloran et al. (2018) pave the way for innovation in the field of future studies and design thinking. </p>
+      </sec>
+      <sec>
+        <title id="t-9fa947564cd7">Design Thinking</title>
+        <p id="t-9f6b96170875">The theories and concepts of design thinking are widely accepted by the scientific community and there are numerous important papers supporting design thinking research methods (Lawson, 1980; Rowe, 1987). Design thinking is a process of exploration and creative strategising (Dorst, 2011; Visser, 2006; Oxman, 2017). The process defined by Oxman (2017) involves the search for a solution, exploration, emergence of a solution, reflection, modification, refinement, adaptation and media (this last term involves concepts such as algorithm design and artificial intelligence) (Bonamiet et al., 2020).  </p>
+        <p id="p-d665e554a6ed">In certain cases, mixed research models require the use of computational techniques to combine qualitative and quantitative data. Our model is based on the approach by O’Halloran et al. (2018), in which the concept of data integration is expanded to include the transformation of qualitative data into quantitative data to enable data mining and visualisation. In this sense, design thinking coincides with the processes described by Creswell (2015) and O’Halloran et al. (2018) for mixed research methods.</p>
+      </sec>
+      <sec>
+        <title id="t-a108eb5a5436">Mathematical tool</title>
+        <p id="t-cae9162378e0">In this section, we describe the unique mathematical tool that constitutes the technical branch of our method. Though we are dealing with a completely formal structure, we must apply a conceptual analysis to the prospective system to help ascertain the semantic relationships. In the initial steps (points one and two below), we provide a method for translating semantic ideas into vectors – the basic elements of linear algebra. In the steps that follow, we adopt a mathematical structure based on the fuzzy set theory. This enables us to implement automated learning tools in metric spaces to calculate the prospective indices that make our procedure unique. </p>
+        <p id="p-03fa0fadfb92">1) Defining the semantic axes of the prospective system. Conceptual analysis enables us to define the main terms (sentences, words, abbreviations) that define the expected direction in future studies. A group of experts used qualitative methods to define these terms and create a comprehensive relationship structure for building the conceptual universe that would help us represent future trends. We will refer to this structure as the “universe”, and the letter “n” to refer to the number of elements. Conceptual analysis methods are necessary in this step, once the semantic structure is established. This system becomes a mathematical object underpinning the future analysis. If we reason by analogy, the terms become an (algebraic) basis (n) in which trends are represented using what we call semantic projections.  </p>
+        <p id="paragraph-3">2) Describing the semantic projections in mathematical terms. They may be defined in different ways, depending on the objective of the prospective analysis. In broad terms, they are real numbers in the interval [0,1] indicating the degree of semantic coincidence of the terms that describe the new trend we wish to verify, and of each of the n elements in the universe, ordered in a finite sequence. The vector defined by these numbers – following the order of the basis – provides the mathematical representation of the trend in our universe.  </p>
+        <p id="paragraph-4">We will use an example to explain how to define a semantic projection. Suppose we have a term “x” in a universe (e.g. the word “sustainable”) and a new term “y” that successfully describes a possible trend we wish to analyse (e.g. “wood”) to study the suitability of certain materials in furniture design within the Green Economy. We define the projection P_x(y) by measuring the number of times the term “x” appears “close” to the term “y” and divide it by the total number of times the term “y” appears in all secondary sources. Here, “close” means fewer than ten positions in the text between the terms “x” and “y” in any sentence from the database containing both “x” and “y”. </p>
+        <p id="p-89714153c37c">Therefore, “y” is represented by the n-dimensional vector y -&gt;(P_x_1(y), P_x_n(y)), which can be understood as follows: each projection P_x(y) provides the “degree of belonging” of the term to the semantic group defined by “x”, which is a fuzzy set. For more examples and a full explanation of how to define these projections, see Manetti et al. (2021).</p>
+      </sec>
+      <sec>
+        <title id="t-127afee35fd7">Information sources</title>
+        <p id="t-128592d4c6a3">The principal problem we face is how to obtain data to feed the system (Martínez-Martínez &amp; Lara-Navarra, 2014). In fact, this is the main innovation of our mathematical tool. The first challenge is how to obtain information beyond what is available from Google apps. Google is a good source; Google Trends and Google Ads provide many tools for analysing trends. However, other sources can ensure the independence of the prospective results. We therefore propose the use of alternative search engines such as Yahoo, Bing or Qwant, and non-profit databases such as Dbpedia and WikiData. </p>
+        <p id="p-242a20ff643b">We needed to establish the distances between terms to define the conceptual universe for our analysis. To do so, we required a metric space comprising our selected concepts for defining the semantic projections of the terms describing the trends we wish to analyse. For some of our objectives, data extraction using Wikidata is therefore more interesting. Wikidata was unveiled by the Wikimedia foundation in 2012 as a structured collaborative knowledge base (Saorín &amp; Pastor-Sánchez, 2018). DbPedia and Wikidata are actually complementary projects that have advantages and disadvantages depending on the desired objective. We prefer to use both, together with YAGO (Yet Another Great Ontology), developed by the Max Planck Institute for Informatics (Suchanek et al., 2007). These tools use linked open data and enable us to find information and contextualise the results more intensively. </p>
+        <p id="p-053680768130">Wikidata allows us to compare information in accordance with semantic web standards (Frisendal, 2012), in turn enabling us to generate conceptual maps of the terms that interest us, translate these to SKOS or OWL and visualise them as RDF graphs. The resulting knowledge graphs support a mathematical procedure for calculating distances. </p>
+        <p id="p-522e3fc0f153">These distances are defined using graph metrics. On a given graph (comprising nodes and vertices or edges), the distance between two nodes is the minimum of the sum of all the edges of all possible routes joining the two nodes. Including weights in the sum of these edges improves the description of the semantic relationships represented in the graph.This is the most systematic and complete way of defining the conceptual universe in each case. The same methodology can be applied to other linguistic or conceptual structures or to databases of concepts that can be used for defining distances. However, this is not the only way to define our universes, or metric spaces. For example, the graphs available from Twitter, Instagram or LinkedIn can be used in the same way to construct metric spaces for defining semantic projections. This would provide a broader view of what is happening in the various parts of the Internet, enable us to build complementary metric structures and, by comparing these, allow us to analyse the authenticity of the results.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title id="t-29e59ea18fa5">Results and discussion</title>
+      <p id="t-0812b909b350">We applied the DEFLEXOR method in response to a series of challenges set by the IED management team, including how to use techniques of studies on the future to develop the institute’s portfolio and ensure it adds value in the employment and social spheres as well as internationally. We held three workshops on consecutive days to meet our research objective. On the first day, we analysed whether studies on the future combined with design methodologies can generate prospective scenarios for the challenges set. In that regard, the workshop participants conducted research in secondary digital and physical sources from the IED library (Figure 2). They also established the fields of interest for the research questions and the search formulas. The group of experts established six specific fields of interest: society, the environment, technology, culture, demographics and the market. After this, the group developed the strategies for searching for information, working together to find the best response to the research question. After selecting the best strategies, the session continued with reading in groups. This was followed by a debate in which speakers argued why certain sources should be included in the process of creating the future study into education at the IED. The workshop resulted in the selection of the main strategic consulting and business reports, e.g. McKinsey, Fijord, Deloitte and the World Economic Forum. </p>
+      <p id="p-4af2c6c0ec4b">The workshop on the second day looked primarily at how creativity can help develop scenarios for the IED’s programme 20 years from now. Participants worked with the Six Thinking Hats method (De Bono, 2000). Lateral thinking is a technique for approaching problems and situations imaginatively and creatively. The first task was to organise the information from the day before to establish the scenarios. This resulted in six macrofields of action: science and technology; laws and market; cities and nature; demographics and people; politics and society; and art, spare time and culture. The group also suggested twelve megatrends: changing business volatility; global economic power shift; alternative energies transition; rapid urbanisation; demographic boom; population ageing; governance system crisis; climate change crisis; standardisation; personalisation; accelerating technologies and material adoption (particularly in relation to artificial intelligence); and hyperconnectivity.  </p>
+      <p id="p-dd2156881235">At the beginning of the session, we established that the thinking processes would take place synchronously to prevent information loss, encourage the flow of ideas, and in turn activate lateral thinking via lesser-known strategies to prevent rational, logical thinking and the trends common to vertical thinking. The sessions began with a perception phase followed by processing, development and creation of ideas around the concepts generated in the session. </p>
+      <p id="p-fd14541789e0">The use of a creative methodology resulted in conceptual leaps that altered perception patterns. This facilitated innovative conceptual pathways that generated suggestions for new education programmes in the different areas and disciplines within the IED’s master’s department. The key point here was to approach conventional ideas and concepts with an attitude of openness to unconventional alternatives. </p>
+      <p id="p-ae30207b2498">We took the qualitative data provided by the experts and fed it into the algorithm, programmed with the six macrofields and the new programme name. The algorithm used external sources to determine the intensity of the relationship between the macrofield of action and the academic proposal and allowed us to ascertain whether the result of the semantic projection was near to, or far from, the experts’ own thinking.</p>
+      <fig id="f-c6cbae2ae387" orientation="portrait" fig-type="graphic" position="anchor">
+        <label>Figure 0 </label>
+        <graphic id="g-a19ab93aa5ac" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/e36eea65-d178-4941-a950-51457921a489/image/3bcd0199-3369-496f-82fa-8b2ad802c4d8-ueng-03-02.png"/>
+      </fig>
+      <p id="p-1b2336c128be">Of the alignment of macrofields and academic proposals, 62% had a high coincidence, 17% showed more disagreement than agreement, and 21% showed high disagreement. The experts then indicated whether they would modify their perception of the future or maintain their selected projection. The outcome was 126 academic programmes linked to macrofields and megatrends.  </p>
+      <p id="p-dca9c530b05a">On the third day, the group compiled the information generated during the previous days. At this point, given the difficulties in managing such a large volume of information, we decided to apply visualisation and prototyping techniques. A visualisation tool would facilitate an overall view while enabling us to identify possible unpopulated or unbalanced areas and ensure the entire master’s programme area was covered. Our objective here was to refine the suggestions for new education programmes to anticipate the training needs of emerging professional roles in the design world. In the prototyping phase, the 126 proposals were placed within the established macrofields and linked to megatrends. We observed an unbalanced distribution of education programmes with respect to the zones on the map, which are: the economic macrofield (laws and the market); the environment macrofield (cities and nature); the demography macrofield (individual and collective dimensions); the politics and society macrofield; the culture macrofield (focus on art and free time); and the science and technology macrofield. </p>
+      <p id="p-f3a4fb2c1e47">The algorithm linked each of these macrofields with two contrasting megatrends. The experts involved on the third day worked in groups to define future scenarios for each of the six macrofields and megatrends. The outcome was as follows:</p>
+      <list list-type="bullet">
+        <list-item id="li-cd93aadd50f3">
+          <p>Scenario 1: Design and new business models. Megatrends: changing business volatility and global economic power shift. Macrofield: laws and market. </p>
+        </list-item>
+        <list-item id="li-8df10bde5173">
+          <p>Scenario 2: Design and sustainable development. Megatrends: alternative energies transition and rapid urbanisation. Macrofield: natural environment. </p>
+        </list-item>
+        <list-item id="li-8f50e121ce58">
+          <p>Scenario 3: Design and wellbeing. Megatrends: demographic boom and population ageing. Macrofield: demography. </p>
+        </list-item>
+        <list-item id="li-73f2cfa13b86">
+          <p>Scenario 4. Design and social impact. Megatrends: governance system crisis and climate change crisis. Macrofield: politics and society. </p>
+        </list-item>
+        <list-item id="li-47417b420670">
+          <p>Scenario 5: Design and diversity inclusion and understanding cultural complexity. Megatrends: standardisation and personalisation. Macrofield: culture. </p>
+        </list-item>
+        <list-item id="li-35bd85203eca">
+          <p>Scenario 6: Design and the humanisation of digital media and smart technology. Megatrends: accelerating technologies and material adoption (particularly in relation to artificial intelligence) and hyperconnectivity. Macrofield: technology. </p>
+        </list-item>
+      </list>
+      <p id="p-bd7a6fb831b7">We created the visualisation for the resulting 126 academic proposals by aligning them based on the semantic relationship with the macrofields and megatrends. The overall visualisation of the existing programmes generated a debate supported by lateral and parallel thinking techniques (divergent and convergent). </p>
+      <p id="p-ac94550f0bec">The debate concluded with the selection of six academic programmes that would be incorporated into the IED’s advanced training portfolio. Application of the DEFLEXOR method resulted in the following programmes being proposed: Master’s Degree in Design for Artificial Intelligence; Master’s Degree in Virtual reality; Master’s Degree in Urban Environment and Mobility; Master’s Degree in Fashion Technology and Wearables; Master’s Degree in Service Design for Healthcare; and Master’s Degree in Sustainable Design and Social Impact. </p>
+      <p id="p-3c1d8d91ab73">To complete the process, we used the algorithm to conduct a final check of the proposed academic programmes to refine their relevance in relation to the megatrends and macrotrends on the map (Figure 3). The use of visualisation techniques in this phase created a new product in the form of a map illustrating the discussions between the experts attending the workshops. The map also provides a foundation for future innovative strategising sessions around the institution's education portfolio.</p>
+      <fig id="f-6aa5ef5d34a3" orientation="portrait" fig-type="graphic" position="anchor">
+        <label>Figure 0 </label>
+        <graphic id="g-92bfdf1b4cb4" xlink:href="https://typeset-prod-media-server.s3.amazonaws.com/article_uploads/e36eea65-d178-4941-a950-51457921a489/image/3847f127-bb59-4421-98ad-c2e4d96c83d8-ueng-03-03.png"/>
+      </fig>
+    </sec>
+    <sec>
+      <title id="t-34a102d392d1">Conclusions</title>
+      <p id="t-2afdbea58186">The use of mixed qualitative and quantitative methods based on the design thinking methodology and supported by an algorithm is a useful tool for studies on the future, since it enables the generation of robust and effective future scenarios. The learning generated in the workshops on the DEFLEXOR method had a positive impact, generating a solid information base comprising 126 specific proposals covering each of the proposed objectives. Visualisation played a key role; an overall view of a universe of macrotrends and megatrends arranged around a question (in this case, the IED's education portfolio) and linked to the idea that the design process facilitates a better understanding of the interconnections between the various phenomena at play and the degree of relevance of these connections. </p>
+      <p id="p-e02e3e2ed9e8">An open investigation using secondary sources and applying the DEFLEXOR algorithm fits effectively with the divergent and convergent phases of the Double Diamond design thinking process. In the conversion and selection phases, the algorithm prompts discussion and acts as a selector. Applying the algorithm generates a solid base of organised information and a common denominator which is open to receiving possible new qualitative information from the secondary sources, enabling us to envisage a design education portfolio 20 years ahead. Using the map to visualise the base informational framework generated by the algorithm and the research work is also important in the creative thinking and ideas generation phase, in that it provides inspiration and prompts new ideas and concepts. In this method, the map simplifies the complexity without losing it. Application of the algorithm ensures control over the information in accordance with the parameters established by the program. In an increasingly technological and digital world, it also equips designers with a tool to support decision-making when using large volumes of data generated by the Internet and social networks to develop the products and services of the future. </p>
+      <p id="p-1803f6f110ac">Studies on the future with new methodologies constitute a change in paradigm and are influencing the present and future of the professional design sector. Educators in the design world need to take these into account, while design professionals should look to integrate studies on the future into their project development process. This is a decisive moment in the history of humanity. We are facing a range of social, political, cultural, economic, environmental and scientific challenges. Amid these disruptive mutations, our attempts to understand how the world works and how to create transformation from innovation should avoid a deterministic and linear view of the future. We require new tools for interpreting evolutionary phenomena so that we leave the door open to the possibility of modelling and creating not just the most likely futures, but the best alternative futures to provide sustainable solutions. (<xref id="x-9d3d1c3f2e13" rid="" ref-type="bibr">1</xref>) </p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="R147197925431075">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>T J</given-names>
+            </name>
+            <name>
+              <surname>Kuratko</surname>
+              <given-names>D F</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>The impact of design and innovation on the future of education</article-title>
+          <source>Psychology of Aesthetics, Creativity, and the Arts</source>
+          <year>2015</year>
+          <volume>9</volume>
+          <issue>2</issue>
+          <fpage>147</fpage>
+          <lpage>151</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1037/aca0000010</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431076">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creswell</surname>
+              <given-names>J W</given-names>
+            </name>
+            <name>
+              <surname>Plano-Clark</surname>
+              <given-names>V L</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Designing and conducting mixed methods research</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2011</year>
+          <uri>https://bit.ly/3spnC5D</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431077">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lara-Navarra</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lopez-Borrull</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sánchez-Navarro</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yànez</surname>
+              <given-names>P</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Medición de la influencia de usuarios en redes sociales: Propuesta SocialEngagement</article-title>
+          <source>Profesional de la Información</source>
+          <year>2018</year>
+          <volume>27</volume>
+          <fpage>899</fpage>
+          <lpage>908</lpage>
+          <uri>https://doi.org/10.3145/epi.2018.jul.18</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431078">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O’halloran</surname>
+              <given-names>K L</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pham</surname>
+              <given-names>D S</given-names>
+            </name>
+            <name>
+              <surname>Bateman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vande-Moere</surname>
+              <given-names>A</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>A digital mixed methods research design: Integrating multimodal analysis with data mining and information visualization for big data analytics</article-title>
+          <source>Journal of Mixed Methods Research</source>
+          <year>2018</year>
+          <volume>12</volume>
+          <issue>1</issue>
+          <fpage>11</fpage>
+          <lpage>30</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1177/1558689816651015</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431079">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mojica</surname>
+              <given-names>F J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>La construcción del futuro. Concepto y modelo de prospectiva estratégica</article-title>
+          <source>Books</source>
+          <year>2005</year>
+          <issue>26</issue>
+          <fpage>1</fpage>
+          <lpage>1</lpage>
+          <uri>https://bit.ly/3G4lRA6</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431080">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bonami</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Piazentini</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dala-Possa</surname>
+              <given-names>A</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Education, Big data and artificial intelligence: Mixed methods in digital platforms. [Educación, big data e inteligencia artificial: Metodologías mixtas en plataformas digitales]</article-title>
+          <source>Comunicar</source>
+          <year>2020</year>
+          <volume>65</volume>
+          <fpage>43</fpage>
+          <lpage>52</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.3916/C65-2020-04</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431081">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creswell</surname>
+              <given-names>J W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>A concise introduction to mixed methods research</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2015</year>
+          <uri>https://bit.ly/3hp6dDT</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431082">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ito</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Howe</surname>
+              <given-names>J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Whiplash: How to survive our faster future</source>
+          <publisher-name>Grand Central Publishing</publisher-name>
+          <year>2016</year>
+          <uri>https://bit.ly/3BTnX3A</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431083">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morse</surname>
+              <given-names>J M</given-names>
+            </name>
+            <name>
+              <surname>Niehaus</surname>
+              <given-names>L</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Mixed method design. Principles and procedures</source>
+          <publisher-name>Routledge</publisher-name>
+          <year>2009</year>
+          <uri>https://bit.ly/3tfUJYI</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431084">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuosa</surname>
+              <given-names>T</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Futures signals sense-making framework (FSSF): A start-up tool to analyse and categorise weak signals, wild cards, drivers, trends and other types of information</article-title>
+          <source>Futures</source>
+          <year>2010</year>
+          <volume>42</volume>
+          <issue>1</issue>
+          <fpage>42</fpage>
+          <lpage>48</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1016/j.futures.2009.08.003</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431085">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jick</surname>
+              <given-names>T D</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Mixing qualitative and quantitative methods: Triangulation in action</article-title>
+          <source>Administrative Science Quarterly</source>
+          <year>1979</year>
+          <volume>24</volume>
+          <issue>4</issue>
+          <fpage>602</fpage>
+          <lpage>611</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.2307/2392366</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431086">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mohri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rostamizadeh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Talwalkar</surname>
+              <given-names>A</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Foundations of machine learning</source>
+          <publisher-name>MIT Press</publisher-name>
+          <year>2018</year>
+          <uri>https://bit.ly/3K3v7VX</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431087">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramírez-Montoya</surname>
+              <given-names>M S</given-names>
+            </name>
+            <name>
+              <surname>Lugo-Ocando</surname>
+              <given-names>J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Systematic review of mixed methods in the framework of educational innovation. [Revisión sistemática de métodos mixtos en el marco de la innovación educativa]</article-title>
+          <source>Comunicar</source>
+          <year>2020</year>
+          <volume>65</volume>
+          <fpage>9</fpage>
+          <lpage>20</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.3916/C65-2020-01</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431088">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martínez-Martínez</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lara-Navarra</surname>
+              <given-names>P</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>El big data transforma la interpretación de los medios sociales</article-title>
+          <source>Profesional de la Información</source>
+          <year>2014</year>
+          <volume>23</volume>
+          <fpage>575</fpage>
+          <lpage>581</lpage>
+          <uri>https://doi.org/10.3145/epi.2014.nov.03</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431089">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dagnino</surname>
+              <given-names>F M</given-names>
+            </name>
+            <name>
+              <surname>Dimitriadis</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Pozzi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Rubia-Avi</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Asensio-Pérez</surname>
+              <given-names>J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>The role of supporting technologies in a mixed methods research design. [El rol de las tecnologías de apoyo en un diseño de investigación de métodos mixtos]</article-title>
+          <source>Comunicar</source>
+          <year>2020</year>
+          <volume>65</volume>
+          <fpage>53</fpage>
+          <lpage>63</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.3916/C65-2020-05</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431090">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pereira-Pérez</surname>
+              <given-names>Z</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Los diseños de método mixto en la investigación en educación: Una experiencia concreta</article-title>
+          <source>Revista Electrónica Educare</source>
+          <year>2011</year>
+          <volume>25</volume>
+          <issue>1</issue>
+          <fpage>15</fpage>
+          <lpage>29</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.15359/ree.15-1.2</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431091">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lawson</surname>
+              <given-names>B</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>How designers think</source>
+          <publisher-name>Architectural Press</publisher-name>
+          <year>1980</year>
+          <uri>https://doi.org/10.4324/9780080454979</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431092">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dorst</surname>
+              <given-names>K</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>The core of ‘design thinking’ and its application</article-title>
+          <source>Design Studies</source>
+          <year>2011</year>
+          <volume>32</volume>
+          <issue>6</issue>
+          <fpage>521</fpage>
+          <lpage>532</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1016/j.destud.2011.07.006</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431093">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vejlgaard</surname>
+              <given-names>H</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Anatomy of a trend</source>
+          <publisher-name>Confetti Publishing</publisher-name>
+          <year>2007</year>
+          <uri>https://bit.ly/3so6wF4</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431094">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saorín</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Pastor-Sánchez</surname>
+              <given-names>J A</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Wikidata y DBpedia: Viaje al centro de la web de datos</article-title>
+          <source>Anuario ThinkEPI</source>
+          <year>2018</year>
+          <volume>12</volume>
+          <fpage>207</fpage>
+          <lpage>214</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.3145/thinkepi.2018.31</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431095">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manzini</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Coad</surname>
+              <given-names>R</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Design, when everybody designs: An introduction to design for social innovation</source>
+          <publisher-name>The MIT Press</publisher-name>
+          <year>2015</year>
+          <uri>https://doi.org/10.7551/mitpress/9873.001.0001</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431096">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manetti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ferrer-Sapena</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sánchez-Pérez</surname>
+              <given-names>E A</given-names>
+            </name>
+            <name>
+              <surname>Lara-Navarra</surname>
+              <given-names>P</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Design trend forecasting by combining conceptual analysis and semantic projections: New tools for open innovation</article-title>
+          <source>Journal of Open Innovation: Technology, Market, and Complexity</source>
+          <year>2021</year>
+          <volume>7</volume>
+          <issue>1</issue>
+          <object-id pub-id-type="doi">https://doi.org/10.3390/joitmc7010092</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431097">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huber</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Veldman</surname>
+              <given-names>G J</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Manual thinking</source>
+          <publisher-name>Empresa Activa</publisher-name>
+          <year>2015</year>
+          <uri>https://bit.ly/33U7csr</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431098">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Campbell</surname>
+              <given-names>D T</given-names>
+            </name>
+            <name>
+              <surname>Fiske</surname>
+              <given-names>D W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Convergent and discriminant validation by the multitrait-multimethod matrix</article-title>
+          <source>Psychological Bulletin</source>
+          <year>1959</year>
+          <volume>56</volume>
+          <issue>2</issue>
+          <fpage>81</fpage>
+          <lpage>105</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1037/h0046016</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431099">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>De-Bono</surname>
+              <given-names>E</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Six thinking hats</source>
+          <publisher-name>Penguin Books</publisher-name>
+          <year>2000</year>
+          <uri>https://bit.ly/3hiWuPm</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431100">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Godet</surname>
+              <given-names>M</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Creating futures</source>
+          <publisher-name>Economica</publisher-name>
+          <year>2001</year>
+          <uri>https://bit.ly/3wBsiHP</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431101">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meyer</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Mackintosh</surname>
+              <given-names>K</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Martin</surname>
+              <given-names>W.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Phraseme analysis and concept analysis: Exploring a symbiotic relationship in the specialized lexicon</article-title>
+          <source>Proceedings of the 6th EURALEX International Congress</source>
+          <publisher-name>Euralex</publisher-name>
+          <year>1994</year>
+          <fpage>339</fpage>
+          <lpage>348</lpage>
+          <uri>https://bit.ly/3M68u4N</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431102">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guetterman</surname>
+              <given-names>T C</given-names>
+            </name>
+            <name>
+              <surname>Fetters</surname>
+              <given-names>M D</given-names>
+            </name>
+            <name>
+              <surname>Creswell</surname>
+              <given-names>J W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Integrating quantitative and qualitative results in health science mixed methods research through joint displays</article-title>
+          <source>Annals of Family Medicine</source>
+          <year>2015</year>
+          <volume>13</volume>
+          <issue>6</issue>
+          <fpage>554</fpage>
+          <lpage>561</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1370/afm.1865</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431103">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suchanek</surname>
+              <given-names>F M</given-names>
+            </name>
+            <name>
+              <surname>Kasneci</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Weikum</surname>
+              <given-names>G</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <article-title>Yago: A core of semantic knowledge</article-title>
+          <source>Proceedings of the 16th international conference on World Wide Web</source>
+          <year>2007</year>
+          <fpage>697</fpage>
+          <lpage>706</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1145/1242572.1242667</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431104">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Decoufle</surname>
+              <given-names>A C</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>La prospectiva</source>
+          <publisher-name>Oikos-tau</publisher-name>
+          <year>1974</year>
+          <uri>https://bit.ly/3wFADZM</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431105">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Frisendal</surname>
+              <given-names>T</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Opportunity: Open information sharing. In Design thinking business analysis. Management for professionals</source>
+          <publisher-name>Springer</publisher-name>
+          <year>2012</year>
+          <uri>https://doi.org/10.1007/978-3-642-32844-2_13</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431106">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berenskoetter</surname>
+              <given-names>F</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Reclaiming the vision thing: Constructivists as students of the future</article-title>
+          <source>International Studies Quarterly</source>
+          <year>2011</year>
+          <volume>55</volume>
+          <issue>3</issue>
+          <fpage>647</fpage>
+          <lpage>668</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1111/j.1468-2478.2011.00669.x</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431107">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oxman</surname>
+              <given-names>R</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <article-title>Thinking difference: Theories and models of parametric design thinking</article-title>
+          <source>Design Studies</source>
+          <year>2017</year>
+          <volume>52</volume>
+          <fpage>4</fpage>
+          <lpage>39</lpage>
+          <object-id pub-id-type="doi">https://doi.org/10.1016/j.destud.2017.06.001</object-id>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431108">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Curry</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Nunez-Smith</surname>
+              <given-names>M</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Mixed methods in health sciences research</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2015</year>
+          <uri>https://doi.org/10.4135/9781483390659</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431109">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rowe</surname>
+              <given-names>P G</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Design thinking</source>
+          <publisher-name>MIT Press</publisher-name>
+          <year>1987</year>
+          <uri>https://bit.ly/3HjpL7f</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431110">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuosa</surname>
+              <given-names>T</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>The evolution of strategic foresight: Navigating public policy making</source>
+          <publisher-name>Routledge</publisher-name>
+          <year>2016</year>
+          <uri>https://doi.org/10.4324/9781315558394</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431111">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>P ; J W</given-names>
+            </name>
+            <name>
+              <surname>Dietterich</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Dietterich</surname>
+              <given-names>T G</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>The art of long view</source>
+          <publisher-name>Morgan Kaufmann</publisher-name>
+          <year>1990</year>
+          <uri>https://bit.ly/36Mq0uT</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431112">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creswell</surname>
+              <given-names>J W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>Research design: Qualitative, quantitative and mixed methods approaches</source>
+          <publisher-name>Sage</publisher-name>
+          <year>2014</year>
+          <uri>https://doi.org/10.5539/elt.v12n5p40</uri>
+        </element-citation>
+      </ref>
+      <ref id="R147197925431113">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Visser</surname>
+              <given-names>W</given-names>
+            </name>
+            <collab/>
+          </person-group>
+          <person-group person-group-type="editor"/>
+          <source>The cognitive artifacts of designing</source>
+          <publisher-name>CRC Press</publisher-name>
+          <year>2006</year>
+          <uri>https://doi.org/10.1201/9781482269529</uri>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
