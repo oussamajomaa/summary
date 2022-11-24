@@ -47,6 +47,7 @@
 
 .header {
     width: 100%;
+    height: 80px;
     background: rgb(235, 235, 235);
     padding: 10px;
     box-sizing: border-box;
@@ -55,13 +56,15 @@
     left: 0; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
+    position: relative;
 }
 
 .header img {
     width: 240px;
-    display: block;
-    margin: auto;
+    position: absolute;
+    left:calc(50vw - 120px);
 }
+
 
 h1 {
     text-align: center;
@@ -87,6 +90,8 @@ select {
     margin-bottom: 10px;
     border-radius: 8px;
 }
+
+
 
 .textarea-translate{
     width: 100%;

@@ -6,7 +6,7 @@ import { ReCaptcha2Component } from 'ngx-captcha';
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { ClipboardService } from 'ngx-clipboard';
 import { DomSanitizer } from '@angular/platform-browser';
-
+import Swal from 'sweetalert2';
 
 @Component({
 	selector: 'app-summary',
@@ -86,6 +86,8 @@ export class SummaryComponent implements OnInit {
 		this.upload = false
 		this.inputFile.nativeElement.value = ""
 		this.textWord = this.countWords(this.text.nativeElement.value)
+		this.fileName = ''
+		// if (this.textWord > 400)
 		this.character = (this.text.nativeElement.value).length
 		// this.max = this.textWord
 		// this.min = Math.round(this.textWord / 2)
@@ -129,37 +131,43 @@ export class SummaryComponent implements OnInit {
 				`
 				)
 			if (this.text.nativeElement.value && !this.upload) {
-				const start = new Date().getTime()
-				const text = this.text.nativeElement.value
-				if (text && this.textWord > 8) {
-					this.spinner = true
-					this.resume = ""
-					this.textWord = this.countWords(text)
-
-					this.http.post(environment.url, JSON.stringify(text),
-						// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
-						{
-							params:
+				if (this.textWord <= 400){
+					const start = new Date().getTime()
+					const text = this.text.nativeElement.value
+					if (text && this.textWord > 8) {
+						this.spinner = true
+						this.resume = ""
+						this.textWord = this.countWords(text)
+	
+						this.http.post(environment.url, JSON.stringify(text),
+							// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
 							{
-								model: this.model,
-								max_length: this.max_length
-							}
-						})
-						.subscribe((res: any) => {
-							this.resume = "Summary" + "\n"
-							this.resume += res.summary
-							this.textTranslated = res.summary
-							this.keywords = res.keywords
-							this.resume += "\n" + "\n" + "Keywords" + "\n"
-							this.keywords.forEach(key => {
-								this.resume += key + " - "
+								params:
+								{
+									model: this.model,
+									max_length: this.max_length
+								}
 							})
-
-							this.resumeWord = this.countWords(this.resume)
-							const end = new Date().getTime()
-							this.processTime = (end - start) / 1000
-							this.spinner = false
-						})
+							.subscribe((res: any) => {
+								this.resume = "Summary" + "\n"
+								this.resume += res.summary
+								this.textTranslated = res.summary
+								this.keywords = res.keywords
+								this.resume += "\n" + "\n" + "Keywords" + "\n"
+								this.keywords.forEach(key => {
+									this.resume += key + " - "
+								})
+	
+								this.resumeWord = this.countWords(this.resume)
+								const end = new Date().getTime()
+								this.processTime = (end - start) / 1000
+								this.spinner = false
+							})
+					}
+				}
+				else{
+					// alert('The text exceeded 400 words!')
+					Swal.fire('warning','The text exceeded 400 words!','warning')
 				}
 			}
 			if (this.fileName && this.upload) {				
@@ -187,6 +195,7 @@ export class SummaryComponent implements OnInit {
 							if (res.data.length === 0) {
 								this.spinner = false
 								this.isData = false
+								// Swal.fire('No Data','There is no summary!','info')
 							}
 
 							// Assign the array of data = [{title,summary={summary,keywords}},..] to allSummaries
@@ -253,7 +262,8 @@ export class SummaryComponent implements OnInit {
 			}
 		}
 		else {
-			this.isModel = true
+			// this.isModel = true
+			Swal.fire('warning','Choose model please!','warning')
 		}
 	}
 

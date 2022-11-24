@@ -1,6 +1,6 @@
 
 <div class="header">
-	<img src="assets/logo.png" alt="">
+	<a href=""><img src="assets/logo.png" alt=""></a>
 </div>
 <div class="container" #container>
 	<!-- <form *ngIf="!robot" [formGroup]="aFormGroup">
@@ -38,13 +38,15 @@
 	
 		<!-- Textarea -->
 		<div style="margin-bottom: 15px;">
-			<textarea class="textarea" placeholder="Enter text here, max 400 words..." (input)="changeText()" rows="10" #text></textarea>
+			<textarea class="textarea" placeholder="Paste your text here or upload your file.
+Two current options: Plain text format or XML " (input)="changeText()" rows="10" #text></textarea>
 			
-			<div style="display: flex; justify-content: end;" *ngIf="!upload">
+			<div style="display: flex; justify-content: end;" *ngIf="!upload || extension ==='txt'">
 				<span>{{textWord}}</span>
-				<span>Words ||</span>
-				<span>{{character}} </span>
-				<span>Characters</span>
+				<span *ngIf="!upload">/ 400 Words</span>
+				<span *ngIf="upload && extension ==='txt'">Words</span>
+				<!-- <span>{{character}} </span>
+				<span>Characters</span> -->
 			</div>
 		</div>
 		
