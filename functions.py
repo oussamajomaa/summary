@@ -9,14 +9,8 @@ def summary_text(body,model_name,max_length):
     length_body = len(body.split(' '))
 
     max_length=round(int(max_length)*length_body/100)
-    # print("max_length "+str(max_length))
-    # if max_length < 50:
-    #     min_length = 50
-    #     max_length = 100
     min_length = round(max_length / 2)
-    print("length body " + str(length_body))
-    print("min_length "+str(min_length))
-    print("max_length "+str(max_length))
+
     body = body.replace(u'\xa0', u' ')
     if model_name == "facebook/bart-large-cnn":
         
@@ -43,6 +37,13 @@ def summary_text(body,model_name,max_length):
         split_points = summary.split('.')
         if (len(split_points)>1):
             del split_points[-1]
+        
+        if(split_points[0]==''):
+            split_points=[]
+
+        if len(split_points[0]) < 30:
+           split_points=[] 
+
         summary = ""
         for point in split_points:
             summary +=point + '.'
@@ -69,6 +70,12 @@ def summary_text(body,model_name,max_length):
         split_points = summary.split('.')
         if (len(split_points)>1):
             del split_points[-1]
+
+        if(split_points[0]==''):
+            split_points=[]
+
+        if len(split_points[0]) < 30:
+           split_points=[] 
         summary = ""
         for point in split_points:
             summary +=point + '.'
@@ -98,6 +105,12 @@ def summary_text(body,model_name,max_length):
         split_points = summary.split('.')
         if (len(split_points)>1):
             del split_points[-1]
+        
+        if(split_points[0]==''):
+            split_points=[]
+
+        if len(split_points[0]) < 30:
+           split_points=[] 
         summary = ""
         for point in split_points:
             summary +=point + '.'

@@ -149,28 +149,26 @@ export class SummaryComponent implements OnInit {
 								}
 							})
 							.subscribe((res: any) => {
-								console.log(res);
-								console.log(res.summary);
-								
-								
 								if (res.summary.length === 0) {
 									this.spinner = false
-									this.isData = false
-									// Swal.fire('No Data','There is no summary!','info')
+									Swal.fire('No Data','There is no summary!','info')
 								}
-								this.resume = "Summary" + "\n"
-								this.resume += res.summary
-								this.textTranslated = res.summary
-								this.keywords = res.keywords
-								this.resume += "\n" + "\n" + "Keywords" + "\n"
-								this.keywords.forEach(key => {
-									this.resume += key + " - "
-								})
-	
-								this.resumeWord = this.countWords(this.textTranslated)
-								const end = new Date().getTime()
-								this.processTime = (end - start) / 1000
-								this.spinner = false
+								else{
+
+									this.resume = "Summary" + "\n"
+									this.resume += res.summary
+									this.textTranslated = res.summary
+									this.keywords = res.keywords
+									this.resume += "\n" + "\n" + "Keywords" + "\n"
+									this.keywords.forEach(key => {
+										this.resume += key + " - "
+									})
+		
+									this.resumeWord = this.countWords(this.textTranslated)
+									const end = new Date().getTime()
+									this.processTime = (end - start) / 1000
+									this.spinner = false
+								}
 							})
 					}
 				}
