@@ -49,8 +49,7 @@ export class SummaryComponent implements OnInit {
 	translated = ""
 	target = "fr"
 
-	siteKey = environment.siteKey
-	// siteKey = "6LcdJuAUAAAAAKwoYqPDHy92q2yPSVAFZU8a49r1"
+	siteKey = "6Le-7OYiAAAAANYoAmPdhNWC2WakmiCd_JHZ3bGt"
 	recaptcha: any
 	aFormGroup: FormGroup
 	public captchaEl: FormControl = new FormControl(null, Validators.required);
