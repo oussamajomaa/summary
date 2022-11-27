@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { environment } from 'src/environments/environment';
-import { ReCaptcha2Component } from 'ngx-captcha';
+import { ReCaptchaV3Service} from 'ngx-captcha';
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { ClipboardService } from 'ngx-clipboard';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -49,7 +49,7 @@ export class SummaryComponent implements OnInit {
 	translated = ""
 	target = "fr"
 
-
+	siteKey = environment.siteKey
 	// siteKey = "6LcdJuAUAAAAAKwoYqPDHy92q2yPSVAFZU8a49r1"
 	recaptcha: any
 	aFormGroup: FormGroup
@@ -60,7 +60,8 @@ export class SummaryComponent implements OnInit {
 		public auth: AuthService,
 		private formBuilder: FormBuilder,
 		private clipboardService: ClipboardService,
-		private sanitizer: DomSanitizer
+		private sanitizer: DomSanitizer,
+		private reCaptchaV3Service: ReCaptchaV3Service
 	) {
 
 	}
@@ -71,6 +72,9 @@ export class SummaryComponent implements OnInit {
 		})
 	}
 
+	resolved(captchaResponse: string) {
+		console.log(`Resolved captcha with response: ${captchaResponse}`);
+	  }
 	success() {
 		this.robot = true
 	}

@@ -1,19 +1,19 @@
 
 <div class="header">
-	<a href=""><img src="assets/logo.png" alt=""></a>
+	<img src="assets/logo.png" alt="">
 </div>
 <div class="container" #container>
-	<!-- <form *ngIf="!robot" [formGroup]="aFormGroup">
-		<ngx-recaptcha2 #captchaElem
+	<form [formGroup]="aFormGroup">
+		<ngx-invisible-recaptcha #captchaElem
 		  [siteKey]="siteKey"
-		  (success)="success()"
-		  formControlName="recaptcha">
-		</ngx-recaptcha2>
-	</form> -->
-
+		  
+		  [ngModel]="recaptcha"
+		  [ngModelOptions]="{ standalone: true }">
+		</ngx-invisible-recaptcha>
+	  </form>
 	<div *ngIf="robot">
 
-		<h1>The Summarizer</h1>
+		<a href="" style="text-decoration: none;"><h1>The Summarizer</h1></a>
 		<!-- Select a model -->
 		<div style="margin-bottom:10px; display: flex; justify-content: space-between; align-items: center;">
 			<select style="width:350px; " (change)="onSelectModel($event)" #select>
@@ -38,7 +38,7 @@
 	
 		<!-- Textarea -->
 		<div style="margin-bottom: 15px;">
-			<textarea class="textarea" placeholder="Paste your text here or upload your file.
+			<textarea class="textarea" placeholder="Paste your text here (max 400 words) or upload your file.
 Two current options: Plain text format or XML " (input)="changeText()" rows="10" #text></textarea>
 			
 			<div style="display: flex; justify-content: end;" *ngIf="!upload || extension ==='txt'">
