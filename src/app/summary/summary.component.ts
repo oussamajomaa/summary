@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { environment } from 'src/environments/environment';
-import { ReCaptchaV3Service} from 'ngx-captcha';
+import { ReCaptchaV3Service } from 'ngx-captcha';
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { ClipboardService } from 'ngx-clipboard';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -75,7 +75,7 @@ export class SummaryComponent implements OnInit {
 
 	resolved(captchaResponse: string) {
 		console.log(`Resolved captcha with response: ${captchaResponse}`);
-	  }
+	}
 	success() {
 		this.robot = true
 	}
@@ -94,15 +94,14 @@ export class SummaryComponent implements OnInit {
 		this.inputFile.nativeElement.value = ""
 		this.textWord = this.countWords(this.text.nativeElement.value)
 		this.fileName = ''
-		// if (this.textWord > 400)
 		this.character = (this.text.nativeElement.value).length
-		// this.max = this.textWord
-		// this.min = Math.round(this.textWord / 2)
 	}
 
 	uploadFile(e) {
 		this.tags = []
 		this.tagTitles = []
+		this.keyWord = []
+		this.allSummaries = []
 		if (e.target.files[0]) {
 			this.text.nativeElement.value = ""
 			this.file = e.target.files[0]
@@ -120,33 +119,33 @@ export class SummaryComponent implements OnInit {
 					this.upload = true
 				};
 				reader.readAsText(this.file);
-				if (this.extension === "xml"){
+
+				// récupérer les balises title
+				if (this.extension === "xml") {
 					const formData = new FormData()
 
 					formData.append("name", this.file.name);
 					formData.append("file", this.file, this.file.name);
-					this.http.post(`${environment.url_local}/titles`, formData)
-					// this.http.post(`${environment.url}/titles`, formData)
-						.subscribe((res:any) => this.tagTitles = res)
-					}
+					// this.http.post(`${environment.url_local}/titles`, formData)
+					this.http.post(`${environment.url}/titles`, formData)
+						.subscribe((res: any) => this.tagTitles = res)
+				}
 			}
 		}
 
 	}
 
-	selectTag(e,title){
-		if (e.target.checked){
+	selectTag(e, title) {
+		if (e.target.checked) {
 			this.tags.push(title)
 		}
-		else{
+		else {
 			this.tags = this.tags.filter(el => {
 				return !(el === title)
 			})
 		}
-		console.log(this.tags);
-		
 	}
-	
+
 	summarize() {
 		this.allSummaries = []
 		this.keyWord = []
@@ -162,14 +161,14 @@ export class SummaryComponent implements OnInit {
 				`
 				)
 			if (this.text.nativeElement.value && !this.upload) {
-				if (this.textWord <= 400){
+				if (this.textWord <= 400) {
 					const start = new Date().getTime()
 					const text = this.text.nativeElement.value
 					if (text && this.textWord > 8) {
 						this.spinner = true
 						this.resume = ""
 						this.textWord = this.countWords(text)
-	
+
 						this.http.post(environment.url, JSON.stringify(text),
 							{
 								params:
@@ -181,9 +180,9 @@ export class SummaryComponent implements OnInit {
 							.subscribe((res: any) => {
 								if (res.summary.length === 0) {
 									this.spinner = false
-									Swal.fire('No Data','There is no summary!','info')
+									Swal.fire('No Data', 'There is no summary!', 'info')
 								}
-								else{
+								else {
 
 									this.resume = "Summary" + "\n"
 									this.resume += res.summary
@@ -193,7 +192,7 @@ export class SummaryComponent implements OnInit {
 									this.keywords.forEach(key => {
 										this.resume += key + " - "
 									})
-		
+
 									this.resumeWord = this.countWords(this.textTranslated)
 									const end = new Date().getTime()
 									this.processTime = (end - start) / 1000
@@ -202,12 +201,12 @@ export class SummaryComponent implements OnInit {
 							})
 					}
 				}
-				else{
+				else {
 					// alert('The text exceeded 400 words!')
-					Swal.fire('warning','The text exceeded 400 words!','warning')
+					Swal.fire('warning', 'The text exceeded 400 words!', 'warning')
 				}
 			}
-			if (this.fileName && this.upload) {				
+			if (this.fileName && this.upload) {
 				this.resume = ""
 				const formData = new FormData()
 
@@ -216,67 +215,95 @@ export class SummaryComponent implements OnInit {
 				this.resume = ""
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
-				this.http.post(`${environment.url_local}/file`, formData,
-				// this.http.post(`${environment.url}/file`, formData,
-					{
-						params:
-						{
-							model: this.model,
-							max_length: this.max_length,
-							extension: this.extension,
-							tags:JSON.stringify(this.tags)
-						}
-					})
-					.subscribe((res: any) => {
+				
+				if (this.extension === "xml") {
+					if (this.tags.length > 0) {
+						// this.http.post(`${environment.url_local}/file`, formData,
+							this.http.post(`${environment.url}/file`, formData,
+							{
+								params:
+								{
+									model: this.model,
+									max_length: this.max_length,
+									extension: this.extension,
+									tags: JSON.stringify(this.tags)
+								}
+							})
+							.subscribe((res: any) => {
 
-						if (this.extension === "xml") {
-							if (res.data.length === 0) {
+
+								if (res.data.length === 0) {
+									this.spinner = false
+									this.isData = false
+									// Swal.fire('No Data','There is no summary!','info')
+								}
+
+								// Assign the array of data = [{title,summary={summary,keywords}},..] to allSummaries
+								this.allSummaries = res.data
+
+								// Assign the general summary
+								this.generalSummary = res.general_summary
+
+								// Assign the array of general keywords to keyword
+								this.keyWord = res.kw
+
+								// Add the title "GENERAL SUMMARY" and the content of general summary to resume
+								this.resume += "GENERAL SUMMARY" + "\n" + this.generalSummary + "\n" + "\n"
+								// Add the title "GENERAL KEYWORD" and the content of keyword to resume
+								this.resume += "GENERAL KEYWORD" + "\n" + this.keyWord + '\n' + '\n'
+								// Get the title and summary of every block and add theme to resume
+								this.allSummaries.forEach(element => {
+									this.resume += element.title + '\n'
+									// Asign the title and summary to testTranslated for translating
+									this.textTranslated += element.title + '\n'
+									this.resume += element.summary.summary + '\n' + '\n'
+									this.textTranslated += element.summary.summary + '\n' + '\n'
+									this.resume += "Keywords" + "\n"
+									element.summary.keywords.forEach(key => {
+										this.resume += key + " - "
+									})
+									this.resume += '\n' + '\n'
+								});
+								// Count the words of resume
+								this.resumeWord = this.countWords(this.textTranslated)
+								const end = new Date().getTime()
+								this.processTime = (end - start) / 1000
 								this.spinner = false
-								this.isData = false
-								// Swal.fire('No Data','There is no summary!','info')
+								// Download text file
+								const data = this.resume
+								const blob = new Blob([data], { type: 'application/octet-stream' });
+								this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
+								this.text.nativeElement.value = "" // clear textarea
+								this.inputFile.nativeElement.value = ""
+								this.fileName = ""
+								this.tags = []
+								this.tagTitles = []
+							})
+					}
+					else {
+						this.spinner = false
+						Swal.fire('warning', 'Choose section please!', 'warning')
+					}
+
+				}
+
+				if (this.extension === "txt") {
+					// this.http.post(`${environment.url_local}/file`, formData,
+						this.http.post(`${environment.url}/file`, formData,
+						{
+							params:
+							{
+								model: this.model,
+								max_length: this.max_length,
+								extension: this.extension,
+								tags: JSON.stringify(this.tags)
 							}
+						})
+						.subscribe((res: any) => {
 
-							// Assign the array of data = [{title,summary={summary,keywords}},..] to allSummaries
-							this.allSummaries = res.data
+							// this.http.post(`${environment.url_local}/file`, formData,
 
-							// Assign the general summary
-							this.generalSummary = res.general_summary
 
-							// Assign the array of general keywords to keyword
-							this.keyWord = res.kw
-			
-							// Add the title "GENERAL SUMMARY" and the content of general summary to resume
-							this.resume += "GENERAL SUMMARY"+"\n"+this.generalSummary + "\n" + "\n"
-							// Add the title "GENERAL KEYWORD" and the content of keyword to resume
-							this.resume += "GENERAL KEYWORD"+"\n"+this.keyWord + '\n' + '\n'
-							// Get the title and summary of every block and add theme to resume
-							this.allSummaries.forEach(element => {
-								this.resume += element.title + '\n'
-								// Asign the title and summary to testTranslated for translating
-								this.textTranslated += element.title + '\n'
-								this.resume += element.summary.summary + '\n' + '\n'
-								this.textTranslated += element.summary.summary + '\n' + '\n'
-								this.resume += "Keywords" + "\n"
-								element.summary.keywords.forEach(key =>{
-									this.resume += key + " - "
-								})
-								this.resume += '\n' + '\n'
-							});
-							// Count the words of resume
-							this.resumeWord = this.countWords(this.textTranslated)
-							const end = new Date().getTime()
-							this.processTime = (end - start) / 1000
-							this.spinner = false
-							// Download text file
-							const data = this.resume					
-							const blob = new Blob([data], { type: 'application/octet-stream' });
-							this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
-							this.text.nativeElement.value = "" // clear textarea
-							this.inputFile.nativeElement.value = ""
-							this.fileName = ""
-						}
-
-						if (this.extension === "txt") {
 							if (res.summary.length === 0) {
 								this.spinner = false
 								this.isData = false
@@ -299,15 +326,16 @@ export class SummaryComponent implements OnInit {
 							const data = this.resume
 							const blob = new Blob([data], { type: 'application/octet-stream' });
 							this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
-						}
-					})
+						})
+				}
 
+				
 
 			}
 		}
 		else {
 			// this.isModel = true
-			Swal.fire('warning','Choose model please!','warning')
+			Swal.fire('warning', 'Choose model please!', 'warning')
 		}
 	}
 

@@ -125,55 +125,12 @@ def summary_text(body,model_name,max_length):
 
 
 def extract_from_xml(filename,tags):
-    # data = {}
-    # soup = BeautifulSoup(filename, 'lxml')
-    # abstract, intro, method, result, concl = ('' for i in range(5))
-    # for tag in soup.find_all('title'):
-    #     if tag.text.strip() == 'Abstract':
-    #         for p in tag.parent.find_all('p'):
-    #             abstract += p.text
-    #         data['Abstract'] = abstract.strip()
-    #     elif 'Introduction' in tag.text.strip():
-    #         for p in tag.parent.find_all('p'):
-    #             intro += p.text
-    #         data['Introduction'] = intro.strip()
-    #     elif 'method' in tag.text.lower().strip() and method == '':
-    #         for p in tag.parent.find_all('p'):
-    #             method += p.text
-    #         data['Methods'] = method.strip()
-    #     elif 'result' in tag.text.lower().strip() and result == '':
-    #         for p in tag.parent.find_all('p'):
-    #             result += p.text
-    #         data['Results'] = result.strip()
-    #     elif ('conclusion' in tag.text.lower().strip() or 'discussion' in tag.text.lower().strip()) and concl == '':
-    #         for p in tag.parent.find_all('p'):
-    #             concl += p.text
-    #         data['Conclusion'] = concl.strip()
     data = {}
     soup = BeautifulSoup(filename, 'lxml')
-
     for tag in soup.find_all('title'):
         content = ""
-        
         if tag.text.strip() in tags:
             for p in tag.parent.find_all('p'):
                 content += p.text
             data[tag.text.strip()] = content.strip()
-        # elif 'Introduction' in tag.text.strip():
-        #     for p in tag.parent.find_all('p'):
-        #         intro += p.text
-        #     data['Introduction'] = intro.strip()
-        # elif 'method' in tag.text.lower().strip() and method == '':
-        #     for p in tag.parent.find_all('p'):
-        #         method += p.text
-        #     data['Methods'] = method.strip()
-        # elif 'result' in tag.text.lower().strip() and result == '':
-        #     for p in tag.parent.find_all('p'):
-        #         result += p.text
-        #     data['Results'] = result.strip()
-        # elif ('conclusion' in tag.text.lower().strip() or 'discussion' in tag.text.lower().strip()) and concl == '':
-        #     for p in tag.parent.find_all('p'):
-        #         concl += p.text
-            # data['Conclusion'] = concl.strip()
-
     return data

@@ -55,18 +55,18 @@ def process():
         general_summary = ""
         for k, v in data.items():
             if len(v) > 0:
-                if k == 'Abstract':
-                    print(v)
-                    general_summary = v
                 sum = summary_text(v,model_name,max_length)
                 obj= {
                     "title" : k,
                     "summary" : sum
                 }
                 summaries.append(obj)
-        # end summary
         
         soup = BeautifulSoup(file, 'xml')
+        for tag in soup.find_all('title'):
+            if tag.text.strip() == 'Abstract':
+                for p in tag.parent.find_all('p'):
+                    general_summary += p.text
         keyWord = soup.find("kwd-group", {"id": "kwd-group-1"})
         kw = []
         if keyWord:
