@@ -39,6 +39,8 @@ def process():
     file = request.files['file']
     extension = request.args.get('extension')
     max_length = request.args.get('max_length')
+    tags = request.args.get('tags')
+    print(tags)
     filename = secure_filename(file.filename)
     file.save(os.path.join('folder', filename))
 
@@ -46,7 +48,7 @@ def process():
     if extension == "xml":
         file = open (filepath,'r').read()
         data = {}
-        data = extract_from_xml(file)
+        data = extract_from_xml(file,tags)
 
         # summary
         summaries = []
@@ -77,6 +79,7 @@ def process():
             "kw":kw,
             "general_summary": general_summary
         }
+        os.remove(filepath)
         return response
     
     if extension == "txt":
@@ -87,6 +90,7 @@ def process():
         contents = " ".join(contents)
         print(contents)
         response = summary_text(contents,model_name,max_length)
+        os.remove(filepath)
         return json.dumps(response)
 
 
@@ -97,6 +101,24 @@ def translator():
     text = request.get_json(force=True)
     translated = GoogleTranslator(source="auto", target=target).translate(text)  
     return json.dumps(translated)
+
+
+@app.route('/titles', methods=['POST'])
+def get_titles():
+    file = request.files['file']
+    filename = secure_filename(file.filename)
+    file.save(os.path.join('folder', filename))
+    filepath = os.path.join('./folder', os.path.basename(filename))
+    file = open (filepath,'r').read()
+    soup = BeautifulSoup(file, 'lxml')
+
+    titles =[]
+    for tag in soup.find_all('title'):
+        titles.append(tag.text)
+
+    os.remove(filepath)
+    
+    return json.dumps(titles)
 
 if __name__ == '__main__':
     app.run(port=5001,debug=True)

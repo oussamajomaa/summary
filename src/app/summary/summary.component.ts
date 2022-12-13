@@ -48,6 +48,8 @@ export class SummaryComponent implements OnInit {
 	fileUrl
 	translated = ""
 	target = "fr"
+	tagTitles = []
+	tags = []
 
 	siteKey = "6Le-7OYiAAAAANYoAmPdhNWC2WakmiCd_JHZ3bGt"
 	recaptcha: any
@@ -86,6 +88,8 @@ export class SummaryComponent implements OnInit {
 	}
 
 	changeText() {
+		this.tags = []
+		this.tagTitles = []
 		this.upload = false
 		this.inputFile.nativeElement.value = ""
 		this.textWord = this.countWords(this.text.nativeElement.value)
@@ -97,6 +101,8 @@ export class SummaryComponent implements OnInit {
 	}
 
 	uploadFile(e) {
+		this.tags = []
+		this.tagTitles = []
 		if (e.target.files[0]) {
 			this.text.nativeElement.value = ""
 			this.file = e.target.files[0]
@@ -114,9 +120,31 @@ export class SummaryComponent implements OnInit {
 					this.upload = true
 				};
 				reader.readAsText(this.file);
+				if (this.extension === "xml"){
+					const formData = new FormData()
+
+					formData.append("name", this.file.name);
+					formData.append("file", this.file, this.file.name);
+					this.http.post(`${environment.url_local}/titles`, formData)
+					// this.http.post(`${environment.url}/titles`, formData)
+						.subscribe((res:any) => this.tagTitles = res)
+					}
 			}
 		}
 
+	}
+
+	selectTag(e,title){
+		if (e.target.checked){
+			this.tags.push(title)
+		}
+		else{
+			this.tags = this.tags.filter(el => {
+				return !(el === title)
+			})
+		}
+		console.log(this.tags);
+		
 	}
 	
 	summarize() {
@@ -143,7 +171,6 @@ export class SummaryComponent implements OnInit {
 						this.textWord = this.countWords(text)
 	
 						this.http.post(environment.url, JSON.stringify(text),
-							// this.http.post(`https://obtic.sorbonne-universite.fr:5000`, JSON.stringify(text),
 							{
 								params:
 								{
@@ -189,14 +216,15 @@ export class SummaryComponent implements OnInit {
 				this.resume = ""
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
-				this.http.post(`${environment.url}/file`, formData,
-					// this.http.post(`https://obtic.sorbonne-universite.fr:5000/file`, formData,
+				this.http.post(`${environment.url_local}/file`, formData,
+				// this.http.post(`${environment.url}/file`, formData,
 					{
 						params:
 						{
 							model: this.model,
 							max_length: this.max_length,
-							extension: this.extension
+							extension: this.extension,
+							tags:JSON.stringify(this.tags)
 						}
 					})
 					.subscribe((res: any) => {
@@ -343,6 +371,8 @@ export class SummaryComponent implements OnInit {
 		this.character = 0
 		this.fileName = ""
 		this.upload = false
+		this.tags = []
+		this.tagTitles = []
 	}
 
 	countWords(str: String) {

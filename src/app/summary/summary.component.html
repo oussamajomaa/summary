@@ -37,7 +37,7 @@
 	
 	
 		<!-- Textarea -->
-		<div style="margin-bottom: 15px;">
+		<div style="margin-bottom: 10px;">
 			<textarea class="textarea" placeholder="Paste your text here (max 400 words) or upload your file.
 Two current options: Plain text format or XML " (input)="changeText()" rows="10" #text></textarea>
 			
@@ -50,10 +50,24 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 			</div>
 		</div>
 		
-		
-	
+		<!-- tags titles -->
+		<div *ngIf="tagTitles.length > 0" 
+			style="border: 1px ;
+			border-radius: 10px;
+			padding: 5px;
+			margin-bottom: 10px;
+			box-shadow: rgba(59, 3, 214, 0.3) 0px 0px 0px 3px;">
+			<h4 style="margin-bottom: 5px;">Chosse section to summarize</h4>
+			<div  style="display:flex;  flex-wrap: wrap;">
+				<label for="tag-title{{i}}" *ngFor="let title of tagTitles, let i=index">
+					<input type="checkbox" id="tag-title{{i}}" (change)="selectTag($event,title)">
+					{{title}}
+				</label>
+			</div>
+		</div>
+
 		<!-- Buttons -->
-		<div style="margin-bottom: 20px; justify-content: space-between; display: flex;">
+		<div style="margin-bottom: 20px;justify-content: space-between; display: flex;" >
 			<!-- Upload file -->
 			<div class="upload-btn-wrapper" style="display: flex; ">
 				<label for="fileDropReff" class="dropzone">
@@ -68,6 +82,7 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 				<button (click)="clearText()" >Reset</button>
 			</div>
 		</div>
+		
 		<hr style="box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 1px;">
 	
 		<!-- Spinner -->
@@ -82,7 +97,7 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 
 			<h3>General Keywords</h3>
 			<div class="keyword">
-				<span class="key-blue" *ngFor="let k of keyWord">{{k}}</span>
+				<span class="key-grey" *ngFor="let k of keyWord">{{k}}</span>
 			</div>
 		</div>
 	
@@ -100,7 +115,8 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 				<div style="width: 35%;" class="keyword">
 					<h4 style="width: 100%;">Keywords</h4>
 					<span *ngFor="let keyword of item.summary.keywords"
-							[ngClass]="{'key-red' : keyword[1] >= 0.5 , 'key-grey' : keyword[1] < 0.5}">
+							class="key-grey"
+							[ngClass]="{'key-bold' : keyword[1] >= 0.5}">
 							{{keyword}}
 					</span>
 				</div>
@@ -141,7 +157,8 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 				<div style="width: 35%;" class="keyword">
 					<h4 style="width: 100%;">Keywords</h4>
 					<span *ngFor="let keyword of keywords" 
-							[ngClass]="{'key-red' : keyword[1] >= 0.5 , 'key-grey' : keyword[1] < 0.5}">
+							class="key-grey"
+							[ngClass]="{'key-bold' : keyword[1] >= 0.5}">
 							{{keyword}}
 					</span>
 				</div>
@@ -174,7 +191,8 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 				<div style="width: 35%;" class="keyword">
 					<h4 style="width: 100%;">Keywords</h4>
 					<span *ngFor="let keyword of keywords" 
-							[ngClass]="{'key-red' : keyword[1] >= 0.5 , 'key-grey' : keyword[1] < 0.5}">
+							class="key-grey"
+							[ngClass]="{'key-bold' : keyword[1] >= 0.5}">
 							{{keyword}}
 					</span>
 				</div>
