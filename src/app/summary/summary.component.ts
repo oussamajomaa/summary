@@ -135,8 +135,8 @@ export class SummaryComponent implements OnInit {
 
 					formData.append("name", this.file.name);
 					formData.append("file", this.file, this.file.name);
-					this.http.post(`${environment.url_local}/titles`, formData)
-					// this.http.post(`${environment.url}/titles`, formData)
+					// this.http.post(`${environment.url_local}/titles`, formData)
+						this.http.post(`${environment.url}/titles`, formData)
 						.subscribe((res: any) => this.tagTitles = res)
 				}
 			}
@@ -158,7 +158,7 @@ export class SummaryComponent implements OnInit {
 	summarize() {
 		this.allSummaries = []
 		this.keyWord = []
-		if (this.model) {			
+		if (this.model) {
 			this.select.nativeElement.setAttribute
 				('style',
 					`
@@ -178,8 +178,8 @@ export class SummaryComponent implements OnInit {
 						this.resume = ""
 						this.textWord = this.countWords(text)
 
-						this.http.post(environment.url_local, JSON.stringify(text),
-						// this.http.post(environment.url, JSON.stringify(text),
+						// this.http.post(environment.url_local, JSON.stringify(text),
+							this.http.post(environment.url, JSON.stringify(text),
 							{
 								params:
 								{
@@ -190,7 +190,17 @@ export class SummaryComponent implements OnInit {
 							.subscribe((res: any) => {
 								if (res.summary.length === 0) {
 									this.spinner = false
-									Swal.fire('No Data', 'There is no summary!', 'info')
+									Swal.fire
+										({
+											text: 'There is no summary!',
+											background: '#EBEBEB',
+											color: '#24468B',
+											timerProgressBar: true,
+											showClass: {
+												popup: 'animate__animated',
+											},
+										})
+
 								}
 								else {
 
@@ -213,7 +223,7 @@ export class SummaryComponent implements OnInit {
 				}
 				else {
 					// alert('The text exceeded 400 words!')
-					Swal.fire('warning', 'The text exceeded 400 words!', 'warning')
+					this.swalFire('The text exceeded 400 words!')
 				}
 			}
 			if (this.fileName && this.upload) {
@@ -225,11 +235,11 @@ export class SummaryComponent implements OnInit {
 				this.resume = ""
 				formData.append("name", this.file.name);
 				formData.append("file", this.file, this.file.name);
-				
+
 				if (this.extension === "xml") {
 					if (this.tags.length > 0) {
-						this.http.post(`${environment.url_local}/file`, formData,
-							// this.http.post(`${environment.url}/file`, formData,
+						// this.http.post(`${environment.url_local}/file`, formData,
+							this.http.post(`${environment.url}/file`, formData,
 							{
 								params:
 								{
@@ -240,8 +250,6 @@ export class SummaryComponent implements OnInit {
 								}
 							})
 							.subscribe((res: any) => {
-
-
 								if (res.data.length === 0) {
 									this.spinner = false
 									this.isData = false
@@ -293,14 +301,14 @@ export class SummaryComponent implements OnInit {
 					}
 					else {
 						this.spinner = false
-						Swal.fire('warning', 'Choose title from list please!', 'warning')
+						this.swalFire('Choose title from list please!')
 					}
 
 				}
 
 				if (this.extension === "txt") {
-					this.http.post(`${environment.url_local}/file`, formData,
-						// this.http.post(`${environment.url}/file`, formData,
+					// this.http.post(`${environment.url_local}/file`, formData,
+						this.http.post(`${environment.url}/file`, formData,
 						{
 							params:
 							{
@@ -337,83 +345,83 @@ export class SummaryComponent implements OnInit {
 						})
 				}
 
-				
-
 			}
-			if (this.isExample && !this.upload){
-				this.extension = 'xml'
-				this.upload = true
-				this.spinner = true
-				this.resume = ""
-				const start = new Date().getTime()
-				
+			if (this.isExample && !this.upload) {
 				if (this.tags.length > 0) {
-					this.http.get(`${environment.url_local}/example_summary`, {params:
+					this.extension = 'xml'
+					this.upload = true
+					this.spinner = true
+					this.resume = ""
+				const start = new Date().getTime()
+					// this.http.get(`${environment.url_local}/example_summary`, {
+					this.http.get(`${environment.url}/example_summary`, {
+						params:
 						{
 							model: this.model,
 							max_length: this.max_length,
 							tags: JSON.stringify(this.tags)
-						}})
-					.subscribe((res: any) => {
-						if (res.data.length === 0) {
-							this.spinner = false
-							this.isData = false
-							this.isExample = false
-							// Swal.fire('No Data','There is no summary!','info')
 						}
-
-						// Assign the array of data = [{title,summary={summary,keywords}},..] to allSummaries
-						this.allSummaries = res.data
-
-						// Assign the general summary
-						this.generalSummary = res.general_summary
-
-						// Assign the array of general keywords to keyword
-						this.keyWord = res.kw
-
-						// Add the title "GENERAL SUMMARY" and the content of general summary to resume
-						this.resume += "GENERAL SUMMARY" + "\n" + this.generalSummary + "\n" + "\n"
-						// Add the title "GENERAL KEYWORD" and the content of keyword to resume
-						this.resume += "GENERAL KEYWORD" + "\n" + this.keyWord + '\n' + '\n'
-						// Get the title and summary of every block and add theme to resume
-						this.allSummaries.forEach(element => {
-							this.resume += element.title + '\n'
-							// Asign the title and summary to testTranslated for translating
-							this.textTranslated += element.title + '\n'
-							this.resume += element.summary.summary + '\n' + '\n'
-							this.textTranslated += element.summary.summary + '\n' + '\n'
-							this.resume += "Keywords" + "\n"
-							element.summary.keywords.forEach(key => {
-								this.resume += key + " - "
-							})
-							this.resume += '\n' + '\n'
-						});
-						// Count the words of resume
-						this.resumeWord = this.countWords(this.textTranslated)
-						const end = new Date().getTime()
-						this.processTime = (end - start) / 1000
-						this.spinner = false
-						// Download text file
-						const data = this.resume
-						const blob = new Blob([data], { type: 'application/octet-stream' });
-						this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
-						this.text.nativeElement.value = "" // clear textarea
-						this.inputFile.nativeElement.value = ""
-						this.fileName = ""
-						this.tags = []
-						this.isDisabled = true
-						// this.tagTitles = []
 					})
+						.subscribe((res: any) => {
+							if (res.data.length === 0) {
+								this.spinner = false
+								this.isData = false
+								this.isExample = false
+								// Swal.fire('No Data','There is no summary!','info')
+							}
+
+							// Assign the array of data = [{title,summary={summary,keywords}},..] to allSummaries
+							this.allSummaries = res.data
+
+							// Assign the general summary
+							this.generalSummary = res.general_summary
+
+							// Assign the array of general keywords to keyword
+							this.keyWord = res.kw
+
+							// Add the title "GENERAL SUMMARY" and the content of general summary to resume
+							this.resume += "GENERAL SUMMARY" + "\n" + this.generalSummary + "\n" + "\n"
+							// Add the title "GENERAL KEYWORD" and the content of keyword to resume
+							this.resume += "GENERAL KEYWORD" + "\n" + this.keyWord + '\n' + '\n'
+							// Get the title and summary of every block and add theme to resume
+							this.allSummaries.forEach(element => {
+								this.resume += element.title + '\n'
+								// Asign the title and summary to testTranslated for translating
+								this.textTranslated += element.title + '\n'
+								this.resume += element.summary.summary + '\n' + '\n'
+								this.textTranslated += element.summary.summary + '\n' + '\n'
+								this.resume += "Keywords" + "\n"
+								element.summary.keywords.forEach(key => {
+									this.resume += key + " - "
+								})
+								this.resume += '\n' + '\n'
+							});
+							// Count the words of resume
+							this.resumeWord = this.countWords(this.textTranslated)
+							const end = new Date().getTime()
+							this.processTime = (end - start) / 1000
+							this.spinner = false
+							// Download text file
+							const data = this.resume
+							const blob = new Blob([data], { type: 'application/octet-stream' });
+							this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
+							this.text.nativeElement.value = "" // clear textarea
+							this.inputFile.nativeElement.value = ""
+							this.fileName = ""
+							this.tags = []
+							this.isDisabled = true
+							// this.tagTitles = []
+						})
 				}
 				else {
 					this.spinner = false
-					Swal.fire('warning', 'Choose title from list please!', 'warning')
+					this.swalFire('Choose title from list please!')
 				}
 			}
 		}
 		else {
 			// this.isModel = true
-			Swal.fire('warning', 'Choose model please!', 'warning')
+			this.swalFire('Choose model please!')
 		}
 	}
 
@@ -425,8 +433,8 @@ export class SummaryComponent implements OnInit {
 	translate() {
 		if (this.textTranslated) {
 			this.isTranslator = true
-			this.http.post(`${environment.url_local}/translate`,
-			// this.http.post(`${environment.url}/translate`,
+			// this.http.post(`${environment.url_local}/translate`,
+				this.http.post(`${environment.url}/translate`,
 				JSON.stringify(this.textTranslated),
 				{ params: { target: this.target } })
 				.subscribe((res: any) => {
@@ -489,12 +497,26 @@ export class SummaryComponent implements OnInit {
 		return str.trim().split(/\s+/).length
 	}
 
-	example_title(){
+	example_title() {
 		this.clearText()
 		this.isExample = true
-		this.http.get(`${environment.url_local}/example_title`)
-		.subscribe((res:any) => this.tagTitles = res)
+		// this.http.get(`${environment.url_local}/example_title`)
+		this.http.get(`${environment.url}/example_title`)
+			.subscribe((res: any) => this.tagTitles = res)
 	}
+
+	swalFire(text){
+		Swal.fire({
+			text: text,
+			background: '#EBEBEB',
+			color: '#24468B',
+			timerProgressBar: true,
+			showClass: {
+				popup: 'animate__animated',
+			},
+		})
+	}
+						
 
 
 
