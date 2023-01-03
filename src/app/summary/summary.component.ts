@@ -158,9 +158,7 @@ export class SummaryComponent implements OnInit {
 	summarize() {
 		this.allSummaries = []
 		this.keyWord = []
-		if (this.model) {
-			console.log(this.model);
-			
+		if (this.model) {			
 			this.select.nativeElement.setAttribute
 				('style',
 					`
@@ -348,7 +346,6 @@ export class SummaryComponent implements OnInit {
 				this.spinner = true
 				this.resume = ""
 				const start = new Date().getTime()
-				console.log(this.isExample);
 				
 				if (this.tags.length > 0) {
 					this.http.get(`${environment.url_local}/example_summary`, {params:
