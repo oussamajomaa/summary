@@ -2,6 +2,7 @@ from keybert import KeyBERT
 from bs4 import BeautifulSoup
 import torch
 
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
@@ -134,3 +135,5 @@ def extract_from_xml(filename,tags):
                 content += p.text
             data[tag.text.strip()] = content.strip()
     return data
+
+

@@ -57,10 +57,10 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 			padding: 5px;
 			margin-bottom: 10px;
 			box-shadow: rgba(3, 119, 214, 0.3) 0px 0px 0px 3px;">
-			<h4 style="margin-bottom: 5px;">Chosse section to summarize</h4>
+			<h4 style="margin-bottom: 5px;">Choose title from list</h4>
 			<div  style="display:flex;  flex-wrap: wrap;">
 				<label for="tag-title{{i}}" *ngFor="let title of tagTitles, let i=index">
-					<input type="checkbox" id="tag-title{{i}}" (change)="selectTag($event,title)">
+					<input type="checkbox" id="tag-title{{i}}" (change)="selectTag($event,title)" [disabled]="isDisabled">
 					{{title}}
 				</label>
 			</div>
@@ -75,6 +75,8 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 					<input type="file" accept=".txt, .xml" (change)="uploadFile($event)" #inputFile id="fileDropReff">
 				</label>
 				<span>{{fileName}}</span>
+				<button (click)="example_title()">Example xml file</button>
+
 			</div>
 			<!-- Summarize && Reset button -->
 			<div>
@@ -90,12 +92,12 @@ Two current options: Plain text format or XML " (input)="changeText()" rows="10"
 	
 		<!-- General keywords for xml file -->
 		<div *ngIf="keyWord.length>0">
-			<h3>General Summary</h3>
+			<h3>General Summary <span style="font-size: 12px;" class="badge badge-secondary">not automatically summarized</span></h3> 
 			<div class="keyword">
 				{{generalSummary}}
 			</div>
 
-			<h3>General Keywords</h3>
+			<h3>General Keywords <span style="font-size: 12px;" class="badge badge-secondary">not automatically extracted</span></h3>
 			<div class="keyword">
 				<span class="key-grey" *ngFor="let k of keyWord">{{k}}</span>
 			</div>
